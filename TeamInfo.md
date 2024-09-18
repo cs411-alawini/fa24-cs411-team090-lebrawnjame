@@ -24,4 +24,4 @@
 | Video Link  |      link_to_video     |
 
 ## Project Summary
-LePhoning is where you can get to know LE SSERAFIM!
+LE SSERAFIM is a South Korean pop (K-Pop) girl group that debuted in 2022. Since their first release, they have steadily gained popularity, and they currently have 14.1 million monthly listeners on Spotify. However, they do not have a centralized platform for fans (“Fearnots”) to interact with the members of the group, with Fearnots taking to Twitter, TikTok, and Reddit to discuss and bond over LE SSERAFIM updates and music. This is where LePhoning comes in!
