@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.landing-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+
+.icon {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+
+.icon p {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.icon-image {
+  width: 64px;
+  height: 64px;
+}
+
+.icon-image.calls {
+  background: url('/icons/calls.png') no-repeat center;
+  background-size: cover;
+}
+
+.icon-image.messages {
+  background: url('/icons/messages.png') no-repeat center;
+  background-size: cover;
+}
+
+.icon-image.photos {
+  background: url('/icons/photos.png') no-repeat center;
+  background-size: cover;
+}
+
+.icon-image.calendar {
+  background: url('/icons/calendar.png') no-repeat center;
+  background-size: cover;
+}
+
+.icon-image.podcast {
+  background: url('/icons/podcast.png') no-repeat center;
+  background-size: cover;
+}
+
+.icon-image.settings {
+  background: url('/icons/settings.png') no-repeat center;
+  background-size: cover;
+}
