@@ -25,7 +25,7 @@ const LandingPage: React.FC = () => {
           <div className="icon-image calendar"></div>
           <p>Calendar</p>
         </Link>
-        <Link href="/podcast" className="icon">
+        <Link href="/podcast" className="icon">2
           <div className="icon-image podcast"></div>
           <p>Podcast</p>
         </Link>
