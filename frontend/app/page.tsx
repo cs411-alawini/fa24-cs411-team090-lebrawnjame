@@ -5,9 +5,8 @@ const LandingPage: React.FC = () => {
   return (
     <div className="landing-container">
       <div className="background">
-      <Image src="/assets/lephoningbackground.png" alt="LE SSERAFIM Collage" fill className="collage-background" />
+        <Image src="public/assets/lephoningbackground.png" alt="LE SSERAFIM Collage" fill className="collage-background" />
       </div>
-      
       <div className="icon-grid">
         <Link href="/calls" className="icon">
           <div className="icon-image calls"></div>
@@ -25,7 +24,7 @@ const LandingPage: React.FC = () => {
           <div className="icon-image calendar"></div>
           <p>Calendar</p>
         </Link>
-        <Link href="/podcast" className="icon">2
+        <Link href="/podcast" className="icon">
           <div className="icon-image podcast"></div>
           <p>Podcast</p>
         </Link>

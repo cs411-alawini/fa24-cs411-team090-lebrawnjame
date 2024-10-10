@@ -2,7 +2,7 @@ export default function LandingPage() {
     return (
       <div className="landing-container">
         <div className="background">
-          <img src="/path-to-your-collage.jpg" alt="LE SSERAFIM Collage" className="collage-background" />
+          <img src="public/assets/lephoningbackground.png" alt="LE SSERAFIM Collage" className="collage-background" />
         </div>
         
         <div className="icon-grid">
