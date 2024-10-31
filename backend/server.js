@@ -59,8 +59,8 @@ function insertShopItems() {
         });
 }
 
-// insertUsers();
+insertUsers();
 insertMessages();
-// insertShopItems();
+insertShopItems();
 
 setTimeout(() => connection.end(), 5000);
