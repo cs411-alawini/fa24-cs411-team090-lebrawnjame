@@ -99,10 +99,12 @@ export default function LandingPage() {
               Explore LePhoning
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              {/* Update this Link component */}
               <Link href="/chat" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
                 <MessageSquare className="w-12 h-12" />
                 <span className="font-medium">Chat</span>
               </Link>
+              {/* Other Links remain the same */}
               <Link href="/events" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
                 <Calendar className="w-12 h-12" />
                 <span className="font-medium">Events</span>
