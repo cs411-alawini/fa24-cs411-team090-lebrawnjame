@@ -94,32 +94,37 @@ export default function LandingPage() {
           </div>
         </section>
         <section id="pages" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6 mx-auto">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-pink-500">
-              Explore LePhoning
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              {/* Update this Link component */}
-              <Link href="/chat" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
-                <MessageSquare className="w-12 h-12" />
-                <span className="font-medium">Chat</span>
-              </Link>
-              {/* Other Links remain the same */}
-              <Link href="/events" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
-                <Calendar className="w-12 h-12" />
-                <span className="font-medium">Events</span>
-              </Link>
-              <Link href="/media" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
-                <Camera className="w-12 h-12" />
-                <span className="font-medium">Media</span>
-              </Link>
-              <Link href="/shop" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
-                <ShoppingBag className="w-12 h-12" />
-                <span className="font-medium">Shop</span>
-              </Link>
-            </div>
+        <div className="container px-4 md:px-6 mx-auto">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12 text-pink-500">
+            Explore LePhoning
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            {/* Chat Link */}
+            <Link href="/chat" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
+              <MessageSquare className="w-12 h-12" />
+              <span className="font-medium">Chat</span>
+            </Link>
+            
+            {/* Events Link (No change needed here) */}
+            <Link href="/events" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
+              <Calendar className="w-12 h-12" />
+              <span className="font-medium">Events</span>
+            </Link>
+            
+            {/* Media Link - Updated to route to /media */}
+            <Link href="/media" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
+              <Camera className="w-12 h-12" />
+              <span className="font-medium">Media</span>
+            </Link>
+            
+            {/* Shop Link (No change needed here) */}
+            <Link href="/shop" className="flex flex-col items-center space-y-2 hover:text-pink-500 transition-colors">
+              <ShoppingBag className="w-12 h-12" />
+              <span className="font-medium">Shop</span>
+            </Link>
           </div>
-        </section>
+        </div>
+      </section>
         <section id="cta" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-pink-500 to-purple-500">
           <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center space-y-4 text-center">
