@@ -3,7 +3,6 @@ import OpenAI from 'openai';
 
 const openai = new OpenAI({
   // apiKey: process.env.OPENAI_API_KEY, // Ensure you set this in your environment variables
-  apiKey: "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"
 });
 
 export async function POST(req: Request) {
