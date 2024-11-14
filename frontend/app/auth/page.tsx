@@ -26,12 +26,10 @@ export default function AuthPage() {
       newErrors.username = 'Username must be at least 3 characters long'
       isValid = false
     }
-
     if (!/\S+@\S+\.\S+/.test(email)) {
       newErrors.email = 'Please enter a valid email address'
       isValid = false
     }
-
     if (password.length < 6) {
       newErrors.password = 'Password must be at least 6 characters long'
       isValid = false
@@ -41,15 +39,34 @@ export default function AuthPage() {
     return isValid
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (validateForm()) {
-      // Here you would typically handle the authentication logic
-      console.log('Form submitted:', { username, email, password })
-      // For now, we'll just redirect to the home page
-      router.push('/')
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+
+    const url = isLogin ? 'http://localhost:3001/auth/login' : 'http://localhost:3001/auth/signup';
+    const payload = isLogin
+        ? { email, password }
+        : { username, email, password, membershipStatus: 0, location: 1 };
+
+    try {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            console.log('Auth successful:', data);
+            router.push('/');
+        } else {
+            setErrors((prev) => ({ ...prev, form: data.message || 'Authentication failed' }));
+        }
+    } catch (error) {
+        // console.error('Error:', error);
+        setErrors((prev) => ({ ...prev, form: 'Server error' }));
     }
-  }
+  };
 
   return (
     <div className="relative min-h-screen bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
