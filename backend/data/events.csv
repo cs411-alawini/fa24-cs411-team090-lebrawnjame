@@ -1,0 +1,1501 @@
+EventID,EventName,StartDate,EndDate,Location,MemberId
+1,Fan Meet-Up,2023-02-23 17:00:00,2023-02-23 21:00:00,"Mexico City, Mexico",2
+2,Concert,2024-10-01 18:00:00,2024-10-01 19:00:00,"Mexico City, Mexico",3
+3,Concert,2024-07-13 16:00:00,2024-07-13 20:00:00,"Buenos Aires, Argentina",2
+4,Tour,2023-03-29 11:00:00,2023-03-29 15:00:00,"Mexico City, Mexico",5
+5,Concert,2022-07-24 04:00:00,2022-07-24 06:00:00,"Chongqing, China",1
+6,Tour,2023-07-19 10:00:00,2023-07-19 13:00:00,"Manila, Philippines",1
+7,Fan Meet-Up,2022-05-08 15:00:00,2022-05-08 18:00:00,"Lagos, Nigeria",1
+8,Tour,2023-01-11 06:00:00,2023-01-11 10:00:00,"Rio de Janeiro, Brazil",2
+9,Merch Sale Event,2022-08-01 02:00:00,2022-08-01 04:00:00,"Kolkata, India",5
+10,Concert,2024-08-28 01:00:00,2024-08-28 04:00:00,"Tianjin, China",5
+11,Merch Sale Event,2023-04-19 02:00:00,2023-04-19 03:00:00,"Dhaka, Bangladesh",4
+12,Reality Show,2024-04-09 06:00:00,2024-04-09 09:00:00,"Karachi, Pakistan",2
+13,Tour,2023-06-20 20:00:00,2023-06-21 00:00:00,"Buenos Aires, Argentina",2
+14,Concert,2022-05-07 16:00:00,2022-05-07 19:00:00,"Beijing, China",4
+15,Concert,2023-02-28 03:00:00,2023-02-28 04:00:00,"Mumbai, India",1
+16,Tour,2024-01-24 14:00:00,2024-01-24 16:00:00,"Tianjin, China",4
+17,Concert,2022-01-28 08:00:00,2022-01-28 09:00:00,"São Paulo, Brazil",4
+18,Tour,2022-12-23 00:00:00,2022-12-23 01:00:00,"Tianjin, China",5
+19,Concert,2023-06-26 22:00:00,2023-06-27 00:00:00,"Delhi, India",5
+20,Tour,2024-08-31 18:00:00,2024-08-31 19:00:00,"Kinshasa, DR Congo",5
+21,Concert,2023-05-01 01:00:00,2023-05-01 02:00:00,"Rio de Janeiro, Brazil",5
+22,Concert,2024-06-19 16:00:00,2024-06-19 19:00:00,"Buenos Aires, Argentina",4
+23,Merch Sale Event,2024-02-02 19:00:00,2024-02-02 21:00:00,"Dhaka, Bangladesh",2
+24,Concert,2021-11-26 14:00:00,2021-11-26 17:00:00,"Kolkata, India",4
+25,Merch Sale Event,2023-05-29 02:00:00,2023-05-29 04:00:00,"Mexico City, Mexico",2
+26,Reality Show,2024-03-23 11:00:00,2024-03-23 15:00:00,"Dhaka, Bangladesh",2
+27,Concert,2024-06-18 21:00:00,2024-06-18 23:00:00,"Istanbul, Turkey",2
+28,Merch Sale Event,2023-02-10 05:00:00,2023-02-10 08:00:00,"Istanbul, Turkey",2
+29,Tour,2024-06-28 01:00:00,2024-06-28 05:00:00,"Cairo, Egypt",4
+30,Concert,2023-05-11 23:00:00,2023-05-12 03:00:00,"Rio de Janeiro, Brazil",3
+31,Fan Meet-Up,2023-07-26 08:00:00,2023-07-26 11:00:00,"São Paulo, Brazil",5
+32,Reality Show,2024-07-29 02:00:00,2024-07-29 03:00:00,"Chongqing, China",3
+33,Fan Meet-Up,2022-07-10 00:00:00,2022-07-10 04:00:00,"Osaka, Japan",1
+34,Reality Show,2022-06-11 12:00:00,2022-06-11 15:00:00,"Kinshasa, DR Congo",2
+35,Tour,2023-09-13 20:00:00,2023-09-13 22:00:00,"Karachi, Pakistan",1
+36,Concert,2022-09-25 05:00:00,2022-09-25 08:00:00,"Lagos, Nigeria",4
+37,Merch Sale Event,2022-07-23 19:00:00,2022-07-23 20:00:00,"Lagos, Nigeria",4
+38,Concert,2022-04-15 15:00:00,2022-04-15 18:00:00,"São Paulo, Brazil",3
+39,Reality Show,2024-02-15 01:00:00,2024-02-15 02:00:00,"Rio de Janeiro, Brazil",5
+40,Merch Sale Event,2021-12-25 13:00:00,2021-12-25 15:00:00,"Cairo, Egypt",3
+41,Tour,2024-10-26 13:00:00,2024-10-26 14:00:00,"Beijing, China",1
+42,Concert,2022-01-26 14:00:00,2022-01-26 17:00:00,"Istanbul, Turkey",5
+43,Tour,2022-02-02 00:00:00,2022-02-02 01:00:00,"São Paulo, Brazil",3
+44,Reality Show,2022-02-26 17:00:00,2022-02-26 19:00:00,"Karachi, Pakistan",3
+45,Fan Meet-Up,2022-06-29 23:00:00,2022-06-30 02:00:00,"Kinshasa, DR Congo",2
+46,Fan Meet-Up,2022-03-22 08:00:00,2022-03-22 11:00:00,"Shanghai, China",4
+47,Merch Sale Event,2024-02-11 12:00:00,2024-02-11 13:00:00,"Manila, Philippines",4
+48,Merch Sale Event,2023-07-19 21:00:00,2023-07-20 01:00:00,"Delhi, India",3
+49,Concert,2024-07-05 20:00:00,2024-07-05 23:00:00,"Lagos, Nigeria",5
+50,Reality Show,2023-08-03 04:00:00,2023-08-03 08:00:00,"Dhaka, Bangladesh",5
+51,Concert,2022-04-30 19:00:00,2022-04-30 23:00:00,"Kolkata, India",3
+52,Reality Show,2023-01-10 17:00:00,2023-01-10 20:00:00,"Buenos Aires, Argentina",1
+53,Merch Sale Event,2022-02-07 19:00:00,2022-02-07 20:00:00,"Manila, Philippines",4
+54,Merch Sale Event,2022-03-06 15:00:00,2022-03-06 17:00:00,"Mexico City, Mexico",3
+55,Merch Sale Event,2023-12-18 05:00:00,2023-12-18 07:00:00,"Manila, Philippines",3
+56,Concert,2023-12-05 02:00:00,2023-12-05 06:00:00,"Chongqing, China",2
+57,Merch Sale Event,2022-09-28 12:00:00,2022-09-28 14:00:00,"Mumbai, India",3
+58,Reality Show,2023-02-01 20:00:00,2023-02-01 23:00:00,"Mexico City, Mexico",1
+59,Concert,2022-02-06 08:00:00,2022-02-06 09:00:00,"Mumbai, India",5
+60,Fan Meet-Up,2023-01-23 16:00:00,2023-01-23 19:00:00,"Kolkata, India",1
+61,Tour,2022-05-26 10:00:00,2022-05-26 11:00:00,"Chongqing, China",3
+62,Tour,2024-04-02 21:00:00,2024-04-03 01:00:00,"Rio de Janeiro, Brazil",4
+63,Reality Show,2023-07-13 14:00:00,2023-07-13 17:00:00,"Lagos, Nigeria",4
+64,Reality Show,2024-07-15 17:00:00,2024-07-15 18:00:00,"Chongqing, China",1
+65,Reality Show,2024-04-02 01:00:00,2024-04-02 03:00:00,"Tokyo, Japan",2
+66,Concert,2023-02-13 20:00:00,2023-02-13 22:00:00,"Osaka, Japan",5
+67,Tour,2024-02-02 15:00:00,2024-02-02 16:00:00,"Shanghai, China",4
+68,Concert,2024-07-11 06:00:00,2024-07-11 09:00:00,"Shanghai, China",5
+69,Fan Meet-Up,2024-08-09 07:00:00,2024-08-09 10:00:00,"Osaka, Japan",5
+70,Fan Meet-Up,2022-09-16 06:00:00,2022-09-16 07:00:00,"Beijing, China",3
+71,Concert,2024-01-11 13:00:00,2024-01-11 14:00:00,"Mexico City, Mexico",1
+72,Tour,2022-01-16 18:00:00,2022-01-16 19:00:00,"Beijing, China",1
+73,Fan Meet-Up,2023-02-12 16:00:00,2023-02-12 20:00:00,"São Paulo, Brazil",3
+74,Fan Meet-Up,2022-11-04 21:00:00,2022-11-05 01:00:00,"Istanbul, Turkey",4
+75,Concert,2022-08-06 10:00:00,2022-08-06 11:00:00,"São Paulo, Brazil",1
+76,Reality Show,2022-10-10 19:00:00,2022-10-10 22:00:00,"Mexico City, Mexico",5
+77,Concert,2024-09-18 08:00:00,2024-09-18 12:00:00,"São Paulo, Brazil",3
+78,Fan Meet-Up,2024-04-14 06:00:00,2024-04-14 08:00:00,"Rio de Janeiro, Brazil",1
+79,Reality Show,2023-05-30 20:00:00,2023-05-31 00:00:00,"Karachi, Pakistan",5
+80,Concert,2021-12-18 05:00:00,2021-12-18 08:00:00,"Mexico City, Mexico",3
+81,Merch Sale Event,2024-05-24 02:00:00,2024-05-24 03:00:00,"Tokyo, Japan",4
+82,Fan Meet-Up,2024-07-24 01:00:00,2024-07-24 03:00:00,"Osaka, Japan",3
+83,Reality Show,2023-02-18 14:00:00,2023-02-18 18:00:00,"Buenos Aires, Argentina",2
+84,Concert,2023-01-23 17:00:00,2023-01-23 20:00:00,"Beijing, China",3
+85,Tour,2024-07-10 00:00:00,2024-07-10 04:00:00,"Cairo, Egypt",3
+86,Merch Sale Event,2023-01-17 16:00:00,2023-01-17 20:00:00,"Shanghai, China",1
+87,Merch Sale Event,2023-08-26 00:00:00,2023-08-26 04:00:00,"Tokyo, Japan",4
+88,Reality Show,2023-07-03 06:00:00,2023-07-03 07:00:00,"Tianjin, China",3
+89,Merch Sale Event,2024-03-11 02:00:00,2024-03-11 03:00:00,"Buenos Aires, Argentina",2
+90,Tour,2023-06-17 12:00:00,2023-06-17 15:00:00,"Lagos, Nigeria",2
+91,Reality Show,2022-01-01 04:00:00,2022-01-01 08:00:00,"Tokyo, Japan",5
+92,Merch Sale Event,2022-04-02 06:00:00,2022-04-02 09:00:00,"Tokyo, Japan",5
+93,Fan Meet-Up,2022-05-29 07:00:00,2022-05-29 10:00:00,"Cairo, Egypt",2
+94,Tour,2024-07-27 06:00:00,2024-07-27 10:00:00,"Lagos, Nigeria",3
+95,Fan Meet-Up,2021-11-24 13:00:00,2021-11-24 15:00:00,"Manila, Philippines",2
+96,Reality Show,2022-03-05 05:00:00,2022-03-05 09:00:00,"Mexico City, Mexico",3
+97,Tour,2022-07-07 12:00:00,2022-07-07 14:00:00,"Kolkata, India",2
+98,Tour,2023-03-20 20:00:00,2023-03-20 22:00:00,"Shanghai, China",1
+99,Concert,2023-07-12 23:00:00,2023-07-13 02:00:00,"São Paulo, Brazil",4
+100,Reality Show,2024-08-30 07:00:00,2024-08-30 10:00:00,"Tianjin, China",4
+101,Fan Meet-Up,2022-05-04 14:00:00,2022-05-04 17:00:00,"Cairo, Egypt",3
+102,Concert,2024-04-04 12:00:00,2024-04-04 15:00:00,"Rio de Janeiro, Brazil",2
+103,Merch Sale Event,2023-12-04 21:00:00,2023-12-05 00:00:00,"Kinshasa, DR Congo",1
+104,Merch Sale Event,2023-07-29 07:00:00,2023-07-29 10:00:00,"Mumbai, India",4
+105,Reality Show,2023-12-16 10:00:00,2023-12-16 11:00:00,"Kolkata, India",1
+106,Concert,2024-05-16 02:00:00,2024-05-16 06:00:00,"Rio de Janeiro, Brazil",5
+107,Tour,2024-03-24 09:00:00,2024-03-24 12:00:00,"Manila, Philippines",3
+108,Concert,2022-04-03 06:00:00,2022-04-03 08:00:00,"Dhaka, Bangladesh",3
+109,Reality Show,2022-03-01 21:00:00,2022-03-01 22:00:00,"São Paulo, Brazil",3
+110,Merch Sale Event,2024-10-23 05:00:00,2024-10-23 07:00:00,"Delhi, India",4
+111,Fan Meet-Up,2024-10-28 15:00:00,2024-10-28 19:00:00,"Buenos Aires, Argentina",2
+112,Concert,2023-05-24 07:00:00,2023-05-24 08:00:00,"Tianjin, China",5
+113,Concert,2024-10-03 10:00:00,2024-10-03 11:00:00,"Cairo, Egypt",2
+114,Concert,2024-09-29 16:00:00,2024-09-29 20:00:00,"Buenos Aires, Argentina",5
+115,Concert,2022-01-02 23:00:00,2022-01-03 02:00:00,"Buenos Aires, Argentina",2
+116,Merch Sale Event,2023-08-13 04:00:00,2023-08-13 07:00:00,"Kolkata, India",2
+117,Merch Sale Event,2023-03-04 04:00:00,2023-03-04 07:00:00,"Buenos Aires, Argentina",3
+118,Concert,2023-01-27 15:00:00,2023-01-27 18:00:00,"Tokyo, Japan",5
+119,Fan Meet-Up,2023-01-28 06:00:00,2023-01-28 10:00:00,"Kinshasa, DR Congo",4
+120,Tour,2024-09-25 23:00:00,2024-09-26 02:00:00,"Beijing, China",1
+121,Merch Sale Event,2022-08-22 06:00:00,2022-08-22 07:00:00,"Tianjin, China",4
+122,Merch Sale Event,2022-10-30 15:00:00,2022-10-30 18:00:00,"Rio de Janeiro, Brazil",5
+123,Reality Show,2023-04-01 20:00:00,2023-04-01 22:00:00,"Dhaka, Bangladesh",1
+124,Tour,2022-06-03 12:00:00,2022-06-03 16:00:00,"Tokyo, Japan",3
+125,Reality Show,2023-08-20 06:00:00,2023-08-20 07:00:00,"Kinshasa, DR Congo",4
+126,Concert,2024-07-22 08:00:00,2024-07-22 12:00:00,"Tokyo, Japan",2
+127,Tour,2023-08-11 14:00:00,2023-08-11 15:00:00,"Delhi, India",4
+128,Merch Sale Event,2022-07-18 19:00:00,2022-07-18 23:00:00,"Dhaka, Bangladesh",5
+129,Merch Sale Event,2023-12-12 23:00:00,2023-12-13 02:00:00,"Tokyo, Japan",1
+130,Merch Sale Event,2022-09-05 11:00:00,2022-09-05 15:00:00,"Mumbai, India",4
+131,Reality Show,2022-03-14 15:00:00,2022-03-14 19:00:00,"Tokyo, Japan",5
+132,Concert,2023-03-30 18:00:00,2023-03-30 20:00:00,"Dhaka, Bangladesh",5
+133,Concert,2024-08-29 18:00:00,2024-08-29 22:00:00,"Manila, Philippines",4
+134,Merch Sale Event,2022-12-20 10:00:00,2022-12-20 11:00:00,"Kinshasa, DR Congo",5
+135,Reality Show,2024-10-18 16:00:00,2024-10-18 18:00:00,"Tokyo, Japan",3
+136,Tour,2023-07-19 04:00:00,2023-07-19 06:00:00,"Lagos, Nigeria",3
+137,Reality Show,2022-01-26 16:00:00,2022-01-26 17:00:00,"Dhaka, Bangladesh",2
+138,Merch Sale Event,2024-03-29 05:00:00,2024-03-29 06:00:00,"São Paulo, Brazil",2
+139,Fan Meet-Up,2024-01-03 14:00:00,2024-01-03 16:00:00,"Beijing, China",4
+140,Reality Show,2023-02-16 08:00:00,2023-02-16 09:00:00,"Dhaka, Bangladesh",5
+141,Tour,2022-05-03 21:00:00,2022-05-04 00:00:00,"Kinshasa, DR Congo",5
+142,Fan Meet-Up,2024-03-26 08:00:00,2024-03-26 12:00:00,"Rio de Janeiro, Brazil",5
+143,Reality Show,2023-07-21 14:00:00,2023-07-21 17:00:00,"Mexico City, Mexico",5
+144,Merch Sale Event,2024-04-20 02:00:00,2024-04-20 03:00:00,"Delhi, India",5
+145,Concert,2024-02-17 23:00:00,2024-02-18 02:00:00,"Chongqing, China",3
+146,Fan Meet-Up,2022-02-18 06:00:00,2022-02-18 10:00:00,"Lagos, Nigeria",4
+147,Fan Meet-Up,2021-12-19 23:00:00,2021-12-20 01:00:00,"Cairo, Egypt",5
+148,Tour,2024-05-15 20:00:00,2024-05-15 22:00:00,"Lagos, Nigeria",3
+149,Concert,2022-06-09 12:00:00,2022-06-09 14:00:00,"Osaka, Japan",1
+150,Concert,2022-06-06 23:00:00,2022-06-07 01:00:00,"Manila, Philippines",4
+151,Reality Show,2023-01-19 09:00:00,2023-01-19 12:00:00,"Lagos, Nigeria",5
+152,Tour,2023-08-02 11:00:00,2023-08-02 13:00:00,"Cairo, Egypt",4
+153,Fan Meet-Up,2024-03-18 11:00:00,2024-03-18 15:00:00,"Buenos Aires, Argentina",4
+154,Fan Meet-Up,2024-10-17 02:00:00,2024-10-17 04:00:00,"Lagos, Nigeria",5
+155,Fan Meet-Up,2022-03-21 18:00:00,2022-03-21 20:00:00,"Osaka, Japan",5
+156,Tour,2024-09-29 19:00:00,2024-09-29 20:00:00,"Beijing, China",5
+157,Concert,2024-01-16 10:00:00,2024-01-16 13:00:00,"Beijing, China",2
+158,Concert,2023-04-28 00:00:00,2023-04-28 01:00:00,"Kinshasa, DR Congo",4
+159,Fan Meet-Up,2023-02-08 17:00:00,2023-02-08 20:00:00,"Rio de Janeiro, Brazil",4
+160,Reality Show,2023-01-02 15:00:00,2023-01-02 18:00:00,"Buenos Aires, Argentina",1
+161,Merch Sale Event,2024-09-30 08:00:00,2024-09-30 12:00:00,"Tokyo, Japan",4
+162,Concert,2021-11-16 02:00:00,2021-11-16 03:00:00,"Beijing, China",4
+163,Fan Meet-Up,2024-01-12 22:00:00,2024-01-13 02:00:00,"Rio de Janeiro, Brazil",1
+164,Concert,2022-10-17 02:00:00,2022-10-17 05:00:00,"Shanghai, China",4
+165,Merch Sale Event,2023-06-23 13:00:00,2023-06-23 14:00:00,"Shanghai, China",2
+166,Merch Sale Event,2022-10-24 14:00:00,2022-10-24 15:00:00,"Beijing, China",2
+167,Merch Sale Event,2023-10-26 07:00:00,2023-10-26 10:00:00,"Tokyo, Japan",4
+168,Reality Show,2024-02-04 06:00:00,2024-02-04 09:00:00,"Tianjin, China",5
+169,Tour,2023-03-07 03:00:00,2023-03-07 07:00:00,"Beijing, China",1
+170,Fan Meet-Up,2022-10-04 16:00:00,2022-10-04 20:00:00,"Shanghai, China",5
+171,Concert,2024-05-23 03:00:00,2024-05-23 04:00:00,"Beijing, China",4
+172,Reality Show,2022-06-17 05:00:00,2022-06-17 08:00:00,"Istanbul, Turkey",5
+173,Concert,2022-07-14 23:00:00,2022-07-15 01:00:00,"Manila, Philippines",1
+174,Concert,2022-02-01 12:00:00,2022-02-01 16:00:00,"Delhi, India",3
+175,Merch Sale Event,2023-04-05 12:00:00,2023-04-05 15:00:00,"Manila, Philippines",1
+176,Reality Show,2024-03-08 05:00:00,2024-03-08 07:00:00,"Lagos, Nigeria",2
+177,Fan Meet-Up,2024-10-13 15:00:00,2024-10-13 16:00:00,"Shanghai, China",1
+178,Fan Meet-Up,2022-11-30 07:00:00,2022-11-30 08:00:00,"Kinshasa, DR Congo",2
+179,Tour,2024-09-10 23:00:00,2024-09-11 01:00:00,"Cairo, Egypt",2
+180,Tour,2024-09-25 10:00:00,2024-09-25 14:00:00,"Kinshasa, DR Congo",5
+181,Tour,2022-09-18 05:00:00,2022-09-18 08:00:00,"Cairo, Egypt",2
+182,Reality Show,2023-11-10 06:00:00,2023-11-10 08:00:00,"Buenos Aires, Argentina",4
+183,Tour,2023-01-17 11:00:00,2023-01-17 14:00:00,"Kinshasa, DR Congo",3
+184,Merch Sale Event,2023-04-10 21:00:00,2023-04-10 22:00:00,"Karachi, Pakistan",1
+185,Tour,2023-12-15 14:00:00,2023-12-15 18:00:00,"Dhaka, Bangladesh",2
+186,Fan Meet-Up,2021-11-03 03:00:00,2021-11-03 06:00:00,"Istanbul, Turkey",4
+187,Concert,2022-01-26 08:00:00,2022-01-26 12:00:00,"Karachi, Pakistan",2
+188,Reality Show,2022-08-24 15:00:00,2022-08-24 19:00:00,"Istanbul, Turkey",4
+189,Fan Meet-Up,2024-10-16 02:00:00,2024-10-16 03:00:00,"Kolkata, India",1
+190,Concert,2022-02-10 00:00:00,2022-02-10 02:00:00,"Buenos Aires, Argentina",1
+191,Reality Show,2024-04-10 12:00:00,2024-04-10 16:00:00,"Rio de Janeiro, Brazil",5
+192,Concert,2023-08-17 22:00:00,2023-08-18 01:00:00,"Beijing, China",5
+193,Reality Show,2024-05-24 07:00:00,2024-05-24 08:00:00,"Mexico City, Mexico",4
+194,Concert,2024-03-15 23:00:00,2024-03-16 00:00:00,"São Paulo, Brazil",1
+195,Merch Sale Event,2022-01-25 16:00:00,2022-01-25 20:00:00,"Delhi, India",2
+196,Concert,2024-02-03 13:00:00,2024-02-03 15:00:00,"Istanbul, Turkey",5
+197,Fan Meet-Up,2024-08-29 11:00:00,2024-08-29 15:00:00,"Cairo, Egypt",4
+198,Tour,2024-05-16 05:00:00,2024-05-16 08:00:00,"Karachi, Pakistan",1
+199,Tour,2023-04-25 10:00:00,2023-04-25 12:00:00,"Osaka, Japan",2
+200,Fan Meet-Up,2021-12-15 22:00:00,2021-12-16 01:00:00,"Rio de Janeiro, Brazil",5
+201,Fan Meet-Up,2023-10-14 09:00:00,2023-10-14 12:00:00,"Chongqing, China",3
+202,Fan Meet-Up,2022-12-18 22:00:00,2022-12-19 02:00:00,"Kolkata, India",2
+203,Reality Show,2022-06-20 04:00:00,2022-06-20 07:00:00,"Beijing, China",4
+204,Merch Sale Event,2022-04-28 23:00:00,2022-04-29 01:00:00,"Dhaka, Bangladesh",4
+205,Reality Show,2023-07-03 23:00:00,2023-07-04 01:00:00,"Buenos Aires, Argentina",4
+206,Reality Show,2023-02-18 05:00:00,2023-02-18 07:00:00,"Cairo, Egypt",4
+207,Reality Show,2022-05-16 00:00:00,2022-05-16 03:00:00,"Kinshasa, DR Congo",4
+208,Reality Show,2024-04-10 20:00:00,2024-04-10 21:00:00,"Buenos Aires, Argentina",2
+209,Concert,2022-09-22 08:00:00,2022-09-22 12:00:00,"Tianjin, China",5
+210,Merch Sale Event,2024-02-09 21:00:00,2024-02-09 23:00:00,"Mexico City, Mexico",5
+211,Tour,2022-12-25 20:00:00,2022-12-25 23:00:00,"Chongqing, China",4
+212,Reality Show,2022-06-10 22:00:00,2022-06-11 00:00:00,"Delhi, India",2
+213,Reality Show,2023-03-14 16:00:00,2023-03-14 20:00:00,"Tokyo, Japan",3
+214,Tour,2023-01-31 20:00:00,2023-01-31 22:00:00,"Cairo, Egypt",3
+215,Tour,2022-12-30 16:00:00,2022-12-30 18:00:00,"Rio de Janeiro, Brazil",2
+216,Concert,2022-08-24 06:00:00,2022-08-24 07:00:00,"Mumbai, India",3
+217,Concert,2023-05-07 14:00:00,2023-05-07 17:00:00,"Mumbai, India",5
+218,Concert,2024-05-16 21:00:00,2024-05-16 22:00:00,"Kolkata, India",1
+219,Tour,2024-03-12 10:00:00,2024-03-12 13:00:00,"Shanghai, China",1
+220,Merch Sale Event,2023-11-14 18:00:00,2023-11-14 20:00:00,"Shanghai, China",5
+221,Merch Sale Event,2023-11-04 19:00:00,2023-11-04 22:00:00,"Cairo, Egypt",1
+222,Tour,2021-12-20 03:00:00,2021-12-20 05:00:00,"Mumbai, India",3
+223,Reality Show,2022-08-04 12:00:00,2022-08-04 16:00:00,"Dhaka, Bangladesh",4
+224,Reality Show,2024-03-29 19:00:00,2024-03-29 22:00:00,"Kinshasa, DR Congo",1
+225,Merch Sale Event,2024-03-07 01:00:00,2024-03-07 04:00:00,"Osaka, Japan",1
+226,Merch Sale Event,2023-09-13 19:00:00,2023-09-13 23:00:00,"Rio de Janeiro, Brazil",4
+227,Reality Show,2022-04-06 18:00:00,2022-04-06 19:00:00,"Tokyo, Japan",2
+228,Merch Sale Event,2023-05-14 07:00:00,2023-05-14 11:00:00,"Tianjin, China",3
+229,Merch Sale Event,2024-09-09 18:00:00,2024-09-09 20:00:00,"Tianjin, China",1
+230,Merch Sale Event,2023-06-16 04:00:00,2023-06-16 06:00:00,"Kolkata, India",4
+231,Reality Show,2022-09-08 19:00:00,2022-09-08 22:00:00,"Manila, Philippines",5
+232,Fan Meet-Up,2022-10-22 08:00:00,2022-10-22 11:00:00,"Osaka, Japan",2
+233,Tour,2023-08-28 18:00:00,2023-08-28 20:00:00,"São Paulo, Brazil",1
+234,Concert,2022-03-29 16:00:00,2022-03-29 19:00:00,"Shanghai, China",4
+235,Fan Meet-Up,2023-08-21 20:00:00,2023-08-21 23:00:00,"Istanbul, Turkey",4
+236,Concert,2021-11-19 23:00:00,2021-11-20 01:00:00,"Osaka, Japan",5
+237,Fan Meet-Up,2024-04-07 22:00:00,2024-04-08 01:00:00,"Shanghai, China",5
+238,Fan Meet-Up,2023-07-20 16:00:00,2023-07-20 17:00:00,"Lagos, Nigeria",2
+239,Merch Sale Event,2024-04-30 20:00:00,2024-05-01 00:00:00,"Chongqing, China",2
+240,Reality Show,2022-07-04 12:00:00,2022-07-04 16:00:00,"Kolkata, India",1
+241,Reality Show,2023-10-26 03:00:00,2023-10-26 07:00:00,"Tokyo, Japan",2
+242,Merch Sale Event,2023-09-05 20:00:00,2023-09-05 22:00:00,"Mexico City, Mexico",4
+243,Tour,2024-04-30 10:00:00,2024-04-30 11:00:00,"Mumbai, India",5
+244,Concert,2023-12-27 18:00:00,2023-12-27 19:00:00,"Lagos, Nigeria",4
+245,Tour,2023-09-14 02:00:00,2023-09-14 04:00:00,"Beijing, China",3
+246,Reality Show,2023-04-09 23:00:00,2023-04-10 03:00:00,"Beijing, China",1
+247,Reality Show,2024-02-25 13:00:00,2024-02-25 15:00:00,"Karachi, Pakistan",1
+248,Fan Meet-Up,2023-03-05 05:00:00,2023-03-05 06:00:00,"Dhaka, Bangladesh",1
+249,Merch Sale Event,2022-04-19 09:00:00,2022-04-19 12:00:00,"São Paulo, Brazil",5
+250,Merch Sale Event,2024-06-30 08:00:00,2024-06-30 11:00:00,"Dhaka, Bangladesh",4
+251,Fan Meet-Up,2022-03-07 12:00:00,2022-03-07 13:00:00,"Tokyo, Japan",5
+252,Merch Sale Event,2023-09-26 20:00:00,2023-09-27 00:00:00,"Karachi, Pakistan",5
+253,Merch Sale Event,2022-02-15 06:00:00,2022-02-15 08:00:00,"Osaka, Japan",4
+254,Concert,2023-09-22 08:00:00,2023-09-22 10:00:00,"Tianjin, China",2
+255,Reality Show,2022-05-06 14:00:00,2022-05-06 18:00:00,"Tianjin, China",5
+256,Reality Show,2024-06-01 23:00:00,2024-06-02 00:00:00,"Manila, Philippines",5
+257,Tour,2023-10-28 11:00:00,2023-10-28 15:00:00,"Rio de Janeiro, Brazil",2
+258,Fan Meet-Up,2022-02-03 15:00:00,2022-02-03 18:00:00,"Chongqing, China",3
+259,Fan Meet-Up,2023-03-03 17:00:00,2023-03-03 21:00:00,"Cairo, Egypt",2
+260,Tour,2023-04-15 00:00:00,2023-04-15 03:00:00,"Karachi, Pakistan",4
+261,Concert,2023-08-18 12:00:00,2023-08-18 13:00:00,"Istanbul, Turkey",5
+262,Tour,2022-11-28 08:00:00,2022-11-28 10:00:00,"Rio de Janeiro, Brazil",2
+263,Concert,2023-09-04 23:00:00,2023-09-05 02:00:00,"Delhi, India",1
+264,Merch Sale Event,2022-03-23 00:00:00,2022-03-23 04:00:00,"Karachi, Pakistan",3
+265,Reality Show,2023-01-23 06:00:00,2023-01-23 07:00:00,"Lagos, Nigeria",3
+266,Concert,2024-02-18 04:00:00,2024-02-18 07:00:00,"Mexico City, Mexico",4
+267,Reality Show,2023-03-11 04:00:00,2023-03-11 05:00:00,"Rio de Janeiro, Brazil",5
+268,Concert,2024-06-04 03:00:00,2024-06-04 07:00:00,"Cairo, Egypt",2
+269,Tour,2023-04-10 10:00:00,2023-04-10 11:00:00,"Osaka, Japan",5
+270,Fan Meet-Up,2022-09-23 20:00:00,2022-09-23 22:00:00,"Lagos, Nigeria",4
+271,Fan Meet-Up,2022-01-29 13:00:00,2022-01-29 16:00:00,"Rio de Janeiro, Brazil",5
+272,Concert,2022-02-01 06:00:00,2022-02-01 07:00:00,"Buenos Aires, Argentina",3
+273,Tour,2023-03-18 23:00:00,2023-03-19 02:00:00,"Manila, Philippines",5
+274,Tour,2023-03-06 04:00:00,2023-03-06 08:00:00,"Mumbai, India",3
+275,Merch Sale Event,2022-07-05 23:00:00,2022-07-06 00:00:00,"Karachi, Pakistan",1
+276,Tour,2023-07-19 16:00:00,2023-07-19 20:00:00,"Osaka, Japan",3
+277,Merch Sale Event,2022-09-28 04:00:00,2022-09-28 06:00:00,"Beijing, China",5
+278,Fan Meet-Up,2022-10-02 17:00:00,2022-10-02 21:00:00,"Manila, Philippines",5
+279,Tour,2022-12-23 15:00:00,2022-12-23 18:00:00,"Kinshasa, DR Congo",2
+280,Merch Sale Event,2022-02-11 10:00:00,2022-02-11 12:00:00,"Osaka, Japan",5
+281,Fan Meet-Up,2022-03-28 17:00:00,2022-03-28 18:00:00,"Kinshasa, DR Congo",4
+282,Reality Show,2022-07-23 10:00:00,2022-07-23 11:00:00,"Buenos Aires, Argentina",2
+283,Tour,2023-09-21 11:00:00,2023-09-21 12:00:00,"Manila, Philippines",2
+284,Merch Sale Event,2022-07-04 11:00:00,2022-07-04 14:00:00,"Istanbul, Turkey",1
+285,Reality Show,2022-12-23 20:00:00,2022-12-24 00:00:00,"Mexico City, Mexico",5
+286,Merch Sale Event,2021-12-24 15:00:00,2021-12-24 16:00:00,"Osaka, Japan",1
+287,Tour,2021-11-20 13:00:00,2021-11-20 15:00:00,"Osaka, Japan",2
+288,Fan Meet-Up,2024-09-04 21:00:00,2024-09-04 23:00:00,"Tianjin, China",2
+289,Tour,2023-07-13 03:00:00,2023-07-13 07:00:00,"Tianjin, China",5
+290,Merch Sale Event,2021-11-18 05:00:00,2021-11-18 06:00:00,"Mumbai, India",5
+291,Reality Show,2024-10-04 14:00:00,2024-10-04 18:00:00,"São Paulo, Brazil",3
+292,Tour,2021-12-01 19:00:00,2021-12-01 22:00:00,"Buenos Aires, Argentina",2
+293,Concert,2023-05-31 12:00:00,2023-05-31 14:00:00,"Kinshasa, DR Congo",3
+294,Merch Sale Event,2023-06-27 05:00:00,2023-06-27 08:00:00,"Osaka, Japan",5
+295,Merch Sale Event,2023-12-09 10:00:00,2023-12-09 11:00:00,"Beijing, China",1
+296,Reality Show,2022-03-03 22:00:00,2022-03-04 02:00:00,"Kolkata, India",3
+297,Fan Meet-Up,2024-07-19 09:00:00,2024-07-19 11:00:00,"Cairo, Egypt",1
+298,Reality Show,2024-08-17 14:00:00,2024-08-17 16:00:00,"Dhaka, Bangladesh",1
+299,Reality Show,2023-09-17 13:00:00,2023-09-17 17:00:00,"Rio de Janeiro, Brazil",1
+300,Concert,2022-08-11 10:00:00,2022-08-11 11:00:00,"Lagos, Nigeria",2
+301,Reality Show,2023-04-23 08:00:00,2023-04-23 10:00:00,"Tokyo, Japan",1
+302,Concert,2022-10-16 13:00:00,2022-10-16 14:00:00,"Rio de Janeiro, Brazil",4
+303,Tour,2022-12-15 18:00:00,2022-12-15 21:00:00,"Cairo, Egypt",4
+304,Reality Show,2023-03-23 18:00:00,2023-03-23 22:00:00,"Chongqing, China",5
+305,Tour,2022-11-22 01:00:00,2022-11-22 02:00:00,"Mexico City, Mexico",4
+306,Fan Meet-Up,2024-04-21 02:00:00,2024-04-21 04:00:00,"Buenos Aires, Argentina",1
+307,Concert,2023-08-07 04:00:00,2023-08-07 08:00:00,"Buenos Aires, Argentina",5
+308,Reality Show,2023-01-07 13:00:00,2023-01-07 16:00:00,"Buenos Aires, Argentina",2
+309,Fan Meet-Up,2023-11-30 11:00:00,2023-11-30 14:00:00,"Delhi, India",4
+310,Tour,2021-12-22 18:00:00,2021-12-22 19:00:00,"Mexico City, Mexico",3
+311,Merch Sale Event,2024-04-17 16:00:00,2024-04-17 19:00:00,"Istanbul, Turkey",2
+312,Merch Sale Event,2024-04-10 03:00:00,2024-04-10 05:00:00,"Osaka, Japan",2
+313,Reality Show,2023-01-16 14:00:00,2023-01-16 16:00:00,"Kinshasa, DR Congo",3
+314,Tour,2024-06-08 00:00:00,2024-06-08 04:00:00,"Kolkata, India",1
+315,Concert,2023-10-18 01:00:00,2023-10-18 04:00:00,"Rio de Janeiro, Brazil",2
+316,Tour,2024-01-14 11:00:00,2024-01-14 15:00:00,"Osaka, Japan",2
+317,Reality Show,2023-09-09 13:00:00,2023-09-09 14:00:00,"Buenos Aires, Argentina",2
+318,Concert,2023-01-07 09:00:00,2023-01-07 10:00:00,"Manila, Philippines",3
+319,Fan Meet-Up,2024-07-23 15:00:00,2024-07-23 18:00:00,"Rio de Janeiro, Brazil",4
+320,Fan Meet-Up,2023-08-03 15:00:00,2023-08-03 19:00:00,"Lagos, Nigeria",3
+321,Merch Sale Event,2023-05-24 22:00:00,2023-05-25 02:00:00,"Rio de Janeiro, Brazil",5
+322,Concert,2022-09-03 00:00:00,2022-09-03 01:00:00,"Lagos, Nigeria",1
+323,Reality Show,2023-03-28 10:00:00,2023-03-28 14:00:00,"Lagos, Nigeria",3
+324,Concert,2022-09-29 09:00:00,2022-09-29 11:00:00,"Dhaka, Bangladesh",2
+325,Concert,2022-07-13 10:00:00,2022-07-13 14:00:00,"Manila, Philippines",3
+326,Tour,2024-09-27 14:00:00,2024-09-27 18:00:00,"Chongqing, China",3
+327,Merch Sale Event,2023-08-22 21:00:00,2023-08-22 22:00:00,"Karachi, Pakistan",3
+328,Tour,2023-07-23 08:00:00,2023-07-23 12:00:00,"São Paulo, Brazil",2
+329,Tour,2024-01-30 05:00:00,2024-01-30 08:00:00,"Karachi, Pakistan",1
+330,Tour,2022-04-14 22:00:00,2022-04-15 01:00:00,"Dhaka, Bangladesh",5
+331,Concert,2022-12-29 17:00:00,2022-12-29 19:00:00,"Beijing, China",1
+332,Reality Show,2022-11-22 03:00:00,2022-11-22 07:00:00,"Mumbai, India",4
+333,Merch Sale Event,2024-06-02 19:00:00,2024-06-02 20:00:00,"Rio de Janeiro, Brazil",4
+334,Merch Sale Event,2022-06-01 10:00:00,2022-06-01 11:00:00,"Mexico City, Mexico",1
+335,Merch Sale Event,2024-08-06 18:00:00,2024-08-06 20:00:00,"Mumbai, India",2
+336,Tour,2022-09-17 17:00:00,2022-09-17 19:00:00,"Dhaka, Bangladesh",2
+337,Reality Show,2024-04-27 10:00:00,2024-04-27 12:00:00,"Kinshasa, DR Congo",1
+338,Tour,2022-07-24 16:00:00,2022-07-24 17:00:00,"Rio de Janeiro, Brazil",2
+339,Concert,2022-04-09 00:00:00,2022-04-09 04:00:00,"Lagos, Nigeria",5
+340,Tour,2022-10-08 18:00:00,2022-10-08 20:00:00,"Chongqing, China",1
+341,Reality Show,2024-08-05 18:00:00,2024-08-05 19:00:00,"Mumbai, India",1
+342,Reality Show,2022-05-03 05:00:00,2022-05-03 06:00:00,"Osaka, Japan",3
+343,Fan Meet-Up,2021-11-17 03:00:00,2021-11-17 05:00:00,"Istanbul, Turkey",3
+344,Merch Sale Event,2023-12-01 13:00:00,2023-12-01 14:00:00,"Chongqing, China",5
+345,Concert,2022-01-19 12:00:00,2022-01-19 14:00:00,"Beijing, China",4
+346,Merch Sale Event,2022-06-28 18:00:00,2022-06-28 20:00:00,"Kinshasa, DR Congo",1
+347,Concert,2023-07-26 19:00:00,2023-07-26 22:00:00,"Kolkata, India",5
+348,Tour,2023-10-15 23:00:00,2023-10-16 00:00:00,"Buenos Aires, Argentina",5
+349,Concert,2022-02-25 06:00:00,2022-02-25 07:00:00,"Cairo, Egypt",5
+350,Tour,2024-10-09 10:00:00,2024-10-09 11:00:00,"Istanbul, Turkey",2
+351,Merch Sale Event,2022-01-14 10:00:00,2022-01-14 11:00:00,"Lagos, Nigeria",1
+352,Merch Sale Event,2023-04-28 08:00:00,2023-04-28 11:00:00,"Kolkata, India",3
+353,Fan Meet-Up,2023-08-17 14:00:00,2023-08-17 18:00:00,"Lagos, Nigeria",2
+354,Fan Meet-Up,2022-03-19 02:00:00,2022-03-19 03:00:00,"Kinshasa, DR Congo",3
+355,Reality Show,2024-10-13 21:00:00,2024-10-13 23:00:00,"Kinshasa, DR Congo",1
+356,Reality Show,2023-06-16 19:00:00,2023-06-16 21:00:00,"Kinshasa, DR Congo",5
+357,Tour,2022-06-12 06:00:00,2022-06-12 09:00:00,"Kinshasa, DR Congo",3
+358,Fan Meet-Up,2022-03-09 15:00:00,2022-03-09 18:00:00,"Shanghai, China",1
+359,Reality Show,2023-09-02 08:00:00,2023-09-02 09:00:00,"Dhaka, Bangladesh",2
+360,Merch Sale Event,2022-11-10 03:00:00,2022-11-10 04:00:00,"Kinshasa, DR Congo",5
+361,Concert,2024-06-15 14:00:00,2024-06-15 16:00:00,"São Paulo, Brazil",3
+362,Tour,2024-08-28 19:00:00,2024-08-28 23:00:00,"Dhaka, Bangladesh",5
+363,Concert,2023-02-17 22:00:00,2023-02-18 00:00:00,"Tokyo, Japan",2
+364,Tour,2023-06-27 00:00:00,2023-06-27 03:00:00,"Delhi, India",4
+365,Reality Show,2024-10-29 18:00:00,2024-10-29 22:00:00,"Karachi, Pakistan",4
+366,Reality Show,2023-12-25 21:00:00,2023-12-25 23:00:00,"Shanghai, China",2
+367,Tour,2022-02-03 09:00:00,2022-02-03 11:00:00,"Tokyo, Japan",4
+368,Concert,2024-09-28 12:00:00,2024-09-28 14:00:00,"Cairo, Egypt",2
+369,Reality Show,2024-07-24 13:00:00,2024-07-24 16:00:00,"Cairo, Egypt",5
+370,Concert,2023-03-11 19:00:00,2023-03-11 20:00:00,"Shanghai, China",5
+371,Tour,2023-11-20 05:00:00,2023-11-20 09:00:00,"Tokyo, Japan",4
+372,Reality Show,2022-04-07 19:00:00,2022-04-07 21:00:00,"Buenos Aires, Argentina",1
+373,Tour,2023-06-03 08:00:00,2023-06-03 12:00:00,"Delhi, India",2
+374,Tour,2024-07-26 06:00:00,2024-07-26 10:00:00,"Beijing, China",1
+375,Reality Show,2023-12-18 09:00:00,2023-12-18 10:00:00,"Osaka, Japan",2
+376,Fan Meet-Up,2023-02-27 05:00:00,2023-02-27 08:00:00,"Shanghai, China",5
+377,Fan Meet-Up,2023-06-16 08:00:00,2023-06-16 10:00:00,"Kinshasa, DR Congo",1
+378,Merch Sale Event,2023-02-23 22:00:00,2023-02-24 00:00:00,"Rio de Janeiro, Brazil",4
+379,Fan Meet-Up,2022-09-02 16:00:00,2022-09-02 17:00:00,"Mexico City, Mexico",1
+380,Concert,2024-02-21 01:00:00,2024-02-21 02:00:00,"Dhaka, Bangladesh",1
+381,Concert,2023-12-03 10:00:00,2023-12-03 14:00:00,"Cairo, Egypt",5
+382,Fan Meet-Up,2023-06-19 08:00:00,2023-06-19 10:00:00,"Osaka, Japan",5
+383,Fan Meet-Up,2022-11-22 23:00:00,2022-11-23 03:00:00,"Cairo, Egypt",5
+384,Fan Meet-Up,2024-05-02 12:00:00,2024-05-02 14:00:00,"Chongqing, China",4
+385,Reality Show,2023-09-24 18:00:00,2023-09-24 22:00:00,"Mexico City, Mexico",1
+386,Reality Show,2022-04-12 23:00:00,2022-04-13 03:00:00,"Manila, Philippines",2
+387,Reality Show,2022-04-16 21:00:00,2022-04-16 22:00:00,"Osaka, Japan",2
+388,Concert,2021-12-18 11:00:00,2021-12-18 12:00:00,"Rio de Janeiro, Brazil",4
+389,Concert,2024-01-15 17:00:00,2024-01-15 18:00:00,"Kinshasa, DR Congo",4
+390,Tour,2024-09-19 09:00:00,2024-09-19 10:00:00,"Tokyo, Japan",5
+391,Reality Show,2021-12-18 04:00:00,2021-12-18 06:00:00,"Lagos, Nigeria",3
+392,Reality Show,2022-01-15 00:00:00,2022-01-15 02:00:00,"Kolkata, India",3
+393,Concert,2022-05-17 23:00:00,2022-05-18 02:00:00,"Dhaka, Bangladesh",2
+394,Tour,2023-02-08 17:00:00,2023-02-08 20:00:00,"São Paulo, Brazil",3
+395,Tour,2023-11-22 21:00:00,2023-11-23 01:00:00,"Beijing, China",2
+396,Reality Show,2024-09-24 22:00:00,2024-09-24 23:00:00,"Osaka, Japan",5
+397,Merch Sale Event,2023-09-10 04:00:00,2023-09-10 06:00:00,"Manila, Philippines",1
+398,Tour,2022-02-16 20:00:00,2022-02-16 22:00:00,"Mumbai, India",3
+399,Fan Meet-Up,2023-10-25 06:00:00,2023-10-25 07:00:00,"Mexico City, Mexico",3
+400,Reality Show,2022-10-02 10:00:00,2022-10-02 13:00:00,"Osaka, Japan",1
+401,Reality Show,2024-07-31 08:00:00,2024-07-31 12:00:00,"Manila, Philippines",4
+402,Concert,2022-02-08 22:00:00,2022-02-08 23:00:00,"Cairo, Egypt",5
+403,Tour,2022-08-21 09:00:00,2022-08-21 11:00:00,"São Paulo, Brazil",2
+404,Reality Show,2022-09-15 07:00:00,2022-09-15 09:00:00,"Karachi, Pakistan",5
+405,Fan Meet-Up,2024-05-01 15:00:00,2024-05-01 16:00:00,"Buenos Aires, Argentina",3
+406,Concert,2024-07-20 03:00:00,2024-07-20 06:00:00,"Tianjin, China",2
+407,Concert,2024-01-18 08:00:00,2024-01-18 11:00:00,"São Paulo, Brazil",3
+408,Reality Show,2023-10-12 22:00:00,2023-10-13 00:00:00,"Delhi, India",3
+409,Concert,2023-07-31 18:00:00,2023-07-31 21:00:00,"Kolkata, India",3
+410,Fan Meet-Up,2022-06-13 16:00:00,2022-06-13 19:00:00,"Mumbai, India",1
+411,Concert,2023-01-02 06:00:00,2023-01-02 08:00:00,"Karachi, Pakistan",5
+412,Merch Sale Event,2021-11-17 07:00:00,2021-11-17 11:00:00,"Tianjin, China",1
+413,Reality Show,2023-05-08 05:00:00,2023-05-08 09:00:00,"Osaka, Japan",5
+414,Concert,2024-04-16 03:00:00,2024-04-16 05:00:00,"São Paulo, Brazil",1
+415,Reality Show,2023-12-17 16:00:00,2023-12-17 18:00:00,"Delhi, India",2
+416,Tour,2024-02-25 13:00:00,2024-02-25 14:00:00,"Kinshasa, DR Congo",3
+417,Concert,2022-05-20 08:00:00,2022-05-20 11:00:00,"Karachi, Pakistan",1
+418,Merch Sale Event,2022-07-04 06:00:00,2022-07-04 08:00:00,"Tianjin, China",2
+419,Concert,2023-07-20 14:00:00,2023-07-20 15:00:00,"Manila, Philippines",2
+420,Tour,2022-02-06 22:00:00,2022-02-07 01:00:00,"Shanghai, China",3
+421,Reality Show,2024-01-02 23:00:00,2024-01-03 03:00:00,"Chongqing, China",1
+422,Merch Sale Event,2023-04-26 12:00:00,2023-04-26 16:00:00,"Cairo, Egypt",2
+423,Concert,2023-04-15 21:00:00,2023-04-16 01:00:00,"São Paulo, Brazil",3
+424,Tour,2023-10-26 00:00:00,2023-10-26 01:00:00,"Chongqing, China",5
+425,Concert,2023-12-10 17:00:00,2023-12-10 20:00:00,"Tokyo, Japan",3
+426,Fan Meet-Up,2022-06-09 06:00:00,2022-06-09 08:00:00,"Osaka, Japan",1
+427,Fan Meet-Up,2022-02-07 02:00:00,2022-02-07 05:00:00,"Kolkata, India",2
+428,Concert,2022-12-26 07:00:00,2022-12-26 10:00:00,"Kolkata, India",2
+429,Concert,2022-11-28 18:00:00,2022-11-28 20:00:00,"Delhi, India",5
+430,Merch Sale Event,2024-04-17 11:00:00,2024-04-17 12:00:00,"Rio de Janeiro, Brazil",3
+431,Reality Show,2024-05-29 20:00:00,2024-05-29 23:00:00,"Beijing, China",2
+432,Concert,2022-07-17 16:00:00,2022-07-17 17:00:00,"Mumbai, India",5
+433,Fan Meet-Up,2024-08-23 02:00:00,2024-08-23 06:00:00,"São Paulo, Brazil",4
+434,Reality Show,2023-12-27 15:00:00,2023-12-27 17:00:00,"Istanbul, Turkey",2
+435,Concert,2024-03-04 10:00:00,2024-03-04 11:00:00,"Osaka, Japan",4
+436,Concert,2024-01-09 16:00:00,2024-01-09 20:00:00,"Mumbai, India",5
+437,Merch Sale Event,2023-03-15 11:00:00,2023-03-15 12:00:00,"Osaka, Japan",5
+438,Reality Show,2022-09-15 19:00:00,2022-09-15 21:00:00,"Chongqing, China",3
+439,Merch Sale Event,2024-07-22 02:00:00,2024-07-22 05:00:00,"Delhi, India",3
+440,Merch Sale Event,2023-02-02 03:00:00,2023-02-02 07:00:00,"Delhi, India",5
+441,Merch Sale Event,2023-01-27 05:00:00,2023-01-27 06:00:00,"São Paulo, Brazil",5
+442,Merch Sale Event,2023-11-14 22:00:00,2023-11-15 02:00:00,"Kinshasa, DR Congo",2
+443,Reality Show,2024-01-21 11:00:00,2024-01-21 14:00:00,"Rio de Janeiro, Brazil",3
+444,Tour,2024-05-02 09:00:00,2024-05-02 13:00:00,"Tokyo, Japan",3
+445,Merch Sale Event,2023-12-04 04:00:00,2023-12-04 07:00:00,"Tianjin, China",5
+446,Fan Meet-Up,2023-11-23 13:00:00,2023-11-23 14:00:00,"São Paulo, Brazil",5
+447,Fan Meet-Up,2022-08-03 09:00:00,2022-08-03 11:00:00,"São Paulo, Brazil",5
+448,Merch Sale Event,2022-05-08 04:00:00,2022-05-08 08:00:00,"Kolkata, India",4
+449,Fan Meet-Up,2022-08-30 19:00:00,2022-08-30 20:00:00,"Beijing, China",2
+450,Reality Show,2023-12-21 12:00:00,2023-12-21 14:00:00,"Delhi, India",5
+451,Reality Show,2022-04-08 06:00:00,2022-04-08 07:00:00,"Kolkata, India",4
+452,Fan Meet-Up,2021-12-25 08:00:00,2021-12-25 12:00:00,"Karachi, Pakistan",5
+453,Concert,2023-01-29 20:00:00,2023-01-29 21:00:00,"Kolkata, India",5
+454,Reality Show,2022-11-20 07:00:00,2022-11-20 10:00:00,"Beijing, China",1
+455,Tour,2022-03-29 21:00:00,2022-03-30 01:00:00,"Kolkata, India",5
+456,Concert,2022-04-08 13:00:00,2022-04-08 15:00:00,"Tianjin, China",1
+457,Concert,2021-11-24 08:00:00,2021-11-24 09:00:00,"Istanbul, Turkey",5
+458,Tour,2024-01-31 19:00:00,2024-01-31 20:00:00,"Manila, Philippines",3
+459,Merch Sale Event,2021-11-24 21:00:00,2021-11-24 23:00:00,"Osaka, Japan",2
+460,Fan Meet-Up,2023-10-08 21:00:00,2023-10-08 22:00:00,"Shanghai, China",5
+461,Reality Show,2024-10-21 22:00:00,2024-10-22 02:00:00,"Tianjin, China",3
+462,Fan Meet-Up,2024-02-06 10:00:00,2024-02-06 12:00:00,"Mumbai, India",1
+463,Fan Meet-Up,2023-08-22 04:00:00,2023-08-22 06:00:00,"Cairo, Egypt",1
+464,Tour,2023-08-21 02:00:00,2023-08-21 06:00:00,"Tianjin, China",4
+465,Reality Show,2022-01-23 21:00:00,2022-01-23 22:00:00,"Rio de Janeiro, Brazil",3
+466,Reality Show,2023-04-17 13:00:00,2023-04-17 15:00:00,"Rio de Janeiro, Brazil",1
+467,Fan Meet-Up,2022-06-28 16:00:00,2022-06-28 20:00:00,"Mexico City, Mexico",2
+468,Tour,2022-03-04 07:00:00,2022-03-04 11:00:00,"Mexico City, Mexico",1
+469,Merch Sale Event,2024-03-09 21:00:00,2024-03-10 00:00:00,"Kolkata, India",5
+470,Tour,2023-03-21 07:00:00,2023-03-21 09:00:00,"Cairo, Egypt",5
+471,Fan Meet-Up,2023-02-25 11:00:00,2023-02-25 12:00:00,"Tokyo, Japan",5
+472,Merch Sale Event,2022-02-22 05:00:00,2022-02-22 09:00:00,"Buenos Aires, Argentina",4
+473,Fan Meet-Up,2023-07-30 04:00:00,2023-07-30 08:00:00,"Buenos Aires, Argentina",4
+474,Tour,2023-11-03 03:00:00,2023-11-03 05:00:00,"Istanbul, Turkey",4
+475,Concert,2023-09-03 19:00:00,2023-09-03 20:00:00,"Beijing, China",1
+476,Merch Sale Event,2024-10-04 00:00:00,2024-10-04 02:00:00,"Chongqing, China",2
+477,Reality Show,2024-04-06 18:00:00,2024-04-06 21:00:00,"Istanbul, Turkey",4
+478,Concert,2023-01-22 08:00:00,2023-01-22 11:00:00,"Karachi, Pakistan",4
+479,Tour,2023-09-08 15:00:00,2023-09-08 17:00:00,"Mexico City, Mexico",1
+480,Merch Sale Event,2022-11-19 19:00:00,2022-11-19 22:00:00,"Tianjin, China",1
+481,Fan Meet-Up,2024-02-23 10:00:00,2024-02-23 11:00:00,"Dhaka, Bangladesh",1
+482,Merch Sale Event,2023-08-27 04:00:00,2023-08-27 05:00:00,"Kolkata, India",5
+483,Concert,2023-01-18 07:00:00,2023-01-18 08:00:00,"Shanghai, China",4
+484,Merch Sale Event,2022-12-20 03:00:00,2022-12-20 07:00:00,"Lagos, Nigeria",3
+485,Concert,2023-09-05 06:00:00,2023-09-05 09:00:00,"Osaka, Japan",1
+486,Merch Sale Event,2022-01-24 06:00:00,2022-01-24 07:00:00,"Chongqing, China",4
+487,Tour,2023-10-03 13:00:00,2023-10-03 15:00:00,"Kinshasa, DR Congo",3
+488,Reality Show,2023-06-24 02:00:00,2023-06-24 03:00:00,"Istanbul, Turkey",2
+489,Reality Show,2023-08-06 01:00:00,2023-08-06 03:00:00,"Delhi, India",1
+490,Reality Show,2024-02-06 13:00:00,2024-02-06 16:00:00,"Mexico City, Mexico",1
+491,Reality Show,2023-12-31 13:00:00,2023-12-31 17:00:00,"Lagos, Nigeria",2
+492,Reality Show,2022-05-30 06:00:00,2022-05-30 10:00:00,"Shanghai, China",4
+493,Reality Show,2024-09-16 12:00:00,2024-09-16 13:00:00,"Mumbai, India",4
+494,Concert,2024-04-18 18:00:00,2024-04-18 20:00:00,"Beijing, China",3
+495,Tour,2024-10-13 00:00:00,2024-10-13 04:00:00,"Dhaka, Bangladesh",2
+496,Reality Show,2023-12-28 14:00:00,2023-12-28 15:00:00,"São Paulo, Brazil",3
+497,Concert,2023-07-20 20:00:00,2023-07-21 00:00:00,"Mumbai, India",2
+498,Concert,2022-06-26 00:00:00,2022-06-26 04:00:00,"Kinshasa, DR Congo",4
+499,Reality Show,2022-03-09 19:00:00,2022-03-09 22:00:00,"Manila, Philippines",1
+500,Reality Show,2022-04-25 10:00:00,2022-04-25 11:00:00,"Tokyo, Japan",5
+501,Merch Sale Event,2022-11-26 19:00:00,2022-11-26 20:00:00,"Lagos, Nigeria",1
+502,Reality Show,2022-08-11 01:00:00,2022-08-11 05:00:00,"Rio de Janeiro, Brazil",5
+503,Fan Meet-Up,2023-04-11 02:00:00,2023-04-11 05:00:00,"Dhaka, Bangladesh",4
+504,Reality Show,2023-09-06 10:00:00,2023-09-06 14:00:00,"Cairo, Egypt",3
+505,Tour,2022-03-22 13:00:00,2022-03-22 16:00:00,"Mumbai, India",5
+506,Concert,2023-10-14 12:00:00,2023-10-14 16:00:00,"Tokyo, Japan",4
+507,Tour,2024-08-26 16:00:00,2024-08-26 19:00:00,"Karachi, Pakistan",2
+508,Tour,2023-01-29 00:00:00,2023-01-29 03:00:00,"Shanghai, China",3
+509,Tour,2023-04-14 21:00:00,2023-04-14 23:00:00,"Tokyo, Japan",4
+510,Tour,2022-01-15 01:00:00,2022-01-15 03:00:00,"Tianjin, China",2
+511,Fan Meet-Up,2024-07-26 21:00:00,2024-07-27 01:00:00,"Delhi, India",5
+512,Merch Sale Event,2022-05-08 01:00:00,2022-05-08 02:00:00,"Mexico City, Mexico",4
+513,Concert,2024-01-13 04:00:00,2024-01-13 05:00:00,"Tokyo, Japan",3
+514,Merch Sale Event,2023-12-30 23:00:00,2023-12-31 00:00:00,"Mumbai, India",5
+515,Reality Show,2024-10-23 08:00:00,2024-10-23 12:00:00,"Delhi, India",2
+516,Fan Meet-Up,2024-10-19 05:00:00,2024-10-19 06:00:00,"Mexico City, Mexico",4
+517,Merch Sale Event,2023-11-04 10:00:00,2023-11-04 12:00:00,"Cairo, Egypt",2
+518,Merch Sale Event,2024-08-13 09:00:00,2024-08-13 12:00:00,"Osaka, Japan",3
+519,Merch Sale Event,2023-06-01 09:00:00,2023-06-01 12:00:00,"Osaka, Japan",4
+520,Merch Sale Event,2022-08-24 22:00:00,2022-08-24 23:00:00,"Istanbul, Turkey",2
+521,Tour,2023-10-25 17:00:00,2023-10-25 21:00:00,"Mumbai, India",4
+522,Concert,2022-10-12 08:00:00,2022-10-12 11:00:00,"Beijing, China",1
+523,Merch Sale Event,2022-08-30 21:00:00,2022-08-31 01:00:00,"Lagos, Nigeria",3
+524,Fan Meet-Up,2022-08-03 16:00:00,2022-08-03 19:00:00,"Mumbai, India",3
+525,Tour,2024-05-21 10:00:00,2024-05-21 13:00:00,"Istanbul, Turkey",1
+526,Reality Show,2021-11-29 20:00:00,2021-11-29 21:00:00,"Kinshasa, DR Congo",5
+527,Merch Sale Event,2022-03-06 21:00:00,2022-03-06 23:00:00,"São Paulo, Brazil",4
+528,Concert,2023-02-05 20:00:00,2023-02-05 23:00:00,"Shanghai, China",5
+529,Merch Sale Event,2023-09-14 11:00:00,2023-09-14 12:00:00,"Dhaka, Bangladesh",5
+530,Fan Meet-Up,2023-03-02 00:00:00,2023-03-02 04:00:00,"Dhaka, Bangladesh",4
+531,Reality Show,2023-12-08 19:00:00,2023-12-08 20:00:00,"Tokyo, Japan",1
+532,Reality Show,2022-08-05 13:00:00,2022-08-05 17:00:00,"Karachi, Pakistan",3
+533,Tour,2024-10-03 09:00:00,2024-10-03 13:00:00,"Istanbul, Turkey",1
+534,Fan Meet-Up,2024-01-06 07:00:00,2024-01-06 08:00:00,"Tokyo, Japan",2
+535,Tour,2024-03-16 18:00:00,2024-03-16 20:00:00,"São Paulo, Brazil",3
+536,Tour,2021-12-17 19:00:00,2021-12-17 20:00:00,"Kinshasa, DR Congo",5
+537,Fan Meet-Up,2022-07-08 06:00:00,2022-07-08 08:00:00,"Karachi, Pakistan",4
+538,Concert,2023-10-13 21:00:00,2023-10-13 23:00:00,"Rio de Janeiro, Brazil",1
+539,Tour,2023-01-27 15:00:00,2023-01-27 19:00:00,"Tianjin, China",5
+540,Fan Meet-Up,2024-08-08 14:00:00,2024-08-08 17:00:00,"Mexico City, Mexico",2
+541,Merch Sale Event,2022-10-24 23:00:00,2022-10-25 02:00:00,"Tokyo, Japan",4
+542,Tour,2022-07-28 22:00:00,2022-07-28 23:00:00,"Shanghai, China",2
+543,Fan Meet-Up,2023-11-26 17:00:00,2023-11-26 20:00:00,"Tianjin, China",3
+544,Reality Show,2023-02-14 02:00:00,2023-02-14 03:00:00,"Cairo, Egypt",1
+545,Fan Meet-Up,2022-01-07 05:00:00,2022-01-07 08:00:00,"Mexico City, Mexico",1
+546,Tour,2022-03-02 16:00:00,2022-03-02 17:00:00,"Lagos, Nigeria",4
+547,Reality Show,2022-04-06 18:00:00,2022-04-06 21:00:00,"Beijing, China",1
+548,Concert,2022-08-31 22:00:00,2022-09-01 01:00:00,"Tokyo, Japan",2
+549,Fan Meet-Up,2022-06-10 16:00:00,2022-06-10 19:00:00,"Tokyo, Japan",2
+550,Concert,2024-03-26 12:00:00,2024-03-26 16:00:00,"Cairo, Egypt",4
+551,Reality Show,2022-06-27 08:00:00,2022-06-27 11:00:00,"Delhi, India",1
+552,Fan Meet-Up,2023-11-07 11:00:00,2023-11-07 13:00:00,"Manila, Philippines",1
+553,Reality Show,2023-12-13 14:00:00,2023-12-13 17:00:00,"Delhi, India",2
+554,Concert,2022-10-22 20:00:00,2022-10-22 23:00:00,"Karachi, Pakistan",5
+555,Fan Meet-Up,2022-01-27 17:00:00,2022-01-27 20:00:00,"Beijing, China",3
+556,Merch Sale Event,2024-04-28 19:00:00,2024-04-28 22:00:00,"Mexico City, Mexico",5
+557,Tour,2023-03-08 21:00:00,2023-03-09 01:00:00,"Rio de Janeiro, Brazil",4
+558,Merch Sale Event,2023-12-03 09:00:00,2023-12-03 12:00:00,"Karachi, Pakistan",5
+559,Concert,2024-03-23 15:00:00,2024-03-23 19:00:00,"Istanbul, Turkey",4
+560,Tour,2023-06-01 02:00:00,2023-06-01 04:00:00,"Mumbai, India",2
+561,Fan Meet-Up,2022-06-06 02:00:00,2022-06-06 03:00:00,"Chongqing, China",3
+562,Reality Show,2024-06-23 03:00:00,2024-06-23 04:00:00,"Manila, Philippines",4
+563,Reality Show,2024-02-18 00:00:00,2024-02-18 03:00:00,"Manila, Philippines",5
+564,Tour,2024-09-10 12:00:00,2024-09-10 13:00:00,"São Paulo, Brazil",4
+565,Tour,2024-05-31 21:00:00,2024-05-31 23:00:00,"Karachi, Pakistan",3
+566,Fan Meet-Up,2023-12-04 23:00:00,2023-12-05 00:00:00,"Manila, Philippines",4
+567,Merch Sale Event,2023-04-30 15:00:00,2023-04-30 17:00:00,"Karachi, Pakistan",2
+568,Reality Show,2023-05-30 07:00:00,2023-05-30 09:00:00,"Mexico City, Mexico",4
+569,Concert,2023-04-16 18:00:00,2023-04-16 20:00:00,"Mumbai, India",2
+570,Concert,2023-01-02 07:00:00,2023-01-02 09:00:00,"Mexico City, Mexico",5
+571,Concert,2023-11-14 10:00:00,2023-11-14 12:00:00,"Dhaka, Bangladesh",1
+572,Fan Meet-Up,2024-07-26 07:00:00,2024-07-26 09:00:00,"Dhaka, Bangladesh",4
+573,Concert,2023-11-06 02:00:00,2023-11-06 06:00:00,"Chongqing, China",4
+574,Concert,2022-09-09 11:00:00,2022-09-09 15:00:00,"Manila, Philippines",2
+575,Fan Meet-Up,2021-11-06 15:00:00,2021-11-06 16:00:00,"Osaka, Japan",5
+576,Reality Show,2022-11-30 20:00:00,2022-11-30 23:00:00,"Tokyo, Japan",2
+577,Reality Show,2023-10-12 22:00:00,2023-10-13 02:00:00,"Rio de Janeiro, Brazil",3
+578,Concert,2023-05-26 03:00:00,2023-05-26 05:00:00,"Mumbai, India",3
+579,Tour,2023-07-15 19:00:00,2023-07-15 22:00:00,"Dhaka, Bangladesh",2
+580,Concert,2022-08-20 16:00:00,2022-08-20 18:00:00,"Delhi, India",3
+581,Tour,2022-10-29 06:00:00,2022-10-29 09:00:00,"Karachi, Pakistan",3
+582,Tour,2024-02-11 20:00:00,2024-02-11 22:00:00,"Shanghai, China",5
+583,Merch Sale Event,2022-12-14 10:00:00,2022-12-14 13:00:00,"Lagos, Nigeria",4
+584,Merch Sale Event,2021-11-01 21:00:00,2021-11-02 00:00:00,"Istanbul, Turkey",2
+585,Reality Show,2022-11-30 13:00:00,2022-11-30 15:00:00,"Istanbul, Turkey",3
+586,Tour,2022-06-07 16:00:00,2022-06-07 20:00:00,"Beijing, China",2
+587,Reality Show,2022-01-19 06:00:00,2022-01-19 10:00:00,"Mumbai, India",1
+588,Fan Meet-Up,2022-07-28 10:00:00,2022-07-28 12:00:00,"Istanbul, Turkey",2
+589,Fan Meet-Up,2022-02-02 03:00:00,2022-02-02 04:00:00,"Cairo, Egypt",3
+590,Reality Show,2023-03-05 14:00:00,2023-03-05 17:00:00,"Mexico City, Mexico",2
+591,Tour,2023-08-22 07:00:00,2023-08-22 08:00:00,"Delhi, India",3
+592,Fan Meet-Up,2022-03-01 00:00:00,2022-03-01 01:00:00,"Karachi, Pakistan",4
+593,Concert,2021-11-01 02:00:00,2021-11-01 05:00:00,"Mumbai, India",2
+594,Reality Show,2023-06-28 21:00:00,2023-06-29 00:00:00,"Karachi, Pakistan",1
+595,Reality Show,2022-04-10 18:00:00,2022-04-10 22:00:00,"Kinshasa, DR Congo",4
+596,Tour,2022-11-07 14:00:00,2022-11-07 16:00:00,"Kolkata, India",4
+597,Merch Sale Event,2024-08-15 05:00:00,2024-08-15 09:00:00,"Chongqing, China",4
+598,Reality Show,2024-01-10 13:00:00,2024-01-10 14:00:00,"Cairo, Egypt",4
+599,Fan Meet-Up,2024-07-02 00:00:00,2024-07-02 03:00:00,"Karachi, Pakistan",4
+600,Tour,2022-01-29 06:00:00,2022-01-29 10:00:00,"Manila, Philippines",2
+601,Concert,2022-12-01 18:00:00,2022-12-01 19:00:00,"Delhi, India",1
+602,Tour,2024-02-19 08:00:00,2024-02-19 12:00:00,"Mumbai, India",4
+603,Concert,2022-08-22 08:00:00,2022-08-22 11:00:00,"Tianjin, China",5
+604,Fan Meet-Up,2022-10-22 16:00:00,2022-10-22 18:00:00,"Istanbul, Turkey",2
+605,Merch Sale Event,2022-07-21 08:00:00,2022-07-21 10:00:00,"Tianjin, China",5
+606,Merch Sale Event,2022-09-22 06:00:00,2022-09-22 07:00:00,"Delhi, India",2
+607,Reality Show,2023-01-29 08:00:00,2023-01-29 09:00:00,"Beijing, China",2
+608,Reality Show,2024-09-05 14:00:00,2024-09-05 17:00:00,"Dhaka, Bangladesh",4
+609,Tour,2022-05-13 07:00:00,2022-05-13 09:00:00,"Manila, Philippines",2
+610,Fan Meet-Up,2021-12-27 08:00:00,2021-12-27 11:00:00,"Lagos, Nigeria",2
+611,Concert,2022-01-24 21:00:00,2022-01-25 01:00:00,"São Paulo, Brazil",2
+612,Tour,2024-03-08 05:00:00,2024-03-08 09:00:00,"Karachi, Pakistan",3
+613,Tour,2024-02-19 12:00:00,2024-02-19 13:00:00,"Kinshasa, DR Congo",2
+614,Merch Sale Event,2022-10-24 20:00:00,2022-10-25 00:00:00,"Kolkata, India",3
+615,Tour,2023-11-30 14:00:00,2023-11-30 18:00:00,"Rio de Janeiro, Brazil",1
+616,Tour,2024-08-23 04:00:00,2024-08-23 08:00:00,"Manila, Philippines",1
+617,Merch Sale Event,2023-03-14 21:00:00,2023-03-14 23:00:00,"Delhi, India",3
+618,Merch Sale Event,2023-08-28 23:00:00,2023-08-29 01:00:00,"Karachi, Pakistan",5
+619,Reality Show,2022-11-18 14:00:00,2022-11-18 18:00:00,"Buenos Aires, Argentina",3
+620,Tour,2024-03-12 12:00:00,2024-03-12 13:00:00,"Osaka, Japan",3
+621,Concert,2023-05-20 12:00:00,2023-05-20 14:00:00,"Chongqing, China",5
+622,Tour,2024-05-04 00:00:00,2024-05-04 04:00:00,"Buenos Aires, Argentina",2
+623,Merch Sale Event,2022-04-14 21:00:00,2022-04-15 00:00:00,"Mumbai, India",4
+624,Tour,2022-05-09 08:00:00,2022-05-09 09:00:00,"Tianjin, China",4
+625,Reality Show,2023-05-04 19:00:00,2023-05-04 22:00:00,"Karachi, Pakistan",3
+626,Tour,2021-12-08 17:00:00,2021-12-08 18:00:00,"Kinshasa, DR Congo",2
+627,Fan Meet-Up,2023-02-14 11:00:00,2023-02-14 14:00:00,"Dhaka, Bangladesh",5
+628,Tour,2023-12-31 06:00:00,2023-12-31 07:00:00,"Manila, Philippines",2
+629,Tour,2024-03-24 10:00:00,2024-03-24 13:00:00,"Osaka, Japan",5
+630,Concert,2023-04-09 16:00:00,2023-04-09 19:00:00,"Shanghai, China",1
+631,Tour,2024-03-29 17:00:00,2024-03-29 20:00:00,"Tianjin, China",3
+632,Fan Meet-Up,2022-07-11 12:00:00,2022-07-11 15:00:00,"Chongqing, China",4
+633,Fan Meet-Up,2023-04-23 01:00:00,2023-04-23 03:00:00,"São Paulo, Brazil",3
+634,Concert,2024-06-12 07:00:00,2024-06-12 10:00:00,"Tokyo, Japan",2
+635,Tour,2023-04-14 10:00:00,2023-04-14 13:00:00,"Rio de Janeiro, Brazil",3
+636,Concert,2022-02-19 21:00:00,2022-02-19 23:00:00,"Delhi, India",2
+637,Tour,2024-02-02 16:00:00,2024-02-02 20:00:00,"Mumbai, India",3
+638,Fan Meet-Up,2021-11-12 19:00:00,2021-11-12 20:00:00,"Manila, Philippines",4
+639,Tour,2024-07-06 13:00:00,2024-07-06 16:00:00,"Rio de Janeiro, Brazil",3
+640,Tour,2024-10-21 09:00:00,2024-10-21 10:00:00,"Istanbul, Turkey",5
+641,Concert,2024-09-24 23:00:00,2024-09-25 00:00:00,"Dhaka, Bangladesh",1
+642,Reality Show,2022-11-26 16:00:00,2022-11-26 17:00:00,"Beijing, China",2
+643,Tour,2022-07-27 06:00:00,2022-07-27 09:00:00,"Istanbul, Turkey",5
+644,Merch Sale Event,2022-12-09 23:00:00,2022-12-10 03:00:00,"Dhaka, Bangladesh",1
+645,Concert,2023-11-20 00:00:00,2023-11-20 04:00:00,"Tokyo, Japan",5
+646,Concert,2023-11-17 15:00:00,2023-11-17 18:00:00,"São Paulo, Brazil",1
+647,Fan Meet-Up,2024-06-09 15:00:00,2024-06-09 17:00:00,"Cairo, Egypt",3
+648,Merch Sale Event,2022-07-08 07:00:00,2022-07-08 08:00:00,"Dhaka, Bangladesh",3
+649,Concert,2023-04-03 08:00:00,2023-04-03 09:00:00,"Kinshasa, DR Congo",5
+650,Tour,2022-11-29 20:00:00,2022-11-29 21:00:00,"São Paulo, Brazil",3
+651,Merch Sale Event,2023-02-07 10:00:00,2023-02-07 12:00:00,"Mumbai, India",2
+652,Reality Show,2024-02-13 18:00:00,2024-02-13 21:00:00,"Kinshasa, DR Congo",4
+653,Fan Meet-Up,2024-08-16 03:00:00,2024-08-16 06:00:00,"Cairo, Egypt",1
+654,Tour,2023-11-19 01:00:00,2023-11-19 02:00:00,"Delhi, India",2
+655,Reality Show,2021-12-03 02:00:00,2021-12-03 06:00:00,"Buenos Aires, Argentina",2
+656,Concert,2022-10-27 00:00:00,2022-10-27 03:00:00,"Kolkata, India",1
+657,Merch Sale Event,2023-06-29 23:00:00,2023-06-30 00:00:00,"São Paulo, Brazil",2
+658,Merch Sale Event,2024-04-01 02:00:00,2024-04-01 03:00:00,"Istanbul, Turkey",3
+659,Tour,2022-05-20 08:00:00,2022-05-20 10:00:00,"Tokyo, Japan",5
+660,Merch Sale Event,2024-09-23 18:00:00,2024-09-23 19:00:00,"Beijing, China",3
+661,Fan Meet-Up,2023-07-13 14:00:00,2023-07-13 15:00:00,"Tokyo, Japan",4
+662,Tour,2024-08-25 08:00:00,2024-08-25 09:00:00,"Kolkata, India",3
+663,Fan Meet-Up,2023-03-22 15:00:00,2023-03-22 19:00:00,"Karachi, Pakistan",4
+664,Concert,2023-07-31 02:00:00,2023-07-31 05:00:00,"Manila, Philippines",3
+665,Merch Sale Event,2022-01-28 12:00:00,2022-01-28 15:00:00,"Dhaka, Bangladesh",5
+666,Reality Show,2024-10-09 05:00:00,2024-10-09 08:00:00,"Buenos Aires, Argentina",3
+667,Fan Meet-Up,2023-09-10 01:00:00,2023-09-10 04:00:00,"Kolkata, India",1
+668,Fan Meet-Up,2023-04-18 12:00:00,2023-04-18 16:00:00,"Buenos Aires, Argentina",3
+669,Merch Sale Event,2023-07-06 16:00:00,2023-07-06 19:00:00,"Dhaka, Bangladesh",2
+670,Concert,2023-10-26 16:00:00,2023-10-26 20:00:00,"Kolkata, India",4
+671,Tour,2024-07-01 16:00:00,2024-07-01 20:00:00,"Mexico City, Mexico",3
+672,Reality Show,2024-03-10 15:00:00,2024-03-10 18:00:00,"Kinshasa, DR Congo",4
+673,Tour,2022-01-25 02:00:00,2022-01-25 04:00:00,"Mexico City, Mexico",2
+674,Tour,2022-08-14 09:00:00,2022-08-14 11:00:00,"Istanbul, Turkey",4
+675,Merch Sale Event,2023-09-04 13:00:00,2023-09-04 17:00:00,"Osaka, Japan",1
+676,Tour,2023-04-14 08:00:00,2023-04-14 09:00:00,"Chongqing, China",4
+677,Fan Meet-Up,2023-01-07 21:00:00,2023-01-07 22:00:00,"Dhaka, Bangladesh",5
+678,Concert,2023-10-06 06:00:00,2023-10-06 08:00:00,"Kinshasa, DR Congo",5
+679,Reality Show,2024-06-29 10:00:00,2024-06-29 12:00:00,"Tokyo, Japan",2
+680,Merch Sale Event,2024-05-01 22:00:00,2024-05-02 02:00:00,"São Paulo, Brazil",3
+681,Tour,2024-09-09 15:00:00,2024-09-09 18:00:00,"Shanghai, China",4
+682,Reality Show,2022-01-01 23:00:00,2022-01-02 03:00:00,"Kinshasa, DR Congo",2
+683,Merch Sale Event,2022-01-11 17:00:00,2022-01-11 21:00:00,"Mexico City, Mexico",2
+684,Merch Sale Event,2022-02-19 01:00:00,2022-02-19 03:00:00,"Rio de Janeiro, Brazil",1
+685,Merch Sale Event,2023-06-03 09:00:00,2023-06-03 11:00:00,"Cairo, Egypt",2
+686,Reality Show,2024-02-12 08:00:00,2024-02-12 12:00:00,"Tokyo, Japan",3
+687,Tour,2024-08-27 03:00:00,2024-08-27 07:00:00,"Karachi, Pakistan",2
+688,Merch Sale Event,2023-12-17 04:00:00,2023-12-17 08:00:00,"Kinshasa, DR Congo",3
+689,Tour,2024-09-05 13:00:00,2024-09-05 15:00:00,"Delhi, India",2
+690,Fan Meet-Up,2022-09-20 14:00:00,2022-09-20 18:00:00,"Istanbul, Turkey",3
+691,Fan Meet-Up,2023-08-31 14:00:00,2023-08-31 16:00:00,"Beijing, China",5
+692,Fan Meet-Up,2022-05-13 14:00:00,2022-05-13 18:00:00,"Buenos Aires, Argentina",1
+693,Reality Show,2023-02-12 12:00:00,2023-02-12 15:00:00,"Kolkata, India",4
+694,Merch Sale Event,2022-05-18 18:00:00,2022-05-18 19:00:00,"Manila, Philippines",2
+695,Tour,2022-11-26 19:00:00,2022-11-26 20:00:00,"Mexico City, Mexico",2
+696,Tour,2023-05-31 07:00:00,2023-05-31 09:00:00,"Karachi, Pakistan",5
+697,Reality Show,2021-12-06 08:00:00,2021-12-06 11:00:00,"Shanghai, China",3
+698,Fan Meet-Up,2023-12-02 17:00:00,2023-12-02 19:00:00,"Osaka, Japan",2
+699,Merch Sale Event,2023-05-11 08:00:00,2023-05-11 10:00:00,"Manila, Philippines",4
+700,Merch Sale Event,2023-03-07 22:00:00,2023-03-07 23:00:00,"Osaka, Japan",4
+701,Concert,2023-11-22 12:00:00,2023-11-22 13:00:00,"Shanghai, China",4
+702,Merch Sale Event,2022-08-08 11:00:00,2022-08-08 12:00:00,"Kinshasa, DR Congo",5
+703,Fan Meet-Up,2022-12-30 23:00:00,2022-12-31 01:00:00,"Kolkata, India",2
+704,Merch Sale Event,2024-02-06 00:00:00,2024-02-06 03:00:00,"Cairo, Egypt",5
+705,Concert,2023-02-04 20:00:00,2023-02-04 21:00:00,"Tokyo, Japan",2
+706,Tour,2021-11-05 16:00:00,2021-11-05 19:00:00,"Lagos, Nigeria",4
+707,Concert,2024-01-01 17:00:00,2024-01-01 20:00:00,"Rio de Janeiro, Brazil",1
+708,Fan Meet-Up,2023-02-28 18:00:00,2023-02-28 19:00:00,"Kinshasa, DR Congo",2
+709,Reality Show,2024-01-17 20:00:00,2024-01-17 21:00:00,"Lagos, Nigeria",5
+710,Merch Sale Event,2024-01-07 03:00:00,2024-01-07 04:00:00,"Tokyo, Japan",4
+711,Tour,2023-01-25 05:00:00,2023-01-25 09:00:00,"Osaka, Japan",3
+712,Concert,2023-04-24 02:00:00,2023-04-24 03:00:00,"Tokyo, Japan",3
+713,Merch Sale Event,2023-10-22 13:00:00,2023-10-22 16:00:00,"Shanghai, China",3
+714,Merch Sale Event,2024-06-04 12:00:00,2024-06-04 15:00:00,"Tokyo, Japan",2
+715,Tour,2023-11-14 16:00:00,2023-11-14 19:00:00,"Mexico City, Mexico",1
+716,Fan Meet-Up,2023-01-28 06:00:00,2023-01-28 08:00:00,"Rio de Janeiro, Brazil",4
+717,Reality Show,2022-04-03 05:00:00,2022-04-03 09:00:00,"Delhi, India",2
+718,Merch Sale Event,2022-10-04 20:00:00,2022-10-04 21:00:00,"Kinshasa, DR Congo",4
+719,Merch Sale Event,2022-01-24 10:00:00,2022-01-24 11:00:00,"Karachi, Pakistan",2
+720,Concert,2022-12-12 08:00:00,2022-12-12 10:00:00,"Dhaka, Bangladesh",1
+721,Concert,2024-04-21 06:00:00,2024-04-21 07:00:00,"Chongqing, China",5
+722,Concert,2022-01-05 08:00:00,2022-01-05 12:00:00,"Rio de Janeiro, Brazil",2
+723,Concert,2023-08-26 04:00:00,2023-08-26 08:00:00,"Istanbul, Turkey",3
+724,Reality Show,2024-06-05 04:00:00,2024-06-05 05:00:00,"Osaka, Japan",5
+725,Merch Sale Event,2021-11-06 05:00:00,2021-11-06 07:00:00,"Kinshasa, DR Congo",1
+726,Concert,2024-06-30 00:00:00,2024-06-30 04:00:00,"Kinshasa, DR Congo",3
+727,Fan Meet-Up,2024-03-26 07:00:00,2024-03-26 10:00:00,"Cairo, Egypt",1
+728,Tour,2024-10-31 06:00:00,2024-10-31 08:00:00,"Dhaka, Bangladesh",2
+729,Tour,2023-12-24 19:00:00,2023-12-24 20:00:00,"Manila, Philippines",3
+730,Concert,2024-07-24 10:00:00,2024-07-24 12:00:00,"Lagos, Nigeria",3
+731,Merch Sale Event,2023-12-21 09:00:00,2023-12-21 13:00:00,"Shanghai, China",4
+732,Concert,2022-05-18 00:00:00,2022-05-18 04:00:00,"Shanghai, China",3
+733,Reality Show,2023-07-03 10:00:00,2023-07-03 12:00:00,"Buenos Aires, Argentina",1
+734,Fan Meet-Up,2024-08-11 01:00:00,2024-08-11 05:00:00,"Lagos, Nigeria",3
+735,Concert,2022-03-29 04:00:00,2022-03-29 07:00:00,"Karachi, Pakistan",3
+736,Tour,2024-03-22 00:00:00,2024-03-22 01:00:00,"Cairo, Egypt",1
+737,Reality Show,2024-03-14 19:00:00,2024-03-14 20:00:00,"Rio de Janeiro, Brazil",1
+738,Merch Sale Event,2024-08-12 00:00:00,2024-08-12 01:00:00,"Beijing, China",3
+739,Fan Meet-Up,2023-03-26 12:00:00,2023-03-26 13:00:00,"Cairo, Egypt",5
+740,Concert,2024-02-04 23:00:00,2024-02-05 00:00:00,"Manila, Philippines",1
+741,Tour,2022-02-07 06:00:00,2022-02-07 07:00:00,"Tianjin, China",3
+742,Merch Sale Event,2024-10-08 16:00:00,2024-10-08 19:00:00,"Delhi, India",5
+743,Tour,2022-11-09 03:00:00,2022-11-09 06:00:00,"Shanghai, China",4
+744,Reality Show,2023-09-14 15:00:00,2023-09-14 19:00:00,"Beijing, China",4
+745,Fan Meet-Up,2022-09-05 09:00:00,2022-09-05 13:00:00,"Osaka, Japan",1
+746,Merch Sale Event,2023-12-29 14:00:00,2023-12-29 16:00:00,"Buenos Aires, Argentina",3
+747,Concert,2023-04-27 14:00:00,2023-04-27 15:00:00,"São Paulo, Brazil",5
+748,Merch Sale Event,2024-07-12 08:00:00,2024-07-12 12:00:00,"Dhaka, Bangladesh",2
+749,Merch Sale Event,2024-06-19 00:00:00,2024-06-19 04:00:00,"Shanghai, China",2
+750,Concert,2022-01-14 19:00:00,2022-01-14 20:00:00,"Mumbai, India",4
+751,Fan Meet-Up,2023-03-19 22:00:00,2023-03-19 23:00:00,"Buenos Aires, Argentina",3
+752,Fan Meet-Up,2021-10-31 23:00:00,2021-11-01 00:00:00,"Istanbul, Turkey",3
+753,Concert,2022-04-02 13:00:00,2022-04-02 15:00:00,"São Paulo, Brazil",5
+754,Reality Show,2024-06-22 05:00:00,2024-06-22 09:00:00,"Mumbai, India",3
+755,Reality Show,2022-11-18 01:00:00,2022-11-18 03:00:00,"Mumbai, India",1
+756,Concert,2022-01-15 19:00:00,2022-01-15 21:00:00,"Kinshasa, DR Congo",2
+757,Fan Meet-Up,2022-04-12 18:00:00,2022-04-12 19:00:00,"Tokyo, Japan",2
+758,Tour,2024-04-26 15:00:00,2024-04-26 18:00:00,"Tianjin, China",3
+759,Concert,2022-10-17 12:00:00,2022-10-17 13:00:00,"São Paulo, Brazil",5
+760,Merch Sale Event,2024-01-16 09:00:00,2024-01-16 13:00:00,"Buenos Aires, Argentina",1
+761,Concert,2023-03-04 21:00:00,2023-03-05 00:00:00,"Kolkata, India",2
+762,Tour,2024-07-28 19:00:00,2024-07-28 20:00:00,"Mumbai, India",2
+763,Fan Meet-Up,2023-01-09 14:00:00,2023-01-09 17:00:00,"Tokyo, Japan",4
+764,Concert,2022-03-14 10:00:00,2022-03-14 12:00:00,"Chongqing, China",5
+765,Reality Show,2023-05-08 08:00:00,2023-05-08 12:00:00,"Karachi, Pakistan",2
+766,Reality Show,2023-12-16 10:00:00,2023-12-16 13:00:00,"Dhaka, Bangladesh",4
+767,Reality Show,2024-01-28 00:00:00,2024-01-28 03:00:00,"Karachi, Pakistan",5
+768,Tour,2023-08-19 05:00:00,2023-08-19 06:00:00,"Beijing, China",1
+769,Reality Show,2024-08-27 11:00:00,2024-08-27 12:00:00,"Manila, Philippines",2
+770,Tour,2024-08-11 12:00:00,2024-08-11 13:00:00,"Dhaka, Bangladesh",1
+771,Merch Sale Event,2023-12-27 12:00:00,2023-12-27 15:00:00,"Chongqing, China",4
+772,Reality Show,2021-12-29 17:00:00,2021-12-29 18:00:00,"Chongqing, China",1
+773,Tour,2023-09-07 03:00:00,2023-09-07 05:00:00,"Tianjin, China",3
+774,Merch Sale Event,2022-10-25 03:00:00,2022-10-25 06:00:00,"Tokyo, Japan",3
+775,Merch Sale Event,2022-09-09 19:00:00,2022-09-09 23:00:00,"Mumbai, India",1
+776,Concert,2022-06-25 15:00:00,2022-06-25 19:00:00,"Lagos, Nigeria",4
+777,Concert,2024-08-02 17:00:00,2024-08-02 18:00:00,"Chongqing, China",4
+778,Concert,2023-02-09 16:00:00,2023-02-09 19:00:00,"Dhaka, Bangladesh",3
+779,Reality Show,2022-01-30 13:00:00,2022-01-30 14:00:00,"Kinshasa, DR Congo",3
+780,Fan Meet-Up,2024-03-05 07:00:00,2024-03-05 08:00:00,"Tokyo, Japan",1
+781,Merch Sale Event,2022-03-31 11:00:00,2022-03-31 14:00:00,"Osaka, Japan",3
+782,Reality Show,2024-09-18 04:00:00,2024-09-18 08:00:00,"Tianjin, China",1
+783,Concert,2024-07-22 07:00:00,2024-07-22 10:00:00,"Lagos, Nigeria",1
+784,Concert,2022-10-18 20:00:00,2022-10-18 23:00:00,"Mexico City, Mexico",2
+785,Concert,2024-03-07 11:00:00,2024-03-07 14:00:00,"Delhi, India",1
+786,Tour,2022-03-21 14:00:00,2022-03-21 18:00:00,"Beijing, China",2
+787,Concert,2021-11-17 09:00:00,2021-11-17 12:00:00,"Tianjin, China",1
+788,Merch Sale Event,2024-09-16 19:00:00,2024-09-16 22:00:00,"Chongqing, China",4
+789,Reality Show,2024-01-12 15:00:00,2024-01-12 19:00:00,"Beijing, China",2
+790,Merch Sale Event,2022-08-20 21:00:00,2022-08-20 23:00:00,"Lagos, Nigeria",2
+791,Merch Sale Event,2024-10-29 13:00:00,2024-10-29 14:00:00,"Osaka, Japan",1
+792,Tour,2023-12-11 16:00:00,2023-12-11 20:00:00,"Istanbul, Turkey",2
+793,Fan Meet-Up,2024-01-31 21:00:00,2024-01-31 22:00:00,"Mexico City, Mexico",3
+794,Merch Sale Event,2022-07-10 10:00:00,2022-07-10 13:00:00,"Tokyo, Japan",5
+795,Tour,2023-01-11 02:00:00,2023-01-11 04:00:00,"Mumbai, India",1
+796,Fan Meet-Up,2022-06-19 14:00:00,2022-06-19 18:00:00,"Tokyo, Japan",3
+797,Concert,2024-07-25 05:00:00,2024-07-25 09:00:00,"Tianjin, China",1
+798,Merch Sale Event,2024-06-30 23:00:00,2024-07-01 01:00:00,"Buenos Aires, Argentina",2
+799,Tour,2021-11-30 00:00:00,2021-11-30 02:00:00,"Mumbai, India",4
+800,Reality Show,2022-12-11 04:00:00,2022-12-11 05:00:00,"Karachi, Pakistan",5
+801,Concert,2022-06-26 03:00:00,2022-06-26 06:00:00,"Osaka, Japan",1
+802,Fan Meet-Up,2023-03-22 16:00:00,2023-03-22 17:00:00,"Dhaka, Bangladesh",4
+803,Concert,2022-01-14 19:00:00,2022-01-14 23:00:00,"Buenos Aires, Argentina",1
+804,Tour,2022-03-01 15:00:00,2022-03-01 18:00:00,"Cairo, Egypt",2
+805,Fan Meet-Up,2022-11-16 13:00:00,2022-11-16 15:00:00,"São Paulo, Brazil",3
+806,Merch Sale Event,2023-08-29 16:00:00,2023-08-29 19:00:00,"Beijing, China",4
+807,Reality Show,2024-03-26 06:00:00,2024-03-26 10:00:00,"Istanbul, Turkey",1
+808,Concert,2023-08-25 07:00:00,2023-08-25 11:00:00,"Kolkata, India",3
+809,Tour,2024-08-14 11:00:00,2024-08-14 13:00:00,"Karachi, Pakistan",2
+810,Concert,2023-06-22 09:00:00,2023-06-22 12:00:00,"Mexico City, Mexico",4
+811,Concert,2023-10-13 06:00:00,2023-10-13 07:00:00,"Beijing, China",3
+812,Merch Sale Event,2021-12-06 07:00:00,2021-12-06 11:00:00,"Mexico City, Mexico",3
+813,Reality Show,2023-10-06 01:00:00,2023-10-06 02:00:00,"Mumbai, India",1
+814,Merch Sale Event,2022-08-01 04:00:00,2022-08-01 07:00:00,"Tianjin, China",2
+815,Reality Show,2023-06-23 22:00:00,2023-06-24 01:00:00,"Rio de Janeiro, Brazil",1
+816,Reality Show,2023-01-19 01:00:00,2023-01-19 05:00:00,"Tianjin, China",2
+817,Reality Show,2024-03-05 19:00:00,2024-03-05 22:00:00,"Mexico City, Mexico",2
+818,Tour,2023-08-04 14:00:00,2023-08-04 17:00:00,"Beijing, China",2
+819,Tour,2024-01-12 19:00:00,2024-01-12 22:00:00,"São Paulo, Brazil",5
+820,Merch Sale Event,2022-01-24 20:00:00,2022-01-24 23:00:00,"São Paulo, Brazil",2
+821,Tour,2023-04-09 04:00:00,2023-04-09 07:00:00,"Mexico City, Mexico",3
+822,Fan Meet-Up,2024-01-16 10:00:00,2024-01-16 14:00:00,"Mumbai, India",2
+823,Reality Show,2023-08-31 20:00:00,2023-08-31 21:00:00,"Dhaka, Bangladesh",5
+824,Fan Meet-Up,2022-09-21 11:00:00,2022-09-21 13:00:00,"Buenos Aires, Argentina",3
+825,Concert,2023-01-05 13:00:00,2023-01-05 14:00:00,"Lagos, Nigeria",4
+826,Tour,2023-04-25 16:00:00,2023-04-25 19:00:00,"Osaka, Japan",3
+827,Fan Meet-Up,2023-11-23 17:00:00,2023-11-23 21:00:00,"Manila, Philippines",1
+828,Reality Show,2022-04-09 02:00:00,2022-04-09 03:00:00,"Osaka, Japan",4
+829,Concert,2023-05-19 13:00:00,2023-05-19 16:00:00,"Beijing, China",2
+830,Fan Meet-Up,2023-02-15 06:00:00,2023-02-15 10:00:00,"Manila, Philippines",5
+831,Fan Meet-Up,2022-07-01 15:00:00,2022-07-01 17:00:00,"Dhaka, Bangladesh",5
+832,Merch Sale Event,2022-12-10 05:00:00,2022-12-10 09:00:00,"Lagos, Nigeria",5
+833,Tour,2023-11-23 21:00:00,2023-11-23 23:00:00,"Buenos Aires, Argentina",3
+834,Fan Meet-Up,2023-01-25 17:00:00,2023-01-25 20:00:00,"Dhaka, Bangladesh",4
+835,Concert,2023-10-01 01:00:00,2023-10-01 05:00:00,"Tokyo, Japan",5
+836,Concert,2023-03-13 05:00:00,2023-03-13 08:00:00,"Cairo, Egypt",5
+837,Fan Meet-Up,2024-10-21 12:00:00,2024-10-21 16:00:00,"Osaka, Japan",2
+838,Fan Meet-Up,2023-07-14 17:00:00,2023-07-14 19:00:00,"Lagos, Nigeria",3
+839,Reality Show,2023-02-05 06:00:00,2023-02-05 07:00:00,"Buenos Aires, Argentina",2
+840,Reality Show,2023-12-22 06:00:00,2023-12-22 10:00:00,"Kolkata, India",3
+841,Reality Show,2021-11-24 00:00:00,2021-11-24 03:00:00,"Kolkata, India",3
+842,Concert,2022-02-10 08:00:00,2022-02-10 12:00:00,"Tianjin, China",1
+843,Concert,2024-03-28 19:00:00,2024-03-28 23:00:00,"Delhi, India",4
+844,Fan Meet-Up,2023-12-27 11:00:00,2023-12-27 13:00:00,"Chongqing, China",5
+845,Fan Meet-Up,2023-11-23 16:00:00,2023-11-23 20:00:00,"Kolkata, India",2
+846,Concert,2022-07-07 04:00:00,2022-07-07 06:00:00,"Cairo, Egypt",1
+847,Concert,2024-02-26 05:00:00,2024-02-26 09:00:00,"Kinshasa, DR Congo",3
+848,Tour,2024-01-31 18:00:00,2024-01-31 22:00:00,"São Paulo, Brazil",4
+849,Reality Show,2024-07-06 19:00:00,2024-07-06 23:00:00,"Rio de Janeiro, Brazil",2
+850,Reality Show,2024-09-13 06:00:00,2024-09-13 07:00:00,"Shanghai, China",1
+851,Concert,2022-05-18 01:00:00,2022-05-18 05:00:00,"Tianjin, China",1
+852,Concert,2024-08-03 00:00:00,2024-08-03 04:00:00,"Dhaka, Bangladesh",4
+853,Concert,2023-05-26 19:00:00,2023-05-26 22:00:00,"Mumbai, India",2
+854,Reality Show,2023-05-24 06:00:00,2023-05-24 08:00:00,"Mexico City, Mexico",2
+855,Reality Show,2022-02-04 15:00:00,2022-02-04 19:00:00,"São Paulo, Brazil",3
+856,Concert,2022-04-13 03:00:00,2022-04-13 04:00:00,"Buenos Aires, Argentina",2
+857,Concert,2023-05-01 21:00:00,2023-05-02 01:00:00,"Kolkata, India",3
+858,Fan Meet-Up,2024-06-04 15:00:00,2024-06-04 18:00:00,"Chongqing, China",4
+859,Fan Meet-Up,2024-02-04 16:00:00,2024-02-04 19:00:00,"Istanbul, Turkey",3
+860,Reality Show,2023-10-16 16:00:00,2023-10-16 18:00:00,"Buenos Aires, Argentina",3
+861,Reality Show,2021-12-06 10:00:00,2021-12-06 11:00:00,"Kolkata, India",3
+862,Merch Sale Event,2023-08-09 20:00:00,2023-08-09 22:00:00,"Mexico City, Mexico",3
+863,Concert,2022-08-12 22:00:00,2022-08-13 01:00:00,"São Paulo, Brazil",1
+864,Concert,2023-10-09 23:00:00,2023-10-10 01:00:00,"São Paulo, Brazil",4
+865,Merch Sale Event,2023-09-21 17:00:00,2023-09-21 18:00:00,"Beijing, China",2
+866,Fan Meet-Up,2024-05-10 07:00:00,2024-05-10 10:00:00,"São Paulo, Brazil",1
+867,Tour,2024-04-12 17:00:00,2024-04-12 20:00:00,"Dhaka, Bangladesh",1
+868,Tour,2023-02-14 18:00:00,2023-02-14 20:00:00,"Kolkata, India",3
+869,Fan Meet-Up,2023-09-23 06:00:00,2023-09-23 10:00:00,"Kinshasa, DR Congo",2
+870,Fan Meet-Up,2024-01-28 07:00:00,2024-01-28 08:00:00,"Kolkata, India",3
+871,Reality Show,2022-04-07 18:00:00,2022-04-07 21:00:00,"Lagos, Nigeria",1
+872,Fan Meet-Up,2022-06-17 10:00:00,2022-06-17 12:00:00,"Cairo, Egypt",2
+873,Merch Sale Event,2023-11-11 11:00:00,2023-11-11 13:00:00,"Mexico City, Mexico",2
+874,Tour,2022-06-06 21:00:00,2022-06-07 01:00:00,"Shanghai, China",2
+875,Fan Meet-Up,2023-06-20 09:00:00,2023-06-20 13:00:00,"Tokyo, Japan",1
+876,Fan Meet-Up,2022-06-26 17:00:00,2022-06-26 19:00:00,"Buenos Aires, Argentina",4
+877,Concert,2023-12-22 04:00:00,2023-12-22 08:00:00,"Lagos, Nigeria",2
+878,Concert,2022-01-24 13:00:00,2022-01-24 14:00:00,"Tianjin, China",5
+879,Tour,2023-04-13 21:00:00,2023-04-13 23:00:00,"Beijing, China",3
+880,Merch Sale Event,2023-04-01 16:00:00,2023-04-01 19:00:00,"Osaka, Japan",1
+881,Concert,2022-11-04 18:00:00,2022-11-04 21:00:00,"Osaka, Japan",2
+882,Concert,2023-04-01 18:00:00,2023-04-01 21:00:00,"Beijing, China",3
+883,Reality Show,2024-06-13 15:00:00,2024-06-13 18:00:00,"Mexico City, Mexico",4
+884,Merch Sale Event,2024-10-08 12:00:00,2024-10-08 13:00:00,"Tokyo, Japan",3
+885,Tour,2022-01-20 08:00:00,2022-01-20 12:00:00,"Lagos, Nigeria",5
+886,Tour,2022-07-15 02:00:00,2022-07-15 04:00:00,"Mumbai, India",2
+887,Concert,2024-10-01 05:00:00,2024-10-01 08:00:00,"Tokyo, Japan",4
+888,Reality Show,2023-12-20 17:00:00,2023-12-20 21:00:00,"Lagos, Nigeria",3
+889,Tour,2022-02-20 14:00:00,2022-02-20 16:00:00,"Tokyo, Japan",3
+890,Tour,2023-08-20 09:00:00,2023-08-20 11:00:00,"Rio de Janeiro, Brazil",2
+891,Merch Sale Event,2024-03-23 10:00:00,2024-03-23 11:00:00,"Kinshasa, DR Congo",3
+892,Tour,2023-02-15 13:00:00,2023-02-15 14:00:00,"Shanghai, China",5
+893,Reality Show,2023-03-30 16:00:00,2023-03-30 20:00:00,"Delhi, India",5
+894,Tour,2023-05-14 12:00:00,2023-05-14 14:00:00,"Kolkata, India",1
+895,Merch Sale Event,2023-05-16 10:00:00,2023-05-16 14:00:00,"Osaka, Japan",2
+896,Concert,2024-09-17 08:00:00,2024-09-17 10:00:00,"Kinshasa, DR Congo",3
+897,Fan Meet-Up,2022-10-23 12:00:00,2022-10-23 14:00:00,"Delhi, India",4
+898,Concert,2023-03-12 07:00:00,2023-03-12 09:00:00,"Dhaka, Bangladesh",1
+899,Fan Meet-Up,2024-05-22 21:00:00,2024-05-23 01:00:00,"Karachi, Pakistan",5
+900,Fan Meet-Up,2022-11-24 14:00:00,2022-11-24 15:00:00,"Kolkata, India",5
+901,Concert,2024-02-18 03:00:00,2024-02-18 04:00:00,"São Paulo, Brazil",1
+902,Tour,2023-08-27 06:00:00,2023-08-27 08:00:00,"Kolkata, India",1
+903,Merch Sale Event,2022-05-08 01:00:00,2022-05-08 02:00:00,"Kolkata, India",2
+904,Tour,2023-12-26 13:00:00,2023-12-26 17:00:00,"Kolkata, India",1
+905,Tour,2024-04-20 22:00:00,2024-04-20 23:00:00,"Kolkata, India",1
+906,Tour,2022-02-26 00:00:00,2022-02-26 03:00:00,"Chongqing, China",2
+907,Merch Sale Event,2021-12-03 03:00:00,2021-12-03 06:00:00,"Tianjin, China",5
+908,Reality Show,2021-11-27 03:00:00,2021-11-27 06:00:00,"Manila, Philippines",4
+909,Merch Sale Event,2024-07-06 03:00:00,2024-07-06 05:00:00,"Tianjin, China",5
+910,Fan Meet-Up,2024-07-08 00:00:00,2024-07-08 02:00:00,"Osaka, Japan",1
+911,Tour,2022-09-06 07:00:00,2022-09-06 11:00:00,"Istanbul, Turkey",1
+912,Tour,2024-05-13 19:00:00,2024-05-13 21:00:00,"Shanghai, China",4
+913,Merch Sale Event,2024-08-07 01:00:00,2024-08-07 03:00:00,"Istanbul, Turkey",1
+914,Tour,2024-09-30 09:00:00,2024-09-30 10:00:00,"Cairo, Egypt",4
+915,Fan Meet-Up,2024-07-29 06:00:00,2024-07-29 07:00:00,"Istanbul, Turkey",2
+916,Concert,2024-08-22 08:00:00,2024-08-22 09:00:00,"Beijing, China",3
+917,Tour,2023-01-30 08:00:00,2023-01-30 12:00:00,"Manila, Philippines",4
+918,Reality Show,2024-10-04 23:00:00,2024-10-05 01:00:00,"Delhi, India",5
+919,Merch Sale Event,2024-10-29 14:00:00,2024-10-29 16:00:00,"Shanghai, China",5
+920,Fan Meet-Up,2022-03-13 15:00:00,2022-03-13 19:00:00,"Buenos Aires, Argentina",4
+921,Fan Meet-Up,2023-10-31 06:00:00,2023-10-31 07:00:00,"Rio de Janeiro, Brazil",3
+922,Reality Show,2021-12-24 14:00:00,2021-12-24 17:00:00,"Beijing, China",5
+923,Concert,2024-08-16 01:00:00,2024-08-16 04:00:00,"Tianjin, China",1
+924,Merch Sale Event,2022-12-11 06:00:00,2022-12-11 10:00:00,"São Paulo, Brazil",3
+925,Fan Meet-Up,2024-05-30 21:00:00,2024-05-30 23:00:00,"Delhi, India",5
+926,Merch Sale Event,2023-02-25 12:00:00,2023-02-25 16:00:00,"Tianjin, China",2
+927,Merch Sale Event,2024-05-07 12:00:00,2024-05-07 16:00:00,"Shanghai, China",4
+928,Merch Sale Event,2023-09-26 12:00:00,2023-09-26 16:00:00,"Manila, Philippines",4
+929,Concert,2022-01-23 08:00:00,2022-01-23 09:00:00,"Lagos, Nigeria",3
+930,Concert,2024-03-03 04:00:00,2024-03-03 06:00:00,"Cairo, Egypt",1
+931,Tour,2024-06-16 07:00:00,2024-06-16 08:00:00,"Lagos, Nigeria",4
+932,Tour,2024-04-16 21:00:00,2024-04-17 00:00:00,"Karachi, Pakistan",4
+933,Merch Sale Event,2022-11-15 20:00:00,2022-11-15 21:00:00,"Rio de Janeiro, Brazil",3
+934,Fan Meet-Up,2024-01-18 21:00:00,2024-01-18 22:00:00,"Chongqing, China",3
+935,Merch Sale Event,2023-05-24 20:00:00,2023-05-24 21:00:00,"Shanghai, China",1
+936,Reality Show,2023-08-12 11:00:00,2023-08-12 14:00:00,"Karachi, Pakistan",5
+937,Reality Show,2021-12-18 13:00:00,2021-12-18 17:00:00,"Osaka, Japan",5
+938,Concert,2023-03-17 02:00:00,2023-03-17 03:00:00,"Tokyo, Japan",5
+939,Reality Show,2024-01-26 22:00:00,2024-01-27 00:00:00,"Mumbai, India",1
+940,Reality Show,2024-06-11 08:00:00,2024-06-11 12:00:00,"Delhi, India",3
+941,Tour,2023-05-06 17:00:00,2023-05-06 20:00:00,"Chongqing, China",4
+942,Reality Show,2024-02-29 14:00:00,2024-02-29 18:00:00,"Shanghai, China",5
+943,Fan Meet-Up,2022-04-23 06:00:00,2022-04-23 10:00:00,"Buenos Aires, Argentina",1
+944,Concert,2024-09-28 13:00:00,2024-09-28 15:00:00,"Rio de Janeiro, Brazil",1
+945,Merch Sale Event,2022-05-22 11:00:00,2022-05-22 14:00:00,"Chongqing, China",3
+946,Tour,2023-07-01 21:00:00,2023-07-02 01:00:00,"Tokyo, Japan",4
+947,Fan Meet-Up,2023-12-07 04:00:00,2023-12-07 05:00:00,"Kolkata, India",4
+948,Reality Show,2023-11-24 21:00:00,2023-11-25 01:00:00,"Lagos, Nigeria",1
+949,Concert,2022-01-02 22:00:00,2022-01-03 02:00:00,"Manila, Philippines",4
+950,Reality Show,2024-08-21 05:00:00,2024-08-21 07:00:00,"Dhaka, Bangladesh",4
+951,Reality Show,2022-03-05 08:00:00,2022-03-05 12:00:00,"Manila, Philippines",5
+952,Concert,2022-06-25 07:00:00,2022-06-25 09:00:00,"Lagos, Nigeria",2
+953,Concert,2022-01-20 12:00:00,2022-01-20 15:00:00,"Karachi, Pakistan",3
+954,Fan Meet-Up,2024-03-03 18:00:00,2024-03-03 19:00:00,"Rio de Janeiro, Brazil",5
+955,Reality Show,2022-09-10 22:00:00,2022-09-11 02:00:00,"São Paulo, Brazil",5
+956,Tour,2023-07-18 11:00:00,2023-07-18 12:00:00,"Lagos, Nigeria",5
+957,Merch Sale Event,2024-05-03 17:00:00,2024-05-03 18:00:00,"Manila, Philippines",2
+958,Reality Show,2024-05-21 18:00:00,2024-05-21 20:00:00,"Istanbul, Turkey",3
+959,Merch Sale Event,2022-11-10 06:00:00,2022-11-10 07:00:00,"Dhaka, Bangladesh",3
+960,Reality Show,2022-09-28 01:00:00,2022-09-28 03:00:00,"Mexico City, Mexico",2
+961,Merch Sale Event,2024-10-02 21:00:00,2024-10-03 01:00:00,"Delhi, India",4
+962,Reality Show,2022-08-31 14:00:00,2022-08-31 15:00:00,"Tianjin, China",4
+963,Fan Meet-Up,2022-04-01 06:00:00,2022-04-01 10:00:00,"Kolkata, India",2
+964,Tour,2023-08-19 23:00:00,2023-08-20 01:00:00,"Kolkata, India",3
+965,Concert,2022-06-21 03:00:00,2022-06-21 07:00:00,"Shanghai, China",5
+966,Merch Sale Event,2021-12-24 16:00:00,2021-12-24 17:00:00,"Karachi, Pakistan",3
+967,Fan Meet-Up,2024-10-21 15:00:00,2024-10-21 18:00:00,"Tianjin, China",2
+968,Fan Meet-Up,2024-10-21 12:00:00,2024-10-21 16:00:00,"Cairo, Egypt",4
+969,Merch Sale Event,2022-07-18 18:00:00,2022-07-18 21:00:00,"Buenos Aires, Argentina",1
+970,Merch Sale Event,2024-10-05 09:00:00,2024-10-05 10:00:00,"Lagos, Nigeria",3
+971,Tour,2022-10-01 02:00:00,2022-10-01 05:00:00,"Buenos Aires, Argentina",2
+972,Tour,2022-12-28 05:00:00,2022-12-28 06:00:00,"Mumbai, India",3
+973,Tour,2023-03-18 18:00:00,2023-03-18 19:00:00,"Manila, Philippines",1
+974,Concert,2024-01-17 20:00:00,2024-01-17 21:00:00,"Mumbai, India",3
+975,Concert,2023-10-18 01:00:00,2023-10-18 02:00:00,"Mumbai, India",3
+976,Concert,2024-10-16 11:00:00,2024-10-16 13:00:00,"Tokyo, Japan",4
+977,Concert,2024-10-24 17:00:00,2024-10-24 18:00:00,"Cairo, Egypt",1
+978,Tour,2024-06-05 00:00:00,2024-06-05 01:00:00,"Buenos Aires, Argentina",1
+979,Merch Sale Event,2024-04-06 20:00:00,2024-04-06 21:00:00,"Tokyo, Japan",2
+980,Reality Show,2024-06-21 18:00:00,2024-06-21 21:00:00,"Karachi, Pakistan",2
+981,Tour,2023-02-22 11:00:00,2023-02-22 14:00:00,"Osaka, Japan",4
+982,Reality Show,2024-05-03 12:00:00,2024-05-03 16:00:00,"Mexico City, Mexico",3
+983,Merch Sale Event,2024-04-08 22:00:00,2024-04-09 00:00:00,"Karachi, Pakistan",1
+984,Reality Show,2024-01-25 13:00:00,2024-01-25 15:00:00,"Lagos, Nigeria",3
+985,Tour,2024-05-12 21:00:00,2024-05-13 01:00:00,"Beijing, China",2
+986,Tour,2024-07-09 14:00:00,2024-07-09 16:00:00,"Mexico City, Mexico",4
+987,Fan Meet-Up,2022-01-28 23:00:00,2022-01-29 01:00:00,"Cairo, Egypt",2
+988,Merch Sale Event,2023-12-23 10:00:00,2023-12-23 12:00:00,"Delhi, India",1
+989,Tour,2023-02-18 15:00:00,2023-02-18 17:00:00,"Mexico City, Mexico",4
+990,Fan Meet-Up,2024-05-04 03:00:00,2024-05-04 06:00:00,"Kolkata, India",5
+991,Concert,2023-12-03 06:00:00,2023-12-03 07:00:00,"Tokyo, Japan",3
+992,Reality Show,2022-11-20 10:00:00,2022-11-20 11:00:00,"Manila, Philippines",4
+993,Fan Meet-Up,2023-03-07 13:00:00,2023-03-07 14:00:00,"Rio de Janeiro, Brazil",4
+994,Merch Sale Event,2024-02-05 15:00:00,2024-02-05 18:00:00,"Beijing, China",4
+995,Tour,2022-07-21 17:00:00,2022-07-21 19:00:00,"Delhi, India",2
+996,Reality Show,2023-06-01 21:00:00,2023-06-02 01:00:00,"Manila, Philippines",1
+997,Merch Sale Event,2023-03-12 09:00:00,2023-03-12 12:00:00,"Osaka, Japan",1
+998,Fan Meet-Up,2024-04-04 20:00:00,2024-04-04 23:00:00,"Cairo, Egypt",3
+999,Fan Meet-Up,2022-09-24 16:00:00,2022-09-24 18:00:00,"Karachi, Pakistan",5
+1000,Reality Show,2022-01-14 03:00:00,2022-01-14 06:00:00,"Mumbai, India",1
+1001,Concert,2023-08-08 08:00:00,2023-08-08 12:00:00,"Istanbul, Turkey",4
+1002,Fan Meet-Up,2021-12-22 17:00:00,2021-12-22 20:00:00,"Cairo, Egypt",1
+1003,Reality Show,2023-05-21 07:00:00,2023-05-21 08:00:00,"Kolkata, India",1
+1004,Reality Show,2023-10-19 01:00:00,2023-10-19 04:00:00,"Buenos Aires, Argentina",5
+1005,Fan Meet-Up,2023-05-29 02:00:00,2023-05-29 06:00:00,"Kinshasa, DR Congo",2
+1006,Reality Show,2024-05-06 16:00:00,2024-05-06 18:00:00,"Mexico City, Mexico",5
+1007,Fan Meet-Up,2024-01-12 22:00:00,2024-01-13 01:00:00,"Mexico City, Mexico",1
+1008,Reality Show,2023-08-29 23:00:00,2023-08-30 02:00:00,"Karachi, Pakistan",4
+1009,Tour,2024-03-16 10:00:00,2024-03-16 14:00:00,"Karachi, Pakistan",4
+1010,Fan Meet-Up,2022-02-23 09:00:00,2022-02-23 12:00:00,"Cairo, Egypt",5
+1011,Merch Sale Event,2022-02-28 06:00:00,2022-02-28 08:00:00,"Kolkata, India",2
+1012,Merch Sale Event,2021-12-10 02:00:00,2021-12-10 05:00:00,"Dhaka, Bangladesh",4
+1013,Merch Sale Event,2023-04-30 19:00:00,2023-04-30 20:00:00,"Kolkata, India",3
+1014,Fan Meet-Up,2022-02-28 05:00:00,2022-02-28 08:00:00,"Delhi, India",2
+1015,Reality Show,2023-03-24 08:00:00,2023-03-24 11:00:00,"Dhaka, Bangladesh",3
+1016,Tour,2023-12-05 21:00:00,2023-12-06 01:00:00,"Beijing, China",2
+1017,Concert,2024-02-17 20:00:00,2024-02-17 23:00:00,"Dhaka, Bangladesh",3
+1018,Tour,2023-12-07 04:00:00,2023-12-07 06:00:00,"Tianjin, China",1
+1019,Concert,2021-11-06 09:00:00,2021-11-06 10:00:00,"Tokyo, Japan",2
+1020,Reality Show,2022-07-21 10:00:00,2022-07-21 12:00:00,"Lagos, Nigeria",3
+1021,Reality Show,2022-10-06 20:00:00,2022-10-06 21:00:00,"Kinshasa, DR Congo",2
+1022,Concert,2022-10-12 06:00:00,2022-10-12 09:00:00,"Dhaka, Bangladesh",5
+1023,Fan Meet-Up,2024-09-26 12:00:00,2024-09-26 13:00:00,"Buenos Aires, Argentina",1
+1024,Tour,2023-07-03 17:00:00,2023-07-03 21:00:00,"Rio de Janeiro, Brazil",1
+1025,Fan Meet-Up,2024-09-13 20:00:00,2024-09-13 21:00:00,"Rio de Janeiro, Brazil",1
+1026,Tour,2022-10-02 10:00:00,2022-10-02 14:00:00,"Cairo, Egypt",3
+1027,Tour,2024-04-22 14:00:00,2024-04-22 16:00:00,"Rio de Janeiro, Brazil",4
+1028,Reality Show,2022-10-28 20:00:00,2022-10-29 00:00:00,"Karachi, Pakistan",4
+1029,Merch Sale Event,2022-10-04 17:00:00,2022-10-04 20:00:00,"Shanghai, China",1
+1030,Concert,2022-11-15 23:00:00,2022-11-16 00:00:00,"Chongqing, China",3
+1031,Tour,2022-10-22 11:00:00,2022-10-22 14:00:00,"Osaka, Japan",4
+1032,Reality Show,2022-05-08 16:00:00,2022-05-08 18:00:00,"Delhi, India",4
+1033,Reality Show,2022-09-28 13:00:00,2022-09-28 17:00:00,"Mexico City, Mexico",4
+1034,Reality Show,2023-07-10 06:00:00,2023-07-10 10:00:00,"Tianjin, China",1
+1035,Reality Show,2022-11-08 13:00:00,2022-11-08 17:00:00,"Tianjin, China",1
+1036,Reality Show,2024-06-06 03:00:00,2024-06-06 04:00:00,"Tianjin, China",4
+1037,Concert,2024-04-27 13:00:00,2024-04-27 14:00:00,"Cairo, Egypt",3
+1038,Reality Show,2024-04-20 01:00:00,2024-04-20 04:00:00,"Mexico City, Mexico",3
+1039,Concert,2022-02-02 18:00:00,2022-02-02 19:00:00,"Buenos Aires, Argentina",1
+1040,Tour,2022-04-13 21:00:00,2022-04-13 23:00:00,"Beijing, China",3
+1041,Merch Sale Event,2022-01-07 22:00:00,2022-01-07 23:00:00,"Mumbai, India",1
+1042,Concert,2022-10-30 16:00:00,2022-10-30 20:00:00,"Kinshasa, DR Congo",4
+1043,Merch Sale Event,2023-06-06 07:00:00,2023-06-06 10:00:00,"Shanghai, China",5
+1044,Fan Meet-Up,2022-10-24 05:00:00,2022-10-24 08:00:00,"Karachi, Pakistan",3
+1045,Tour,2024-06-05 09:00:00,2024-06-05 13:00:00,"Istanbul, Turkey",2
+1046,Reality Show,2024-10-10 17:00:00,2024-10-10 21:00:00,"Kolkata, India",2
+1047,Reality Show,2022-02-09 03:00:00,2022-02-09 05:00:00,"Buenos Aires, Argentina",3
+1048,Fan Meet-Up,2022-02-19 15:00:00,2022-02-19 19:00:00,"Mexico City, Mexico",1
+1049,Fan Meet-Up,2023-06-26 09:00:00,2023-06-26 10:00:00,"Karachi, Pakistan",4
+1050,Concert,2024-04-21 04:00:00,2024-04-21 06:00:00,"Istanbul, Turkey",4
+1051,Fan Meet-Up,2022-09-11 03:00:00,2022-09-11 07:00:00,"Chongqing, China",1
+1052,Tour,2023-02-06 05:00:00,2023-02-06 07:00:00,"Istanbul, Turkey",4
+1053,Reality Show,2023-05-06 03:00:00,2023-05-06 05:00:00,"Mumbai, India",5
+1054,Merch Sale Event,2024-01-07 17:00:00,2024-01-07 18:00:00,"Dhaka, Bangladesh",2
+1055,Concert,2022-06-02 01:00:00,2022-06-02 04:00:00,"Kinshasa, DR Congo",3
+1056,Merch Sale Event,2024-04-12 03:00:00,2024-04-12 04:00:00,"Lagos, Nigeria",5
+1057,Merch Sale Event,2022-06-08 19:00:00,2022-06-08 22:00:00,"Kolkata, India",5
+1058,Tour,2022-09-03 13:00:00,2022-09-03 15:00:00,"Beijing, China",3
+1059,Merch Sale Event,2022-05-09 09:00:00,2022-05-09 11:00:00,"Mexico City, Mexico",1
+1060,Tour,2022-10-27 15:00:00,2022-10-27 18:00:00,"Delhi, India",1
+1061,Fan Meet-Up,2024-07-20 13:00:00,2024-07-20 17:00:00,"Buenos Aires, Argentina",3
+1062,Tour,2023-12-24 06:00:00,2023-12-24 07:00:00,"Dhaka, Bangladesh",3
+1063,Reality Show,2021-11-27 04:00:00,2021-11-27 06:00:00,"Karachi, Pakistan",2
+1064,Concert,2021-11-25 13:00:00,2021-11-25 14:00:00,"Kinshasa, DR Congo",1
+1065,Fan Meet-Up,2023-11-13 13:00:00,2023-11-13 16:00:00,"Mumbai, India",3
+1066,Reality Show,2023-08-23 13:00:00,2023-08-23 16:00:00,"Karachi, Pakistan",3
+1067,Merch Sale Event,2023-08-29 11:00:00,2023-08-29 14:00:00,"São Paulo, Brazil",4
+1068,Fan Meet-Up,2024-06-21 06:00:00,2024-06-21 09:00:00,"Kinshasa, DR Congo",1
+1069,Concert,2023-09-13 10:00:00,2023-09-13 11:00:00,"Mumbai, India",5
+1070,Fan Meet-Up,2022-04-02 09:00:00,2022-04-02 12:00:00,"Manila, Philippines",1
+1071,Fan Meet-Up,2023-05-19 17:00:00,2023-05-19 18:00:00,"Mumbai, India",2
+1072,Concert,2022-08-01 12:00:00,2022-08-01 15:00:00,"Dhaka, Bangladesh",4
+1073,Concert,2023-01-26 18:00:00,2023-01-26 22:00:00,"Chongqing, China",2
+1074,Reality Show,2023-12-09 03:00:00,2023-12-09 06:00:00,"Tokyo, Japan",5
+1075,Merch Sale Event,2023-05-25 07:00:00,2023-05-25 08:00:00,"Dhaka, Bangladesh",2
+1076,Reality Show,2024-02-19 15:00:00,2024-02-19 18:00:00,"Karachi, Pakistan",5
+1077,Fan Meet-Up,2023-03-31 05:00:00,2023-03-31 07:00:00,"Shanghai, China",5
+1078,Reality Show,2022-04-01 06:00:00,2022-04-01 09:00:00,"Delhi, India",1
+1079,Fan Meet-Up,2024-08-26 04:00:00,2024-08-26 07:00:00,"Beijing, China",3
+1080,Fan Meet-Up,2024-10-24 09:00:00,2024-10-24 11:00:00,"Karachi, Pakistan",3
+1081,Fan Meet-Up,2024-07-20 17:00:00,2024-07-20 21:00:00,"Shanghai, China",1
+1082,Tour,2023-07-09 09:00:00,2023-07-09 10:00:00,"Istanbul, Turkey",4
+1083,Fan Meet-Up,2022-01-19 00:00:00,2022-01-19 04:00:00,"Tokyo, Japan",2
+1084,Concert,2023-02-06 01:00:00,2023-02-06 05:00:00,"Karachi, Pakistan",5
+1085,Reality Show,2024-04-14 13:00:00,2024-04-14 16:00:00,"Mexico City, Mexico",1
+1086,Fan Meet-Up,2022-12-16 14:00:00,2022-12-16 15:00:00,"Cairo, Egypt",1
+1087,Merch Sale Event,2022-01-07 01:00:00,2022-01-07 04:00:00,"Cairo, Egypt",2
+1088,Merch Sale Event,2022-08-15 04:00:00,2022-08-15 05:00:00,"Istanbul, Turkey",1
+1089,Tour,2022-04-26 02:00:00,2022-04-26 05:00:00,"Cairo, Egypt",3
+1090,Merch Sale Event,2024-08-27 12:00:00,2024-08-27 13:00:00,"Shanghai, China",2
+1091,Reality Show,2024-03-05 19:00:00,2024-03-05 23:00:00,"Karachi, Pakistan",4
+1092,Fan Meet-Up,2023-01-23 01:00:00,2023-01-23 02:00:00,"Kinshasa, DR Congo",2
+1093,Concert,2022-10-26 21:00:00,2022-10-26 22:00:00,"Manila, Philippines",1
+1094,Fan Meet-Up,2023-06-20 06:00:00,2023-06-20 10:00:00,"Rio de Janeiro, Brazil",2
+1095,Tour,2022-12-08 21:00:00,2022-12-09 01:00:00,"Buenos Aires, Argentina",5
+1096,Reality Show,2022-06-07 18:00:00,2022-06-07 20:00:00,"Karachi, Pakistan",1
+1097,Concert,2024-01-02 19:00:00,2024-01-02 23:00:00,"Lagos, Nigeria",2
+1098,Concert,2023-09-03 18:00:00,2023-09-03 22:00:00,"Istanbul, Turkey",5
+1099,Reality Show,2023-03-26 06:00:00,2023-03-26 08:00:00,"Kinshasa, DR Congo",4
+1100,Merch Sale Event,2024-05-25 06:00:00,2024-05-25 08:00:00,"Tokyo, Japan",1
+1101,Fan Meet-Up,2023-03-02 16:00:00,2023-03-02 19:00:00,"Kolkata, India",4
+1102,Concert,2022-03-18 00:00:00,2022-03-18 04:00:00,"Beijing, China",2
+1103,Tour,2024-08-29 07:00:00,2024-08-29 11:00:00,"Buenos Aires, Argentina",5
+1104,Concert,2023-06-14 09:00:00,2023-06-14 10:00:00,"Karachi, Pakistan",5
+1105,Concert,2022-07-10 19:00:00,2022-07-10 23:00:00,"Delhi, India",5
+1106,Reality Show,2022-03-07 07:00:00,2022-03-07 10:00:00,"Rio de Janeiro, Brazil",3
+1107,Reality Show,2022-06-27 07:00:00,2022-06-27 09:00:00,"Rio de Janeiro, Brazil",1
+1108,Fan Meet-Up,2022-05-11 16:00:00,2022-05-11 17:00:00,"Rio de Janeiro, Brazil",2
+1109,Tour,2022-09-22 19:00:00,2022-09-22 22:00:00,"Mumbai, India",1
+1110,Merch Sale Event,2023-09-12 22:00:00,2023-09-13 00:00:00,"São Paulo, Brazil",2
+1111,Concert,2023-05-27 13:00:00,2023-05-27 17:00:00,"Dhaka, Bangladesh",1
+1112,Reality Show,2023-11-02 15:00:00,2023-11-02 17:00:00,"Kinshasa, DR Congo",3
+1113,Reality Show,2022-02-20 14:00:00,2022-02-20 16:00:00,"Chongqing, China",1
+1114,Fan Meet-Up,2022-07-11 17:00:00,2022-07-11 19:00:00,"Osaka, Japan",2
+1115,Concert,2022-07-25 18:00:00,2022-07-25 20:00:00,"Mumbai, India",2
+1116,Tour,2022-03-18 17:00:00,2022-03-18 21:00:00,"Mumbai, India",4
+1117,Concert,2022-01-29 00:00:00,2022-01-29 01:00:00,"Chongqing, China",5
+1118,Tour,2022-04-18 04:00:00,2022-04-18 08:00:00,"Karachi, Pakistan",2
+1119,Tour,2022-02-07 13:00:00,2022-02-07 15:00:00,"Karachi, Pakistan",3
+1120,Merch Sale Event,2021-12-29 06:00:00,2021-12-29 07:00:00,"Istanbul, Turkey",2
+1121,Merch Sale Event,2023-01-31 20:00:00,2023-01-31 22:00:00,"Rio de Janeiro, Brazil",1
+1122,Concert,2022-05-13 14:00:00,2022-05-13 17:00:00,"Shanghai, China",1
+1123,Reality Show,2022-05-21 14:00:00,2022-05-21 16:00:00,"Rio de Janeiro, Brazil",3
+1124,Merch Sale Event,2022-10-10 02:00:00,2022-10-10 03:00:00,"Kinshasa, DR Congo",2
+1125,Tour,2023-07-23 13:00:00,2023-07-23 17:00:00,"Mexico City, Mexico",2
+1126,Merch Sale Event,2024-10-27 20:00:00,2024-10-28 00:00:00,"São Paulo, Brazil",1
+1127,Concert,2024-05-25 23:00:00,2024-05-26 03:00:00,"Dhaka, Bangladesh",3
+1128,Tour,2023-02-01 20:00:00,2023-02-01 23:00:00,"Mexico City, Mexico",2
+1129,Merch Sale Event,2022-11-15 10:00:00,2022-11-15 12:00:00,"Manila, Philippines",1
+1130,Reality Show,2022-06-30 22:00:00,2022-06-30 23:00:00,"Dhaka, Bangladesh",2
+1131,Fan Meet-Up,2022-01-17 13:00:00,2022-01-17 16:00:00,"Mumbai, India",1
+1132,Concert,2022-11-29 07:00:00,2022-11-29 09:00:00,"Dhaka, Bangladesh",3
+1133,Fan Meet-Up,2022-05-14 12:00:00,2022-05-14 15:00:00,"Rio de Janeiro, Brazil",3
+1134,Fan Meet-Up,2022-01-12 01:00:00,2022-01-12 05:00:00,"Mexico City, Mexico",2
+1135,Tour,2024-06-12 08:00:00,2024-06-12 12:00:00,"Chongqing, China",5
+1136,Merch Sale Event,2023-07-18 08:00:00,2023-07-18 11:00:00,"Kinshasa, DR Congo",5
+1137,Merch Sale Event,2024-10-18 11:00:00,2024-10-18 15:00:00,"Rio de Janeiro, Brazil",3
+1138,Reality Show,2024-03-21 19:00:00,2024-03-21 23:00:00,"Mexico City, Mexico",3
+1139,Tour,2023-03-19 18:00:00,2023-03-19 19:00:00,"Kinshasa, DR Congo",5
+1140,Tour,2023-01-29 02:00:00,2023-01-29 05:00:00,"São Paulo, Brazil",5
+1141,Merch Sale Event,2024-10-19 20:00:00,2024-10-19 22:00:00,"Beijing, China",5
+1142,Fan Meet-Up,2022-08-14 07:00:00,2022-08-14 09:00:00,"Mumbai, India",3
+1143,Concert,2022-07-30 02:00:00,2022-07-30 04:00:00,"São Paulo, Brazil",1
+1144,Reality Show,2022-05-30 07:00:00,2022-05-30 11:00:00,"Shanghai, China",1
+1145,Reality Show,2023-02-06 09:00:00,2023-02-06 12:00:00,"Tokyo, Japan",5
+1146,Merch Sale Event,2023-11-16 09:00:00,2023-11-16 11:00:00,"Cairo, Egypt",1
+1147,Fan Meet-Up,2023-11-02 21:00:00,2023-11-03 00:00:00,"Manila, Philippines",4
+1148,Concert,2023-05-03 15:00:00,2023-05-03 19:00:00,"Mexico City, Mexico",1
+1149,Merch Sale Event,2023-01-27 12:00:00,2023-01-27 13:00:00,"Kolkata, India",1
+1150,Concert,2024-01-11 05:00:00,2024-01-11 08:00:00,"Lagos, Nigeria",3
+1151,Concert,2023-04-04 11:00:00,2023-04-04 14:00:00,"Osaka, Japan",3
+1152,Fan Meet-Up,2024-06-17 07:00:00,2024-06-17 08:00:00,"Cairo, Egypt",3
+1153,Merch Sale Event,2022-03-10 09:00:00,2022-03-10 11:00:00,"Karachi, Pakistan",3
+1154,Tour,2023-06-12 14:00:00,2023-06-12 17:00:00,"Istanbul, Turkey",1
+1155,Concert,2023-06-29 10:00:00,2023-06-29 13:00:00,"Tianjin, China",4
+1156,Concert,2023-04-02 09:00:00,2023-04-02 11:00:00,"Istanbul, Turkey",1
+1157,Merch Sale Event,2022-02-16 20:00:00,2022-02-16 23:00:00,"Dhaka, Bangladesh",3
+1158,Reality Show,2023-08-21 04:00:00,2023-08-21 07:00:00,"Mexico City, Mexico",2
+1159,Merch Sale Event,2024-09-19 18:00:00,2024-09-19 19:00:00,"Tokyo, Japan",3
+1160,Reality Show,2021-11-27 16:00:00,2021-11-27 19:00:00,"Kinshasa, DR Congo",5
+1161,Merch Sale Event,2024-10-29 08:00:00,2024-10-29 11:00:00,"Tianjin, China",3
+1162,Concert,2022-07-07 09:00:00,2022-07-07 10:00:00,"Delhi, India",2
+1163,Reality Show,2024-09-29 12:00:00,2024-09-29 13:00:00,"Karachi, Pakistan",4
+1164,Tour,2021-11-01 03:00:00,2021-11-01 07:00:00,"Mexico City, Mexico",2
+1165,Reality Show,2023-02-19 10:00:00,2023-02-19 13:00:00,"Kolkata, India",3
+1166,Reality Show,2022-06-06 18:00:00,2022-06-06 20:00:00,"Mumbai, India",2
+1167,Merch Sale Event,2023-05-30 18:00:00,2023-05-30 19:00:00,"Mexico City, Mexico",5
+1168,Tour,2024-08-12 15:00:00,2024-08-12 16:00:00,"Shanghai, China",2
+1169,Reality Show,2022-02-23 15:00:00,2022-02-23 17:00:00,"Buenos Aires, Argentina",4
+1170,Fan Meet-Up,2022-05-29 05:00:00,2022-05-29 06:00:00,"Cairo, Egypt",4
+1171,Concert,2022-04-06 00:00:00,2022-04-06 01:00:00,"Cairo, Egypt",5
+1172,Tour,2024-05-16 17:00:00,2024-05-16 19:00:00,"Manila, Philippines",2
+1173,Fan Meet-Up,2024-04-18 02:00:00,2024-04-18 05:00:00,"Karachi, Pakistan",5
+1174,Merch Sale Event,2023-06-07 01:00:00,2023-06-07 05:00:00,"Tokyo, Japan",3
+1175,Fan Meet-Up,2023-01-06 11:00:00,2023-01-06 13:00:00,"São Paulo, Brazil",3
+1176,Concert,2022-10-21 21:00:00,2022-10-21 22:00:00,"Buenos Aires, Argentina",2
+1177,Tour,2022-09-17 06:00:00,2022-09-17 10:00:00,"Osaka, Japan",5
+1178,Reality Show,2024-06-20 00:00:00,2024-06-20 04:00:00,"Beijing, China",1
+1179,Concert,2022-11-14 04:00:00,2022-11-14 08:00:00,"Manila, Philippines",3
+1180,Tour,2023-02-22 14:00:00,2023-02-22 16:00:00,"São Paulo, Brazil",4
+1181,Reality Show,2022-10-09 04:00:00,2022-10-09 07:00:00,"Mexico City, Mexico",5
+1182,Concert,2024-09-04 15:00:00,2024-09-04 17:00:00,"Manila, Philippines",5
+1183,Reality Show,2024-10-13 16:00:00,2024-10-13 18:00:00,"Mexico City, Mexico",5
+1184,Tour,2023-01-13 15:00:00,2023-01-13 17:00:00,"Kinshasa, DR Congo",4
+1185,Concert,2024-01-14 14:00:00,2024-01-14 15:00:00,"Manila, Philippines",3
+1186,Merch Sale Event,2022-02-08 04:00:00,2022-02-08 06:00:00,"Lagos, Nigeria",3
+1187,Merch Sale Event,2024-01-21 08:00:00,2024-01-21 12:00:00,"Chongqing, China",3
+1188,Reality Show,2022-01-22 04:00:00,2022-01-22 08:00:00,"Manila, Philippines",5
+1189,Reality Show,2022-09-24 15:00:00,2022-09-24 16:00:00,"Lagos, Nigeria",2
+1190,Reality Show,2022-06-18 12:00:00,2022-06-18 15:00:00,"Istanbul, Turkey",1
+1191,Reality Show,2024-07-15 22:00:00,2024-07-16 01:00:00,"Buenos Aires, Argentina",1
+1192,Concert,2023-08-17 10:00:00,2023-08-17 11:00:00,"São Paulo, Brazil",2
+1193,Fan Meet-Up,2024-03-30 03:00:00,2024-03-30 06:00:00,"Tokyo, Japan",5
+1194,Reality Show,2023-07-08 11:00:00,2023-07-08 12:00:00,"Beijing, China",4
+1195,Concert,2024-03-25 01:00:00,2024-03-25 05:00:00,"São Paulo, Brazil",5
+1196,Reality Show,2021-12-20 16:00:00,2021-12-20 17:00:00,"Dhaka, Bangladesh",5
+1197,Reality Show,2024-05-11 05:00:00,2024-05-11 09:00:00,"Lagos, Nigeria",3
+1198,Merch Sale Event,2022-07-11 21:00:00,2022-07-12 01:00:00,"Delhi, India",5
+1199,Tour,2024-07-17 07:00:00,2024-07-17 08:00:00,"Beijing, China",4
+1200,Concert,2023-05-23 09:00:00,2023-05-23 13:00:00,"Kinshasa, DR Congo",5
+1201,Concert,2023-02-01 22:00:00,2023-02-02 00:00:00,"Beijing, China",2
+1202,Reality Show,2024-03-25 08:00:00,2024-03-25 12:00:00,"Buenos Aires, Argentina",3
+1203,Fan Meet-Up,2022-05-23 02:00:00,2022-05-23 04:00:00,"Cairo, Egypt",5
+1204,Concert,2023-05-03 05:00:00,2023-05-03 08:00:00,"Osaka, Japan",2
+1205,Merch Sale Event,2022-07-28 17:00:00,2022-07-28 19:00:00,"Karachi, Pakistan",5
+1206,Fan Meet-Up,2024-07-03 23:00:00,2024-07-04 02:00:00,"Delhi, India",3
+1207,Concert,2024-02-16 00:00:00,2024-02-16 03:00:00,"Kolkata, India",5
+1208,Merch Sale Event,2023-08-02 10:00:00,2023-08-02 11:00:00,"Kinshasa, DR Congo",2
+1209,Reality Show,2022-06-12 13:00:00,2022-06-12 16:00:00,"Mumbai, India",2
+1210,Concert,2024-08-24 12:00:00,2024-08-24 14:00:00,"Cairo, Egypt",5
+1211,Reality Show,2022-03-13 15:00:00,2022-03-13 18:00:00,"Mumbai, India",3
+1212,Fan Meet-Up,2023-02-11 08:00:00,2023-02-11 11:00:00,"São Paulo, Brazil",5
+1213,Reality Show,2023-05-19 11:00:00,2023-05-19 13:00:00,"Karachi, Pakistan",2
+1214,Concert,2022-02-15 10:00:00,2022-02-15 11:00:00,"Istanbul, Turkey",5
+1215,Tour,2023-02-18 14:00:00,2023-02-18 17:00:00,"Mexico City, Mexico",4
+1216,Merch Sale Event,2024-10-05 01:00:00,2024-10-05 05:00:00,"Chongqing, China",4
+1217,Merch Sale Event,2022-07-26 10:00:00,2022-07-26 14:00:00,"Karachi, Pakistan",5
+1218,Reality Show,2023-01-14 05:00:00,2023-01-14 06:00:00,"Tokyo, Japan",2
+1219,Tour,2022-10-17 21:00:00,2022-10-17 23:00:00,"Chongqing, China",5
+1220,Concert,2024-06-17 15:00:00,2024-06-17 18:00:00,"Beijing, China",1
+1221,Concert,2024-09-03 16:00:00,2024-09-03 19:00:00,"Kinshasa, DR Congo",2
+1222,Concert,2022-04-22 01:00:00,2022-04-22 03:00:00,"Manila, Philippines",1
+1223,Reality Show,2023-03-29 11:00:00,2023-03-29 15:00:00,"Istanbul, Turkey",2
+1224,Reality Show,2024-09-23 18:00:00,2024-09-23 20:00:00,"Mexico City, Mexico",2
+1225,Reality Show,2022-04-23 23:00:00,2022-04-24 00:00:00,"Istanbul, Turkey",5
+1226,Reality Show,2024-10-26 18:00:00,2024-10-26 22:00:00,"Dhaka, Bangladesh",5
+1227,Merch Sale Event,2022-05-27 09:00:00,2022-05-27 13:00:00,"Tokyo, Japan",4
+1228,Fan Meet-Up,2022-06-17 16:00:00,2022-06-17 18:00:00,"Cairo, Egypt",2
+1229,Reality Show,2024-04-16 19:00:00,2024-04-16 22:00:00,"Dhaka, Bangladesh",4
+1230,Reality Show,2024-02-06 15:00:00,2024-02-06 18:00:00,"Cairo, Egypt",5
+1231,Tour,2021-11-10 07:00:00,2021-11-10 10:00:00,"Delhi, India",1
+1232,Fan Meet-Up,2024-08-24 01:00:00,2024-08-24 03:00:00,"Tokyo, Japan",4
+1233,Fan Meet-Up,2024-01-28 11:00:00,2024-01-28 13:00:00,"Beijing, China",5
+1234,Fan Meet-Up,2021-12-22 21:00:00,2021-12-22 22:00:00,"Dhaka, Bangladesh",4
+1235,Fan Meet-Up,2024-08-15 12:00:00,2024-08-15 15:00:00,"Manila, Philippines",3
+1236,Fan Meet-Up,2024-07-20 17:00:00,2024-07-20 18:00:00,"Tokyo, Japan",2
+1237,Tour,2022-07-25 12:00:00,2022-07-25 14:00:00,"Chongqing, China",3
+1238,Concert,2022-09-16 15:00:00,2022-09-16 16:00:00,"Tokyo, Japan",3
+1239,Concert,2022-08-23 08:00:00,2022-08-23 12:00:00,"Osaka, Japan",1
+1240,Tour,2023-12-27 11:00:00,2023-12-27 12:00:00,"São Paulo, Brazil",3
+1241,Tour,2023-07-25 01:00:00,2023-07-25 02:00:00,"Mumbai, India",5
+1242,Concert,2023-01-21 08:00:00,2023-01-21 12:00:00,"São Paulo, Brazil",3
+1243,Merch Sale Event,2022-11-29 20:00:00,2022-11-30 00:00:00,"Kinshasa, DR Congo",4
+1244,Fan Meet-Up,2023-01-01 20:00:00,2023-01-01 23:00:00,"Karachi, Pakistan",4
+1245,Tour,2024-07-26 01:00:00,2024-07-26 04:00:00,"Manila, Philippines",5
+1246,Fan Meet-Up,2022-11-18 14:00:00,2022-11-18 16:00:00,"Lagos, Nigeria",4
+1247,Reality Show,2022-07-11 23:00:00,2022-07-12 02:00:00,"Beijing, China",5
+1248,Reality Show,2023-10-20 03:00:00,2023-10-20 04:00:00,"São Paulo, Brazil",5
+1249,Fan Meet-Up,2024-02-04 19:00:00,2024-02-04 21:00:00,"Kinshasa, DR Congo",4
+1250,Fan Meet-Up,2022-12-01 09:00:00,2022-12-01 10:00:00,"Kolkata, India",4
+1251,Reality Show,2022-02-27 05:00:00,2022-02-27 08:00:00,"Tokyo, Japan",1
+1252,Reality Show,2022-09-01 04:00:00,2022-09-01 07:00:00,"Osaka, Japan",3
+1253,Fan Meet-Up,2022-01-05 01:00:00,2022-01-05 05:00:00,"Mexico City, Mexico",3
+1254,Reality Show,2023-08-18 13:00:00,2023-08-18 17:00:00,"Cairo, Egypt",2
+1255,Fan Meet-Up,2024-01-08 15:00:00,2024-01-08 17:00:00,"Dhaka, Bangladesh",3
+1256,Reality Show,2024-06-05 05:00:00,2024-06-05 07:00:00,"Mumbai, India",5
+1257,Reality Show,2023-10-05 20:00:00,2023-10-05 22:00:00,"Cairo, Egypt",4
+1258,Merch Sale Event,2024-04-13 13:00:00,2024-04-13 15:00:00,"Delhi, India",2
+1259,Reality Show,2023-04-02 17:00:00,2023-04-02 21:00:00,"Mexico City, Mexico",2
+1260,Fan Meet-Up,2023-09-26 23:00:00,2023-09-27 03:00:00,"Tokyo, Japan",4
+1261,Fan Meet-Up,2024-09-04 22:00:00,2024-09-05 01:00:00,"Beijing, China",1
+1262,Concert,2022-12-29 14:00:00,2022-12-29 15:00:00,"Delhi, India",5
+1263,Fan Meet-Up,2024-06-27 11:00:00,2024-06-27 13:00:00,"São Paulo, Brazil",4
+1264,Concert,2022-04-20 07:00:00,2022-04-20 09:00:00,"Buenos Aires, Argentina",5
+1265,Fan Meet-Up,2023-06-26 04:00:00,2023-06-26 05:00:00,"Kolkata, India",3
+1266,Merch Sale Event,2022-04-16 07:00:00,2022-04-16 10:00:00,"Rio de Janeiro, Brazil",5
+1267,Fan Meet-Up,2024-04-25 13:00:00,2024-04-25 17:00:00,"Kolkata, India",5
+1268,Merch Sale Event,2022-09-18 08:00:00,2022-09-18 10:00:00,"Istanbul, Turkey",4
+1269,Reality Show,2023-07-07 14:00:00,2023-07-07 15:00:00,"Mumbai, India",5
+1270,Concert,2023-04-06 21:00:00,2023-04-07 01:00:00,"São Paulo, Brazil",3
+1271,Fan Meet-Up,2022-09-02 10:00:00,2022-09-02 12:00:00,"Istanbul, Turkey",3
+1272,Concert,2024-06-27 00:00:00,2024-06-27 02:00:00,"Istanbul, Turkey",5
+1273,Reality Show,2023-02-25 08:00:00,2023-02-25 09:00:00,"Dhaka, Bangladesh",3
+1274,Reality Show,2024-09-06 09:00:00,2024-09-06 13:00:00,"Mexico City, Mexico",4
+1275,Merch Sale Event,2022-12-09 00:00:00,2022-12-09 01:00:00,"Tokyo, Japan",3
+1276,Fan Meet-Up,2024-02-27 15:00:00,2024-02-27 16:00:00,"Manila, Philippines",5
+1277,Reality Show,2022-08-10 13:00:00,2022-08-10 17:00:00,"Tokyo, Japan",5
+1278,Tour,2022-03-09 08:00:00,2022-03-09 09:00:00,"Osaka, Japan",2
+1279,Merch Sale Event,2023-07-27 18:00:00,2023-07-27 21:00:00,"Rio de Janeiro, Brazil",2
+1280,Merch Sale Event,2023-03-18 11:00:00,2023-03-18 12:00:00,"Lagos, Nigeria",5
+1281,Tour,2023-10-18 15:00:00,2023-10-18 17:00:00,"Mumbai, India",1
+1282,Reality Show,2023-08-03 01:00:00,2023-08-03 04:00:00,"Delhi, India",2
+1283,Concert,2022-12-09 13:00:00,2022-12-09 17:00:00,"Osaka, Japan",4
+1284,Reality Show,2022-10-18 00:00:00,2022-10-18 02:00:00,"Istanbul, Turkey",1
+1285,Concert,2022-06-19 08:00:00,2022-06-19 12:00:00,"Delhi, India",2
+1286,Merch Sale Event,2024-05-07 03:00:00,2024-05-07 06:00:00,"Buenos Aires, Argentina",3
+1287,Fan Meet-Up,2023-03-23 17:00:00,2023-03-23 20:00:00,"Mumbai, India",3
+1288,Merch Sale Event,2023-05-16 05:00:00,2023-05-16 06:00:00,"Beijing, China",2
+1289,Tour,2023-07-16 12:00:00,2023-07-16 13:00:00,"Kolkata, India",2
+1290,Fan Meet-Up,2023-11-14 11:00:00,2023-11-14 13:00:00,"Buenos Aires, Argentina",2
+1291,Reality Show,2024-10-12 10:00:00,2024-10-12 11:00:00,"Shanghai, China",4
+1292,Reality Show,2022-03-18 21:00:00,2022-03-18 23:00:00,"Mexico City, Mexico",1
+1293,Fan Meet-Up,2022-04-13 09:00:00,2022-04-13 12:00:00,"Mexico City, Mexico",4
+1294,Reality Show,2024-03-27 22:00:00,2024-03-28 00:00:00,"Cairo, Egypt",5
+1295,Reality Show,2023-02-26 04:00:00,2023-02-26 07:00:00,"Karachi, Pakistan",5
+1296,Reality Show,2024-09-18 19:00:00,2024-09-18 22:00:00,"Chongqing, China",5
+1297,Concert,2023-07-04 14:00:00,2023-07-04 15:00:00,"Kinshasa, DR Congo",1
+1298,Merch Sale Event,2023-07-03 21:00:00,2023-07-04 00:00:00,"Beijing, China",5
+1299,Reality Show,2022-09-29 13:00:00,2022-09-29 14:00:00,"Osaka, Japan",2
+1300,Reality Show,2024-01-15 20:00:00,2024-01-15 21:00:00,"Mumbai, India",1
+1301,Tour,2024-02-15 09:00:00,2024-02-15 11:00:00,"Kinshasa, DR Congo",1
+1302,Tour,2024-04-04 00:00:00,2024-04-04 03:00:00,"Beijing, China",1
+1303,Merch Sale Event,2022-08-22 20:00:00,2022-08-22 21:00:00,"Mexico City, Mexico",3
+1304,Tour,2022-02-11 12:00:00,2022-02-11 14:00:00,"Karachi, Pakistan",5
+1305,Merch Sale Event,2024-01-03 05:00:00,2024-01-03 07:00:00,"Mexico City, Mexico",4
+1306,Tour,2023-12-08 11:00:00,2023-12-08 15:00:00,"Karachi, Pakistan",4
+1307,Concert,2023-09-29 04:00:00,2023-09-29 06:00:00,"Osaka, Japan",5
+1308,Tour,2023-12-28 02:00:00,2023-12-28 03:00:00,"Lagos, Nigeria",4
+1309,Tour,2022-04-29 05:00:00,2022-04-29 06:00:00,"Beijing, China",2
+1310,Merch Sale Event,2024-01-28 05:00:00,2024-01-28 08:00:00,"Lagos, Nigeria",5
+1311,Concert,2023-07-05 12:00:00,2023-07-05 14:00:00,"Dhaka, Bangladesh",3
+1312,Tour,2024-07-30 15:00:00,2024-07-30 18:00:00,"Rio de Janeiro, Brazil",2
+1313,Reality Show,2024-08-12 11:00:00,2024-08-12 14:00:00,"Istanbul, Turkey",3
+1314,Reality Show,2024-07-19 19:00:00,2024-07-19 22:00:00,"Istanbul, Turkey",5
+1315,Concert,2022-09-10 13:00:00,2022-09-10 14:00:00,"Lagos, Nigeria",2
+1316,Fan Meet-Up,2023-04-29 08:00:00,2023-04-29 11:00:00,"Lagos, Nigeria",5
+1317,Concert,2022-07-06 20:00:00,2022-07-06 23:00:00,"Rio de Janeiro, Brazil",5
+1318,Reality Show,2023-06-06 11:00:00,2023-06-06 13:00:00,"Istanbul, Turkey",4
+1319,Reality Show,2024-03-05 14:00:00,2024-03-05 17:00:00,"Karachi, Pakistan",5
+1320,Fan Meet-Up,2023-11-03 13:00:00,2023-11-03 16:00:00,"Istanbul, Turkey",4
+1321,Concert,2022-03-29 23:00:00,2022-03-30 01:00:00,"Chongqing, China",5
+1322,Tour,2024-09-06 23:00:00,2024-09-07 01:00:00,"São Paulo, Brazil",3
+1323,Merch Sale Event,2023-11-16 07:00:00,2023-11-16 10:00:00,"Lagos, Nigeria",3
+1324,Tour,2024-10-30 22:00:00,2024-10-31 01:00:00,"Kolkata, India",3
+1325,Fan Meet-Up,2023-11-29 03:00:00,2023-11-29 07:00:00,"Buenos Aires, Argentina",1
+1326,Concert,2023-01-19 02:00:00,2023-01-19 06:00:00,"Istanbul, Turkey",4
+1327,Fan Meet-Up,2023-06-28 03:00:00,2023-06-28 05:00:00,"Tianjin, China",3
+1328,Fan Meet-Up,2022-07-13 08:00:00,2022-07-13 10:00:00,"Lagos, Nigeria",4
+1329,Fan Meet-Up,2023-04-04 06:00:00,2023-04-04 09:00:00,"Cairo, Egypt",3
+1330,Tour,2024-02-17 22:00:00,2024-02-18 02:00:00,"Tianjin, China",5
+1331,Tour,2022-04-25 01:00:00,2022-04-25 02:00:00,"Dhaka, Bangladesh",5
+1332,Fan Meet-Up,2022-07-15 07:00:00,2022-07-15 08:00:00,"Kolkata, India",1
+1333,Reality Show,2024-04-10 23:00:00,2024-04-11 01:00:00,"Tianjin, China",1
+1334,Tour,2022-08-21 06:00:00,2022-08-21 09:00:00,"Manila, Philippines",2
+1335,Tour,2023-07-15 04:00:00,2023-07-15 08:00:00,"Shanghai, China",1
+1336,Concert,2023-12-27 09:00:00,2023-12-27 13:00:00,"Kinshasa, DR Congo",4
+1337,Concert,2022-05-12 20:00:00,2022-05-12 22:00:00,"Lagos, Nigeria",3
+1338,Concert,2022-02-24 11:00:00,2022-02-24 13:00:00,"Istanbul, Turkey",2
+1339,Tour,2022-04-28 18:00:00,2022-04-28 22:00:00,"Cairo, Egypt",4
+1340,Concert,2023-02-07 06:00:00,2023-02-07 09:00:00,"Buenos Aires, Argentina",3
+1341,Tour,2024-10-18 11:00:00,2024-10-18 13:00:00,"Istanbul, Turkey",1
+1342,Tour,2023-08-08 19:00:00,2023-08-08 22:00:00,"São Paulo, Brazil",4
+1343,Merch Sale Event,2023-11-26 07:00:00,2023-11-26 08:00:00,"Delhi, India",4
+1344,Merch Sale Event,2023-05-10 17:00:00,2023-05-10 20:00:00,"Mumbai, India",1
+1345,Merch Sale Event,2024-04-20 07:00:00,2024-04-20 09:00:00,"Manila, Philippines",2
+1346,Fan Meet-Up,2023-06-11 08:00:00,2023-06-11 10:00:00,"Lagos, Nigeria",2
+1347,Tour,2022-07-09 07:00:00,2022-07-09 08:00:00,"Beijing, China",1
+1348,Concert,2022-01-01 13:00:00,2022-01-01 16:00:00,"Kolkata, India",5
+1349,Tour,2024-01-20 19:00:00,2024-01-20 21:00:00,"Buenos Aires, Argentina",5
+1350,Concert,2023-03-28 19:00:00,2023-03-28 23:00:00,"Beijing, China",2
+1351,Merch Sale Event,2022-03-13 23:00:00,2022-03-14 01:00:00,"Kolkata, India",4
+1352,Fan Meet-Up,2023-01-26 04:00:00,2023-01-26 05:00:00,"Karachi, Pakistan",4
+1353,Fan Meet-Up,2023-09-07 00:00:00,2023-09-07 03:00:00,"Manila, Philippines",4
+1354,Tour,2024-04-11 01:00:00,2024-04-11 04:00:00,"Kinshasa, DR Congo",2
+1355,Fan Meet-Up,2022-12-21 09:00:00,2022-12-21 12:00:00,"Mumbai, India",1
+1356,Merch Sale Event,2022-12-10 12:00:00,2022-12-10 16:00:00,"Istanbul, Turkey",1
+1357,Fan Meet-Up,2022-01-02 05:00:00,2022-01-02 08:00:00,"Cairo, Egypt",4
+1358,Tour,2023-07-09 20:00:00,2023-07-09 22:00:00,"Shanghai, China",3
+1359,Tour,2023-04-25 18:00:00,2023-04-25 19:00:00,"Dhaka, Bangladesh",2
+1360,Merch Sale Event,2021-12-06 11:00:00,2021-12-06 14:00:00,"Dhaka, Bangladesh",3
+1361,Merch Sale Event,2024-10-18 14:00:00,2024-10-18 16:00:00,"Lagos, Nigeria",5
+1362,Concert,2023-01-15 09:00:00,2023-01-15 10:00:00,"Tokyo, Japan",3
+1363,Merch Sale Event,2023-03-28 02:00:00,2023-03-28 03:00:00,"Cairo, Egypt",3
+1364,Concert,2022-02-20 19:00:00,2022-02-20 21:00:00,"Dhaka, Bangladesh",2
+1365,Concert,2023-06-06 12:00:00,2023-06-06 13:00:00,"Istanbul, Turkey",3
+1366,Merch Sale Event,2023-10-19 16:00:00,2023-10-19 18:00:00,"Mumbai, India",4
+1367,Reality Show,2024-05-25 14:00:00,2024-05-25 18:00:00,"Cairo, Egypt",4
+1368,Tour,2022-09-21 07:00:00,2022-09-21 08:00:00,"Manila, Philippines",1
+1369,Reality Show,2023-04-12 15:00:00,2023-04-12 16:00:00,"Tianjin, China",5
+1370,Fan Meet-Up,2023-02-14 09:00:00,2023-02-14 12:00:00,"Tianjin, China",5
+1371,Tour,2023-01-01 02:00:00,2023-01-01 03:00:00,"Tianjin, China",5
+1372,Concert,2022-10-11 01:00:00,2022-10-11 04:00:00,"Manila, Philippines",4
+1373,Merch Sale Event,2022-12-18 04:00:00,2022-12-18 06:00:00,"Tianjin, China",5
+1374,Reality Show,2022-10-24 23:00:00,2022-10-25 01:00:00,"Karachi, Pakistan",2
+1375,Concert,2022-08-09 15:00:00,2022-08-09 19:00:00,"Kolkata, India",4
+1376,Tour,2023-07-25 05:00:00,2023-07-25 09:00:00,"Lagos, Nigeria",4
+1377,Merch Sale Event,2022-04-01 05:00:00,2022-04-01 09:00:00,"Kolkata, India",5
+1378,Merch Sale Event,2023-12-30 16:00:00,2023-12-30 20:00:00,"Karachi, Pakistan",5
+1379,Merch Sale Event,2021-11-07 10:00:00,2021-11-07 13:00:00,"Tianjin, China",1
+1380,Fan Meet-Up,2022-05-16 01:00:00,2022-05-16 02:00:00,"Shanghai, China",2
+1381,Fan Meet-Up,2024-01-07 14:00:00,2024-01-07 16:00:00,"São Paulo, Brazil",3
+1382,Tour,2024-10-03 15:00:00,2024-10-03 19:00:00,"Mumbai, India",1
+1383,Merch Sale Event,2023-05-09 06:00:00,2023-05-09 09:00:00,"São Paulo, Brazil",5
+1384,Tour,2024-03-31 19:00:00,2024-03-31 20:00:00,"Tokyo, Japan",5
+1385,Reality Show,2024-05-21 21:00:00,2024-05-21 23:00:00,"Istanbul, Turkey",4
+1386,Merch Sale Event,2022-08-30 06:00:00,2022-08-30 10:00:00,"Osaka, Japan",2
+1387,Reality Show,2022-09-21 12:00:00,2022-09-21 13:00:00,"Tianjin, China",3
+1388,Fan Meet-Up,2023-11-02 05:00:00,2023-11-02 06:00:00,"Kinshasa, DR Congo",5
+1389,Merch Sale Event,2022-11-29 22:00:00,2022-11-30 01:00:00,"Karachi, Pakistan",1
+1390,Concert,2023-12-11 10:00:00,2023-12-11 14:00:00,"Rio de Janeiro, Brazil",1
+1391,Merch Sale Event,2021-11-11 20:00:00,2021-11-11 23:00:00,"Karachi, Pakistan",1
+1392,Reality Show,2022-12-23 04:00:00,2022-12-23 06:00:00,"Karachi, Pakistan",2
+1393,Merch Sale Event,2023-06-03 00:00:00,2023-06-03 03:00:00,"Dhaka, Bangladesh",3
+1394,Concert,2023-04-03 11:00:00,2023-04-03 15:00:00,"Dhaka, Bangladesh",2
+1395,Tour,2023-03-25 08:00:00,2023-03-25 11:00:00,"Mexico City, Mexico",4
+1396,Tour,2023-11-30 04:00:00,2023-11-30 08:00:00,"Tokyo, Japan",1
+1397,Concert,2021-12-09 20:00:00,2021-12-10 00:00:00,"Kolkata, India",4
+1398,Reality Show,2022-02-07 17:00:00,2022-02-07 21:00:00,"Dhaka, Bangladesh",2
+1399,Concert,2023-10-28 08:00:00,2023-10-28 10:00:00,"Tokyo, Japan",4
+1400,Reality Show,2023-03-05 10:00:00,2023-03-05 12:00:00,"Manila, Philippines",2
+1401,Fan Meet-Up,2024-07-23 07:00:00,2024-07-23 10:00:00,"Delhi, India",2
+1402,Tour,2022-10-09 17:00:00,2022-10-09 18:00:00,"Cairo, Egypt",4
+1403,Reality Show,2021-11-04 22:00:00,2021-11-05 02:00:00,"Istanbul, Turkey",2
+1404,Merch Sale Event,2022-10-27 23:00:00,2022-10-28 01:00:00,"Delhi, India",2
+1405,Concert,2022-08-08 01:00:00,2022-08-08 03:00:00,"Osaka, Japan",2
+1406,Reality Show,2023-11-29 01:00:00,2023-11-29 04:00:00,"Tianjin, China",4
+1407,Tour,2023-01-13 17:00:00,2023-01-13 18:00:00,"Cairo, Egypt",1
+1408,Reality Show,2022-05-16 22:00:00,2022-05-17 00:00:00,"Rio de Janeiro, Brazil",1
+1409,Reality Show,2023-08-26 02:00:00,2023-08-26 04:00:00,"Tokyo, Japan",4
+1410,Fan Meet-Up,2023-07-01 11:00:00,2023-07-01 15:00:00,"Osaka, Japan",3
+1411,Concert,2024-10-14 02:00:00,2024-10-14 04:00:00,"Mexico City, Mexico",2
+1412,Merch Sale Event,2023-11-26 13:00:00,2023-11-26 17:00:00,"Tokyo, Japan",3
+1413,Reality Show,2022-10-28 22:00:00,2022-10-28 23:00:00,"Karachi, Pakistan",4
+1414,Reality Show,2022-06-25 15:00:00,2022-06-25 17:00:00,"Delhi, India",4
+1415,Tour,2023-09-16 00:00:00,2023-09-16 04:00:00,"Manila, Philippines",5
+1416,Fan Meet-Up,2023-09-22 17:00:00,2023-09-22 20:00:00,"Lagos, Nigeria",1
+1417,Tour,2023-12-18 15:00:00,2023-12-18 19:00:00,"São Paulo, Brazil",4
+1418,Concert,2023-09-09 02:00:00,2023-09-09 03:00:00,"Rio de Janeiro, Brazil",3
+1419,Fan Meet-Up,2022-05-11 03:00:00,2022-05-11 05:00:00,"Kolkata, India",5
+1420,Merch Sale Event,2023-01-29 01:00:00,2023-01-29 02:00:00,"Tokyo, Japan",1
+1421,Fan Meet-Up,2024-05-30 03:00:00,2024-05-30 04:00:00,"Beijing, China",2
+1422,Tour,2022-05-01 14:00:00,2022-05-01 18:00:00,"Istanbul, Turkey",5
+1423,Tour,2022-06-10 04:00:00,2022-06-10 05:00:00,"Manila, Philippines",2
+1424,Reality Show,2023-06-13 10:00:00,2023-06-13 11:00:00,"Chongqing, China",4
+1425,Reality Show,2024-05-06 07:00:00,2024-05-06 10:00:00,"Shanghai, China",3
+1426,Fan Meet-Up,2022-03-04 20:00:00,2022-03-05 00:00:00,"Osaka, Japan",1
+1427,Fan Meet-Up,2022-10-11 20:00:00,2022-10-12 00:00:00,"Dhaka, Bangladesh",2
+1428,Fan Meet-Up,2023-06-14 04:00:00,2023-06-14 07:00:00,"Karachi, Pakistan",5
+1429,Concert,2022-06-10 18:00:00,2022-06-10 20:00:00,"Osaka, Japan",5
+1430,Concert,2022-12-14 01:00:00,2022-12-14 02:00:00,"Lagos, Nigeria",5
+1431,Concert,2024-09-18 16:00:00,2024-09-18 19:00:00,"Beijing, China",4
+1432,Reality Show,2024-07-21 05:00:00,2024-07-21 09:00:00,"Chongqing, China",2
+1433,Reality Show,2023-12-17 20:00:00,2023-12-18 00:00:00,"Kolkata, India",4
+1434,Merch Sale Event,2022-05-20 22:00:00,2022-05-21 01:00:00,"Cairo, Egypt",4
+1435,Reality Show,2024-02-01 09:00:00,2024-02-01 13:00:00,"Kinshasa, DR Congo",3
+1436,Reality Show,2022-09-17 12:00:00,2022-09-17 13:00:00,"Dhaka, Bangladesh",5
+1437,Fan Meet-Up,2024-04-02 01:00:00,2024-04-02 05:00:00,"Karachi, Pakistan",4
+1438,Fan Meet-Up,2022-04-12 09:00:00,2022-04-12 12:00:00,"Mexico City, Mexico",3
+1439,Tour,2023-11-17 18:00:00,2023-11-17 22:00:00,"Lagos, Nigeria",4
+1440,Reality Show,2024-09-01 05:00:00,2024-09-01 09:00:00,"Buenos Aires, Argentina",2
+1441,Tour,2023-07-07 13:00:00,2023-07-07 16:00:00,"Tianjin, China",2
+1442,Tour,2023-08-10 09:00:00,2023-08-10 10:00:00,"Istanbul, Turkey",1
+1443,Tour,2023-01-04 18:00:00,2023-01-04 20:00:00,"Osaka, Japan",2
+1444,Merch Sale Event,2022-08-24 08:00:00,2022-08-24 11:00:00,"Tianjin, China",1
+1445,Tour,2023-10-13 10:00:00,2023-10-13 14:00:00,"Mumbai, India",3
+1446,Reality Show,2022-06-10 11:00:00,2022-06-10 13:00:00,"São Paulo, Brazil",1
+1447,Fan Meet-Up,2024-06-04 20:00:00,2024-06-04 23:00:00,"Delhi, India",4
+1448,Merch Sale Event,2022-04-20 01:00:00,2022-04-20 04:00:00,"Tianjin, China",2
+1449,Concert,2024-09-08 11:00:00,2024-09-08 14:00:00,"Manila, Philippines",3
+1450,Fan Meet-Up,2022-05-17 21:00:00,2022-05-17 22:00:00,"Mumbai, India",1
+1451,Merch Sale Event,2023-03-02 12:00:00,2023-03-02 16:00:00,"Shanghai, China",5
+1452,Reality Show,2023-06-27 01:00:00,2023-06-27 05:00:00,"Delhi, India",1
+1453,Merch Sale Event,2023-04-21 17:00:00,2023-04-21 20:00:00,"Delhi, India",3
+1454,Merch Sale Event,2022-10-23 10:00:00,2022-10-23 12:00:00,"Kinshasa, DR Congo",3
+1455,Merch Sale Event,2023-01-06 21:00:00,2023-01-07 00:00:00,"Beijing, China",5
+1456,Fan Meet-Up,2024-07-14 22:00:00,2024-07-14 23:00:00,"Mexico City, Mexico",3
+1457,Tour,2023-08-10 18:00:00,2023-08-10 22:00:00,"Beijing, China",4
+1458,Merch Sale Event,2024-09-23 17:00:00,2024-09-23 19:00:00,"Istanbul, Turkey",4
+1459,Concert,2021-11-10 03:00:00,2021-11-10 07:00:00,"Osaka, Japan",1
+1460,Concert,2023-06-21 10:00:00,2023-06-21 13:00:00,"São Paulo, Brazil",1
+1461,Merch Sale Event,2023-10-26 20:00:00,2023-10-26 22:00:00,"Tokyo, Japan",1
+1462,Reality Show,2022-06-15 02:00:00,2022-06-15 04:00:00,"Beijing, China",2
+1463,Tour,2024-07-06 04:00:00,2024-07-06 06:00:00,"Mexico City, Mexico",3
+1464,Fan Meet-Up,2024-09-29 01:00:00,2024-09-29 05:00:00,"Mumbai, India",1
+1465,Tour,2022-02-26 12:00:00,2022-02-26 13:00:00,"Cairo, Egypt",2
+1466,Merch Sale Event,2022-07-21 23:00:00,2022-07-22 03:00:00,"Mexico City, Mexico",5
+1467,Reality Show,2023-05-04 05:00:00,2023-05-04 07:00:00,"Tokyo, Japan",5
+1468,Concert,2021-11-02 03:00:00,2021-11-02 06:00:00,"Dhaka, Bangladesh",3
+1469,Tour,2022-03-01 21:00:00,2022-03-01 23:00:00,"Delhi, India",5
+1470,Reality Show,2023-07-19 16:00:00,2023-07-19 17:00:00,"Mexico City, Mexico",1
+1471,Concert,2023-11-28 02:00:00,2023-11-28 06:00:00,"Kolkata, India",4
+1472,Tour,2023-04-15 18:00:00,2023-04-15 21:00:00,"Tokyo, Japan",4
+1473,Concert,2024-08-16 21:00:00,2024-08-16 23:00:00,"Lagos, Nigeria",1
+1474,Merch Sale Event,2023-10-11 20:00:00,2023-10-12 00:00:00,"Karachi, Pakistan",1
+1475,Concert,2023-03-19 09:00:00,2023-03-19 10:00:00,"Istanbul, Turkey",1
+1476,Concert,2024-08-30 06:00:00,2024-08-30 09:00:00,"Istanbul, Turkey",4
+1477,Fan Meet-Up,2023-05-19 06:00:00,2023-05-19 09:00:00,"Dhaka, Bangladesh",3
+1478,Merch Sale Event,2024-06-07 15:00:00,2024-06-07 19:00:00,"Kolkata, India",4
+1479,Fan Meet-Up,2022-03-12 23:00:00,2022-03-13 00:00:00,"Dhaka, Bangladesh",4
+1480,Reality Show,2024-03-18 17:00:00,2024-03-18 18:00:00,"Karachi, Pakistan",3
+1481,Fan Meet-Up,2024-09-08 18:00:00,2024-09-08 22:00:00,"Cairo, Egypt",4
+1482,Reality Show,2022-12-23 17:00:00,2022-12-23 18:00:00,"Kinshasa, DR Congo",2
+1483,Fan Meet-Up,2022-09-13 02:00:00,2022-09-13 04:00:00,"Dhaka, Bangladesh",1
+1484,Fan Meet-Up,2023-11-13 16:00:00,2023-11-13 17:00:00,"Cairo, Egypt",1
+1485,Fan Meet-Up,2023-06-08 14:00:00,2023-06-08 17:00:00,"Istanbul, Turkey",5
+1486,Merch Sale Event,2024-05-10 04:00:00,2024-05-10 06:00:00,"Osaka, Japan",3
+1487,Merch Sale Event,2024-05-17 18:00:00,2024-05-17 19:00:00,"Tokyo, Japan",4
+1488,Concert,2022-01-08 15:00:00,2022-01-08 17:00:00,"Karachi, Pakistan",2
+1489,Fan Meet-Up,2022-10-09 12:00:00,2022-10-09 16:00:00,"Tokyo, Japan",2
+1490,Reality Show,2023-10-04 10:00:00,2023-10-04 11:00:00,"Chongqing, China",4
+1491,Merch Sale Event,2023-02-14 13:00:00,2023-02-14 17:00:00,"Istanbul, Turkey",5
+1492,Fan Meet-Up,2022-01-19 22:00:00,2022-01-20 00:00:00,"Karachi, Pakistan",3
+1493,Tour,2024-10-20 11:00:00,2024-10-20 15:00:00,"Buenos Aires, Argentina",2
+1494,Tour,2024-10-09 11:00:00,2024-10-09 14:00:00,"Osaka, Japan",4
+1495,Tour,2022-04-24 10:00:00,2022-04-24 13:00:00,"Osaka, Japan",4
+1496,Reality Show,2021-11-10 01:00:00,2021-11-10 02:00:00,"Karachi, Pakistan",5
+1497,Tour,2024-01-03 13:00:00,2024-01-03 17:00:00,"Tianjin, China",5
+1498,Merch Sale Event,2023-10-17 18:00:00,2023-10-17 20:00:00,"Istanbul, Turkey",3
+1499,Reality Show,2022-02-23 09:00:00,2022-02-23 12:00:00,"Buenos Aires, Argentina",5
+1500,Reality Show,2022-04-18 12:00:00,2022-04-18 14:00:00,"Tianjin, China",2
