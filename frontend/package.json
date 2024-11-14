@@ -27,6 +27,7 @@
     "lucide-react": "^0.456.0",
     "mysql2": "^3.11.4",
     "next": "^15.0.3",
+    "openai": "^4.72.0",
     "react": "^18.3.1",
     "react-big-calendar": "^1.15.0",
     "react-dom": "^18.3.1",

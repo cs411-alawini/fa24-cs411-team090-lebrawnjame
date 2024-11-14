@@ -10,7 +10,7 @@ export async function GET() {
     });
 
     try {
-        const [rows] = await connection.execute('SELECT * FROM Messages');
+        const [rows] = await connection.execute('SELECT * FROM Messages WHERE Username = "bruceconner"');
         return NextResponse.json(rows);
     } catch (error) {
         console.error("Database query error:", error);
