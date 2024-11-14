@@ -1,6 +1,22 @@
-// Remove the type annotation for NextConfig
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-};
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        port: '3000',
+        pathname: '/media/**',
+      },
+    ],
+  },
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.(png|jpg|jpeg|gif|webp)$/i,
+      type: 'asset/resource',
+    })
+    return config
+  },
+}
 
 export default nextConfig;
