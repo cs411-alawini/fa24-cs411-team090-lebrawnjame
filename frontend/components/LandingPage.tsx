@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { MessageSquare, Calendar, Camera, ShoppingBag, Mic, Heart, Zap, Users } from "lucide-react"
+import { MessageSquare, Calendar, Camera, ShoppingBag, Mic, Heart, Zap, Users, Music } from "lucide-react"
 import Link from "next/link"
 
 export default function LandingPage() {
@@ -10,7 +10,7 @@ export default function LandingPage() {
       <header className="w-full px-4 lg:px-6 h-14 flex items-center justify-center bg-white">
         <div className="w-full flex items-center justify-between">
           <Link className="flex items-center justify-center" href="#">
-            <Mic className="h-6 w-6 text-pink-500" />
+            <Music className="h-6 w-6 text-pink-500" />
             <span className="ml-2 text-2xl font-bold text-pink-500">LePhoning</span>
           </Link>
           <nav className="flex items-center gap-4 sm:gap-6">

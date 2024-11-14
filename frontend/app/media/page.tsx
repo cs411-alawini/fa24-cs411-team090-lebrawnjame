@@ -8,7 +8,9 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Camera, Video } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 
+import Link from 'next/link'
 
 //asked gpt to generate fake data (we need to work with endpoints for this)
 const mediaItems = [
@@ -33,6 +35,12 @@ export default function MediaPage() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
+        <Link href="/">
+            <Button variant="outline" className="flex items-center gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
       <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">LE SSERAFIM Media</h1>
       
       <Tabs defaultValue="all" className="w-full max-w-3xl mx-auto mb-8">

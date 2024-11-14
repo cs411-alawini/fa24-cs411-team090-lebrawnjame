@@ -5,9 +5,10 @@ import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { motion } from "framer-motion"
+import { ArrowLeft } from 'lucide-react'
+import Link from 'next/link'
 
 export default function AuthPage() {
   const [isLogin, setIsLogin] = useState(true)
@@ -51,91 +52,99 @@ export default function AuthPage() {
   }
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
-      <Card className="w-full max-w-md">
-        <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">Welcome to LePhoning</CardTitle>
-          <CardDescription className="text-center">Connect with LE SSERAFIM fans worldwide</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <Tabs defaultValue="login" onValueChange={(value) => setIsLogin(value === 'login')}>
-            <TabsList className="grid w-full grid-cols-2">
-              <TabsTrigger value="login">Login</TabsTrigger>
-              <TabsTrigger value="signup">Sign Up</TabsTrigger>
-            </TabsList>
-            <TabsContent value="login">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                  {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
-                  <Input
-                    id="password"
-                    type="password"
-                    placeholder="Enter your password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                  {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
-                </div>
-                <Button type="submit" className="w-full">Login</Button>
-              </form>
-            </TabsContent>
-            <TabsContent value="signup">
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="space-y-2">
-                  <Label htmlFor="username">Username</Label>
-                  <Input
-                    id="username"
-                    type="text"
-                    placeholder="Choose a username"
-                    value={username}
-                    onChange={(e) => setUsername(e.target.value)}
-                  />
-                  {errors.username && <p className="text-sm text-red-500">{errors.username}</p>}
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                  {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
-                </div>
-                <div className="space-y-2">
-                  <Label htmlFor="password">Password</Label>
-                  <Input
-                    id="password"
-                    type="password"
-                    placeholder="Choose a password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                  {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
-                </div>
-                <Button type="submit" className="w-full">Sign Up</Button>
-              </form>
-            </TabsContent>
-          </Tabs>
-        </CardContent>
-        <CardFooter>
-          <p className="text-sm text-center w-full">
-            By signing up, you agree to our Terms of Service and Privacy Policy.
-          </p>
-        </CardFooter>
-      </Card>
+    <div className="relative min-h-screen bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500">
+      <Link href="/" className="absolute top-4 left-4">
+        <Button variant="outline" className="flex items-center gap-2">
+          <ArrowLeft className="h-4 w-4" />
+          Back to Home
+        </Button>
+      </Link>
+      <div className="flex items-center justify-center min-h-screen">
+        <Card className="w-full max-w-md">
+          <CardHeader>
+            <CardTitle className="text-2xl font-bold text-center">Welcome to LePhoning</CardTitle>
+            <CardDescription className="text-center">Connect with LE SSERAFIM fans worldwide</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Tabs defaultValue="login" onValueChange={(value) => setIsLogin(value === 'login')}>
+              <TabsList className="grid w-full grid-cols-2">
+                <TabsTrigger value="login">Login</TabsTrigger>
+                <TabsTrigger value="signup">Sign Up</TabsTrigger>
+              </TabsList>
+              <TabsContent value="login">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="password">Password</Label>
+                    <Input
+                      id="password"
+                      type="password"
+                      placeholder="Enter your password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                    {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
+                  </div>
+                  <Button type="submit" className="w-full">Login</Button>
+                </form>
+              </TabsContent>
+              <TabsContent value="signup">
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="username">Username</Label>
+                    <Input
+                      id="username"
+                      type="text"
+                      placeholder="Choose a username"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
+                    />
+                    {errors.username && <p className="text-sm text-red-500">{errors.username}</p>}
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input
+                      id="email"
+                      type="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                    {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="password">Password</Label>
+                    <Input
+                      id="password"
+                      type="password"
+                      placeholder="Choose a password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                    {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
+                  </div>
+                  <Button type="submit" className="w-full">Sign Up</Button>
+                </form>
+              </TabsContent>
+            </Tabs>
+          </CardContent>
+          <CardFooter>
+            <p className="text-sm text-center w-full">
+              By signing up, you agree to our Terms of Service and Privacy Policy.
+            </p>
+          </CardFooter>
+        </Card>
+      </div>
     </div>
   )
 }

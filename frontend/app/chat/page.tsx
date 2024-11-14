@@ -6,6 +6,9 @@ import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Send } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
+
+import Link from 'next/link'
 
 const members = [
   { name: 'Kazuha', avatar: '/kazuha.jpg' },
@@ -53,6 +56,12 @@ export default function ChatPage() {
   return (
     <div className="flex h-screen bg-gray-100">
       <div className="w-1/4 bg-gray-200 p-4">
+        <Link href="/">
+            <Button variant="outline" className="flex items-center gap-2">
+              <ArrowLeft className="h-4 w-4" />
+              Back to Home
+            </Button>
+          </Link>
         <h2 className="text-xl font-bold mb-4">LE SSERAFIM Members</h2>
         <ScrollArea className="h-[calc(100vh-8rem)]">
           {members.map((member) => (
