@@ -11,11 +11,11 @@ var connection = mysql.createConnection({
 
 connection.connect(err => {
     if (err) throw err;
-    console.log("we in");
+    // console.log("we in");
 });
 
 function insertUsers() {
-    fs.createReadStream('data/users (3).csv')
+    fs.createReadStream('data/user.csv')
         .pipe(csv())
         .on('data', (row) => {
             const query = 'INSERT INTO User (Username, Email, MembershipStatus, Location) VALUES (?, ?, ?, ?)';
@@ -25,12 +25,12 @@ function insertUsers() {
             });
         })
         .on('end', () => {
-            console.log('users inserted');
+            console.log('Users inserted');
         });
 }
 
 function insertMessages() {
-    fs.createReadStream('data/messages (2).csv')
+    fs.createReadStream('data/messages.csv')
         .pipe(csv())
         .on('data', (row) => {
             const query = 'INSERT INTO Messages (MessageID, Username, MemberId, SentBy, Content, Time) VALUES (?, ?, ?, ?, ?, ?)';
@@ -40,11 +40,11 @@ function insertMessages() {
             });
         })
         .on('end', () => {
-            console.log('Messages data inserted.');
+            console.log('Messages inserted.');
         });
 }
 
-function insertShopItems() {
+function insertShop() {
     fs.createReadStream('data/shop.csv')
         .pipe(csv())
         .on('data', (row) => {
@@ -55,12 +55,44 @@ function insertShopItems() {
             });
         })
         .on('end', () => {
-            console.log('Shop items data inserted.');
+            console.log('Shop data inserted.');
         });
 }
 
-insertUsers();
-insertMessages();
-insertShopItems();
+function insertShopPreferences() {
+    fs.createReadStream('data/shop_pref.csv')
+        .pipe(csv())
+        .on('data', (row) => {
+            const query = 'INSERT INTO ShopPreferences (Username, ItemID, Bias, EventName) VALUES (?, ?, ?, ?)';
+            const values = [row.Username, row.ItemID, row.Bias, row.EventName];
+            connection.query(query, values, (err) => {
+                if (err) console.error("Error inserting shoppreferences item:", err);
+            });
+        })
+        .on('end', () => {
+            console.log('Shop preferences data inserted.');
+        });
+}
+
+function insertEvents() {
+    fs.createReadStream('data/events.csv')
+        .pipe(csv())
+        .on('data', (row) => {
+            const query = 'INSERT INTO Events (EventID, EventName, StartDate, EndDate, Location, MemberId) VALUES (?, ?, ?, ?, ?, ?)';
+            const values = [row.EventID, row.EventName, row.StartDate, row.EndDate, row.Location, row.MemberId];
+            connection.query(query, values, (err) => {
+                if (err) console.error("Error inserting event data:", err);
+            });
+        })
+        .on('end', () => {
+            console.log('Event data inserted.');
+        });
+}
+
+// insertUsers();
+// insertMessages();
+// insertShop();
+// insertShopPreferences();
+// insertEvents();
 
 setTimeout(() => connection.end(), 5000);
