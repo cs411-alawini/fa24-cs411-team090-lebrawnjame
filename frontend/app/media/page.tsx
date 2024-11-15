@@ -1,33 +1,46 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 import { ScrollArea } from "@/components/ui/scroll-area"
-import { Camera, Video } from 'lucide-react'
-import { ArrowLeft } from 'lucide-react'
-
+import { Camera, Video, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
-//asked gpt to generate fake data (we need to work with endpoints for this)
-const mediaItems = [
-  { id: 1, type: 'image', src: '/placeholder.svg?height=300&width=300', alt: 'LE SSERAFIM group photo' },
-  { id: 2, type: 'video', src: '/placeholder.svg?height=300&width=300', alt: 'LE SSERAFIM performance video' },
-  { id: 3, type: 'image', src: '/placeholder.svg?height=300&width=300', alt: 'Kazuha solo shot' },
-  { id: 4, type: 'image', src: '/placeholder.svg?height=300&width=300', alt: 'Chaewon solo shot' },
-  { id: 5, type: 'video', src: '/placeholder.svg?height=300&width=300', alt: 'LE SSERAFIM behind the scenes' },
-  { id: 6, type: 'image', src: '/placeholder.svg?height=300&width=300', alt: 'Eunchae solo shot' },
-  { id: 7, type: 'image', src: '/placeholder.svg?height=300&width=300', alt: 'Yunjin solo shot' },
-  { id: 8, type: 'video', src: '/placeholder.svg?height=300&width=300', alt: 'LE SSERAFIM music video teaser' },
-  { id: 9, type: 'image', src: '/placeholder.svg?height=300&width=300', alt: 'Sakura solo shot' },
-]
+type MediaItem = {
+  id: number;
+  type: 'image' | 'video';
+  src: string;
+  alt: string;
+}
 
 export default function MediaPage() {
   const [filter, setFilter] = useState('all')
-  const [selectedItem, setSelectedItem] = useState<{ id: number; type: string; src: string; alt: string; } | null>(null)
+  const [selectedItem, setSelectedItem] = useState<MediaItem | null>(null)
+  const [mediaItems, setMediaItems] = useState<MediaItem[]>([])
+
+  useEffect(() => {
+    async function loadMediaItems() {
+      try {
+        const items: MediaItem[] = Array.from({ length: 20 }, (_, i) => ({
+          id: i + 1,
+          type: ['image11.webp', 'image14.webp'].includes(`image${i + 1}.webp`) ? 'video' : 'image',
+          src: `/media/image${i + 1}.${['image11.webp', 'image14.webp'].includes(`image${i + 1}.webp`) ? 'webp' : 
+                 i + 1 === 7 ? 'jpeg' : 
+                 i + 1 === 13 ? 'png' : 'jpg'}`,
+          alt: `LE SSERAFIM ${['image11.webp', 'image14.webp'].includes(`image${i + 1}.webp`) ? 'video' : 'photo'} ${i + 1}`,
+        }))
+        setMediaItems(items)
+      } catch (error) {
+        console.error('Error loading media items:', error)
+      }
+    }
+
+    loadMediaItems()
+  }, [])
 
   const filteredItems = mediaItems.filter(item => 
     filter === 'all' || item.type === filter
@@ -35,12 +48,12 @@ export default function MediaPage() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
-        <Link href="/">
-            <Button variant="outline" className="flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
+      <Link href="/">
+        <Button variant="outline" className="flex items-center gap-2 mb-4">
+          <ArrowLeft className="h-4 w-4" />
+          Back to Home
+        </Button>
+      </Link>
       <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">LE SSERAFIM Media</h1>
       
       <Tabs defaultValue="all" className="w-full max-w-3xl mx-auto mb-8">
@@ -100,10 +113,10 @@ export default function MediaPage() {
                         className="object-contain w-full h-full"
                       />
                     ) : (
-                      <div className="aspect-video bg-gray-200 flex items-center justify-center">
-                        <Video className="h-24 w-24 text-gray-400" />
-                        <p className="text-gray-500 mt-4">Video playback not implemented</p>
-                      </div>
+                      <video controls className="w-full h-auto">
+                        <source src={selectedItem.src} type="video/webm" />
+                        Your browser does not support the video tag.
+                      </video>
                     )
                   )}
                 </DialogContent>
