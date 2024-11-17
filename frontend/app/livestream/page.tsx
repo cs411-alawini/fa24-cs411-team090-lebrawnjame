@@ -1,24 +1,19 @@
 'use client'
-
-import { useEffect, useState } from "react"
-import Link from "next/link"
-import { ArrowLeft, Video } from 'lucide-react'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ScrollArea } from "@/components/ui/scroll-area"
+// pages/LiveStreamPage.tsx
+import { useEffect, useState } from "react";
 
 const LiveStreamPage = () => {
-  const [isLive, setIsLive] = useState(false)
+  const [isLive, setIsLive] = useState(false);
 
   useEffect(() => {
     if (isLive) {
-      const chatangoScript = document.createElement("script")
-      chatangoScript.id = "cid0020000392664811261"
-      chatangoScript.src = "//st.chatango.com/js/gz/emb.js"
-      chatangoScript.async = true
-      chatangoScript.dataset.cfasync = "false"
-      chatangoScript.style.width = "300px";
-      chatangoScript.style.height = "500px";
+      const chatangoScript = document.createElement("script");
+      chatangoScript.id = "cid0020000392664811261";
+      chatangoScript.src = "//st.chatango.com/js/gz/emb.js";
+      chatangoScript.async = true;
+      chatangoScript.dataset.cfasync = "false";
+      chatangoScript.style.width = "100%";
+      chatangoScript.style.height = "100%";
       chatangoScript.innerHTML = JSON.stringify({
         handle: "westreaming",
         arch: "js",
@@ -36,73 +31,129 @@ const LiveStreamPage = () => {
           r: 100,
           fwtickm: 1,
         },
-      })
-      document.getElementById("chat-container")?.appendChild(chatangoScript)
+      });
+      document.getElementById("chat-container")?.appendChild(chatangoScript);
 
       return () => {
-        document.getElementById("chat-container")?.removeChild(chatangoScript)
-      }
+        document.getElementById("chat-container")?.removeChild(chatangoScript);
+      };
     }
-  }, [isLive])
+  }, [isLive]);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-8">
-          <Link href="/">
-            <Button variant="outline" className="flex items-center gap-2">
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
-            </Button>
-          </Link>
-          <h1 className="text-3xl font-bold text-center text-pink-500">LE SSERAFIM Live Stream</h1>
-          <Button
-            onClick={() => setIsLive(!isLive)}
-            variant={isLive ? "destructive" : "default"}
-            className="flex items-center gap-2"
-          >
-            <Video className="h-4 w-4" />
-            {isLive ? "End Stream" : "Go Live"}
-          </Button>
+    <div style={styles.pageContainer}>
+      <header style={styles.header}>
+        <h1 style={styles.title}>Live Stream Dashboard</h1>
+        <button style={styles.goLiveButton} onClick={() => setIsLive(!isLive)}>
+          {isLive ? "End Stream" : "Go Live"}
+        </button>
+      </header>
+
+      <div style={styles.contentContainer}>
+        <div style={styles.streamContainer}>
+          {isLive ? (
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/UBol6eDEr2k?autoplay=1"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="YouTube Live Stream"
+            ></iframe>
+          ) : (
+            <div style={styles.placeholder}>
+              <p style={styles.placeholderText}>Click "Go Live" to start streaming</p>
+            </div>
+          )}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <Card className="lg:col-span-2">
-            <CardHeader>
-              <CardTitle>Live Stream</CardTitle>
-            </CardHeader>
-            <CardContent className="aspect-video bg-black rounded-lg overflow-hidden">
-              {isLive ? (
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/UBol6eDEr2k?autoplay=1"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  title="YouTube Live Stream"
-                  className="w-full h-full"
-                ></iframe>
-              ) : (
-                <div className="w-full h-full flex items-center justify-center bg-gray-800 text-white">
-                  <p className="text-lg">Click "Go Live" to start streaming</p>
-                </div>
-              )}
-            </CardContent>
-          </Card>
-
-          <Card className="h-[calc(100vh-12rem)]">
-            <CardHeader>
-              <CardTitle>Live Chat</CardTitle>
-            </CardHeader>
-            <CardContent className="p-0 h-[calc(100vh-16rem)]">
-              <div id="chat-container" className="w-full h-full min-w-[300px] min-h-[500px]"></div>
-            </CardContent>
-          </Card>
+        <div style={styles.chatContainer}>
+          <h2 style={styles.chatTitle}>Live Chat</h2>
+          <div id="chat-container" style={styles.chatBox}></div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LiveStreamPage
+// CSS-in-JS styles
+const styles = {
+  pageContainer: {
+    fontFamily: "Arial, sans-serif",
+    color: "#333",
+    display: "flex",
+    flexDirection: "column" as "column",
+    alignItems: "center",
+    padding: "20px",
+    backgroundColor: "#f8f9fa",
+    minHeight: "100vh",
+  },
+  header: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "10px 0",
+    borderBottom: "2px solid #ddd",
+    marginBottom: "20px",
+  },
+  title: {
+    fontSize: "24px",
+    fontWeight: "bold",
+  },
+  goLiveButton: {
+    padding: "10px 20px",
+    backgroundColor: "#28a745",
+    color: "#fff",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    fontSize: "16px",
+  },
+  contentContainer: {
+    display: "flex",
+    flexDirection: "row" as "row",
+    width: "100%",
+    maxWidth: "1400px",
+    gap: "20px",
+  },
+  streamContainer: {
+    flex: 3,
+    backgroundColor: "#000",
+    borderRadius: "10px",
+    overflow: "hidden",
+  },
+  placeholder: {
+    width: "100%",
+    height: "100%",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#333",
+    color: "#fff",
+  },
+  placeholderText: {
+    fontSize: "18px",
+    textAlign: "center" as "center",
+  },
+  chatContainer: {
+    flex: 1,
+    backgroundColor: "#fff",
+    borderRadius: "10px",
+    boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+    overflow: "hidden",
+    padding: "10px",
+  },
+  chatTitle: {
+    fontSize: "20px",
+    margin: "0 0 10px",
+    color: "#333",
+  },
+  chatBox: {
+    width: "100%",
+    height: "500px",
+  },
+};
+
+export default LiveStreamPage;
