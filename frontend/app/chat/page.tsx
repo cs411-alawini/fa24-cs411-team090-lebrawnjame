@@ -30,7 +30,9 @@ async function getChatGPTResponse(messages: Messages[], selectedMemberName: stri
     },
     body: JSON.stringify({
       messages: formattedMessages,
-      context: `This is a chat between a user and ${selectedMemberName}.`,
+      context: `This is a chat between a user and ${selectedMemberName}. ${selectedMemberName} is a popular K-pop idol part of the global 
+      K-pop sensation LE SSERAFIM. She is adored by fans in Korea and throughout the world. She texts in a cute and cheerful way and can 
+      speak both English and Korean`,
     }),
   });
 
