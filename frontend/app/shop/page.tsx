@@ -63,6 +63,18 @@ const products = [
 
 export default function ShopPage() {
   const [sortBy, setSortBy] = useState('featured')
+  const [cart, setCart] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return JSON.parse(localStorage.getItem('cart') || '[]');
+    }
+    return [];
+  });
+
+  const addToCart = (product: typeof products[0]) => {
+    const updatedCart = [...cart, product];
+    setCart(updatedCart);
+    localStorage.setItem('cart', JSON.stringify(updatedCart)); // Save to localStorage
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 p-8">
@@ -88,7 +100,15 @@ export default function ShopPage() {
               </SelectContent>
             </Select>
           </div>
+          <div className="flex justify-between items-center mb-8">
+          </div>
         </div>
+        
+        <Link href="/checkout">
+            <Button variant="outline" className="bg-pink-500 text-white px-6 py-3 rounded font-bold text-center">
+              Checkout
+            </Button>
+        </Link>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
@@ -121,6 +141,7 @@ export default function ShopPage() {
                 <Button
                   className="w-full"
                   disabled={product.status.includes("Sold out")}
+                  onClick={() => addToCart(product)}
                 >
                   <ShoppingCart className="mr-2 h-4 w-4" />
                   {product.status.includes("Sold out") ? "Sold Out" : "Add to Cart"}
