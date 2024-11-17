@@ -42,6 +42,9 @@ export default function LandingPage() {
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="/livestream">
               Livestream
             </Link>
+            <Link className="text-sm font-medium hover:underline underline-offset-4" href="/profile">
+              Profile
+            </Link>
             {username ? (
               <Link href="/profile">
                 <Button variant="ghost" className="text-sm font-medium flex items-center gap-2">

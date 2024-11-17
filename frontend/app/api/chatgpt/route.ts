@@ -18,7 +18,7 @@ export async function POST(req: Request) {
           content: msg.content,
         })),
       ],
-      max_tokens: 200, // Adjust as needed
+      max_tokens: 62, // Adjust as needed
     });
 
     const chatGPTResponse = response.choices[0]?.message?.content;

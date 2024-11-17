@@ -11,7 +11,7 @@ interface Message {
 }
 
 const queries = [
-  "SELECT * FROM Users;",
+  'SELECT * FROM User where Username = "abhi5"',
   // "SELECT * FROM products WHERE price < 100;",
   // "SELECT * FROM orders WHERE status = 'pending';",
   // Add more queries as needed
@@ -38,7 +38,7 @@ export default function Chatbot() {
 
       if (matchedQuery) {
         // Step 2: Execute the matched query
-        const queryResults = await executeQuery(matchedQuery)
+        const queryResults = await getRequest(matchedQuery)
 
         if (queryResults) {
           // Step 3: Summarize the results using ChatGPT
@@ -64,7 +64,8 @@ export default function Chatbot() {
 
   // Function to match user message with the best query using ChatGPT
   const matchQuery = async (userMessage: string) => {
-    const context = "Match the user's question with one of the provided database queries."
+    const context = "Match the user's question with one of the provided database queries. Return the query in the exact format and nothing else.";
+    
     try {
       const response = await fetch('/api/matchQuery', {
         method: "POST",
@@ -72,30 +73,41 @@ export default function Chatbot() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ userMessage, queries, context }),
-      })
-      const data = await response.json()
-      return data.matchedQuery
-    } catch (error) {
-      alert("Error matching query")
-      return null
-    }
-  }
-
-  const executeQuery = async (query: string) => {
-    try {
-      const response = await fetch('/api/executeQuery?query=${encodeURIComponent(query)}', {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-        },
       });
+  
       const data = await response.json();
-      return data.results;
+  
+      // Check if matchedQuery is in the queries array
+      if (queries.includes(data.matchedQuery)) {
+        alert(data.matchedQuery);
+        return data.matchedQuery;
+      } else {
+        return null; // Return null if it's not in the array
+      }
     } catch (error) {
-      alert("Error executing query");
+      alert("Error matching query");
       return null;
     }
   };  
+
+  const getRequest = async (query: string) => {
+    try {
+        const response = await fetch(`/api/getRequest?query=${encodeURIComponent(query)}`, {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+
+        const data = await response.json();
+
+        return data;
+    } catch (error) {
+        console.error("Error executing query:", error);
+        alert("Error executing query");
+        return null;
+    }
+  };
   
   const summarizeResults = async (queryResults: any) => {
     const context = "Summarize the following database query results in a user-friendly way."
