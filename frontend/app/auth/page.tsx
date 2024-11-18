@@ -157,7 +157,24 @@ export default function AuthPage() {
           </CardContent>
           <CardFooter>
             <p className="text-sm text-center w-full">
-              By signing up, you agree to our Terms of Service and Privacy Policy.
+              By signing up, you agree to our{' '}
+              <a
+                href="https://docs.google.com/document/d/1UKMjTSykd-DO5ivyFYOz3wIXTXZA60mDX_XeK5_7eTc/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline"
+              >
+                Terms of Service
+              </a>{' '}
+              and{' '}
+              <a
+                href="https://docs.google.com/document/d/1AFcgWn3-zFVwZs6lcrbl98ondCBi0-dSpaZmQbXKu48/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 underline"
+              >
+                Privacy Policy
+              </a>.
             </p>
           </CardFooter>
         </Card>

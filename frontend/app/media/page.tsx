@@ -25,7 +25,7 @@ export default function MediaPage() {
   useEffect(() => {
     async function loadMediaItems() {
       try {
-        const items: MediaItem[] = Array.from({ length: 20 }, (_, i) => ({
+        const items: MediaItem[] = Array.from({ length: 56 }, (_, i) => ({ // Changed 20 to 56
           id: i + 1,
           type: 'image',
           src: `/media/image${i + 1}.${i + 1 === 7 ? 'jpeg' : i + 1 === 13 ? 'png' : 'jpg'}`,
