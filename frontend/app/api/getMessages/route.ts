@@ -1,7 +1,15 @@
 import { NextResponse } from 'next/server';
 import { createConnection } from 'mysql2/promise';
 
-export async function GET() {
+export async function GET(request: Request) {
+    // Get the username from the query string
+    const { searchParams } = new URL(request.url);
+    const username = searchParams.get('username');
+
+    if (!username) {
+        return NextResponse.json({ message: 'Username is required' }, { status: 400 });
+    }
+
     const connection = await createConnection({
         host: '35.226.113.165',
         user: 'dev',
@@ -10,7 +18,7 @@ export async function GET() {
     });
 
     try {
-        const [rows] = await connection.execute('SELECT * FROM Messages WHERE Username = "bruceconner"');
+        const [rows] = await connection.execute('SELECT * FROM Messages WHERE Username = ?', [username]);
         return NextResponse.json(rows);
     } catch (error) {
         console.error("Database query error:", error);
