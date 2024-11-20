@@ -1,10 +1,11 @@
-'use client'
+'use client';
 
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { useState, useEffect } from "react"
-import { useRouter } from "next/navigation"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { useState, useEffect, useContext } from "react";
+import { useRouter } from "next/navigation";
+import { UserContext } from "@/contexts/UserContext"; // Import UserContext
 
 type UserInfo = {
   [key: string]: string;
@@ -29,6 +30,9 @@ interface Preferences {
 }
 
 export default function ProfilePage() {
+  const { user,logout } = useContext(UserContext); // Access the current user
+  const router = useRouter();
+
   const [userInfo, setUserInfo] = useState<UserInfo>({
     username: "",
     email: "",
@@ -46,98 +50,108 @@ export default function ProfilePage() {
   const [contentLoading, setContentLoading] = useState(true);
   const [newUser, setNewUser] = useState(true);
 
-  const router = useRouter(); // Initialize useRouter
-
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setUserInfo({ ...userInfo, [name]: value });
   };
 
   useEffect(() => {
+    if (!user) {
+      router.push("/auth?tab=login"); // Redirect to login if not logged in
+      return;
+    }
+
     const getUserInfo = async () => {
       try {
-        let query = 'SELECT * FROM User WHERE Username = "abhi5"';
+        const query = `SELECT * FROM User WHERE Username = "${user.username}"`; // Use logged-in user's username
         const response = await fetch(`/api/getRequest?query=${encodeURIComponent(query)}`);
         const data = await response.json();
 
         if (data && data.length > 0) {
-          const user = data[0];
+          const userData = data[0];
           setUserInfo({
-            username: user.Username,
-            email: user.Email,
-            membership: user.MembershipStatus,
-            location: user.Location,
-            password: user.Password,
+            username: userData.Username,
+            email: userData.Email,
+            membership: userData.MembershipStatus,
+            location: userData.Location,
+            password: userData.Password,
           });
           setNewUser(false);
         } else {
           setNewUser(true);
         }
       } catch (error) {
-        console.error("Error fetching user: ", error);
+        console.error("Error fetching user info: ", error);
       } finally {
         setUserLoading(false);
       }
     };
 
     getUserInfo();
-  }, []);
+  }, [user, router]);
 
   useEffect(() => {
+    if (!user) return;
+
     const getRegisterInfo = async () => {
       try {
-        let query = 'SELECT * FROM Register WHERE Username = "abhi5"';
+        const query = `SELECT * FROM Register WHERE Username = "${user.username}"`;
         const response = await fetch(`/api/getRequest?query=${encodeURIComponent(query)}`);
         const data = await response.json();
 
         if (data && data.length > 0) {
-          setRegister(data[0].map((event: any) => ({
-            username: event.Username,
-            eventid: event.EventID,
-            registrationtime: event.RegistrationTime,
-          })));
+          setRegister(
+            data.map((event: any) => ({
+              username: event.Username,
+              eventid: event.EventID,
+              registrationtime: event.RegistrationTime,
+            }))
+          );
         }
       } catch (error) {
-        console.error("Error fetching events: ", error);
+        console.error("Error fetching registered events: ", error);
       } finally {
         setRegisterLoading(false);
       }
     };
 
     getRegisterInfo();
-  }, []);
+  }, [user]);
 
   useEffect(() => {
+    if (!user) return;
+
     const getPreferencesInfo = async () => {
       try {
-        let query = 'SELECT * FROM ContentPreferences WHERE Username = "abhi5"';
+        const query = `SELECT * FROM ContentPreferences WHERE Username = "${user.username}"`;
         const response = await fetch(`/api/getRequest?query=${encodeURIComponent(query)}`);
         const data = await response.json();
 
         if (data && data.length > 0) {
-          setPreferences(data[0].map((content: any) => ({
-            username: content.Username,
-            mediaid: content.MediaID,
-            bias: content.Bias,
-            eventname: content.EventName,
-          })));
+          setPreferences(
+            data.map((content: any) => ({
+              username: content.Username,
+              mediaid: content.MediaID,
+              bias: content.Bias,
+              eventname: content.EventName,
+            }))
+          );
         }
       } catch (error) {
-        console.error("Error fetching preferences: ", error);
+        console.error("Error fetching content preferences: ", error);
       } finally {
         setContentLoading(false);
       }
     };
 
     getPreferencesInfo();
-  }, []);
-
+  }, [user]);
 
   const updateUserInfo = async () => {
     try {
       let query;
       let values;
-  
+
       if (newUser) {
         query = `
           INSERT INTO User (Username, Email, MembershipStatus, Location, Password) 
@@ -164,19 +178,18 @@ export default function ProfilePage() {
           userInfo.username,
         ];
       }
-  
+
       const response = await fetch('/api/postRequest', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query, values }),
       });
-  
+
       if (response.ok) {
         const data = await response.json();
         setMessage("Your information has been successfully updated!");
         console.log("Update result:", data);
       } else {
-        const errorData = await response.json();
         setMessage("Failed to update your information. Please try again.");
       }
     } catch (error) {
@@ -188,15 +201,23 @@ export default function ProfilePage() {
     router.push("/");
   };
 
+  const handleLogout = () => {
+    logout(); // Call the logout function to clear user data
+    router.push("/auth?tab=login"); // Redirect to the login page
+  };
+
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="w-full px-4 lg:px-6 h-14 flex items-center justify-between bg-white">
         <h1 className="text-2xl font-bold text-pink-500">Profile</h1>
         <div className="flex gap-4">
-          <Button variant="ghost" className="text-sm font-medium" onClick={navigateToHome}>
+          <Button variant="ghost" className="text-sm font-medium" onClick={() => router.push("/")}>
             Back to Home
           </Button>
-          <Button variant="ghost" className="text-sm font-medium">Log Out</Button>
+          <Button variant="ghost" className="text-sm font-medium" onClick={handleLogout}>
+            Log Out
+          </Button>
         </div>
       </header>
       <main className="flex-1 w-full py-12 bg-gray-100">
@@ -229,7 +250,7 @@ export default function ProfilePage() {
                 ))}
               </div>
               <div className="flex justify-end mt-4">
-                <Button className="bg-pink-500 text-white hover:bg-pink-600" onClick={updateUserInfo}>
+                <Button className="bg-pink-500 text-white hover:bg-pink-600">
                   Save Changes
                 </Button>
               </div>
@@ -294,4 +315,5 @@ export default function ProfilePage() {
       </footer>
     </div>
   );
+
 }

@@ -9,14 +9,17 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
+import { useContext } from 'react';
+import { UserContext } from '@/contexts/UserContext'
 
 export default function AuthPage() {
+  const { login } = useContext(UserContext);
+  const router = useRouter();
   const [isLogin, setIsLogin] = useState(true)
   const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [errors, setErrors] = useState({ username: '', email: '', password: '' })
-  const router = useRouter()
 
   const validateForm = () => {
     let isValid = true
@@ -39,32 +42,32 @@ export default function AuthPage() {
     return isValid
   }
 
-  const handleSubmit = async (e: React.FormEvent) => {
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     const url = isLogin ? 'http://localhost:3001/auth/login' : 'http://localhost:3001/auth/signup';
     const payload = isLogin
-        ? { email, password }
-        : { username, email, password, membershipStatus: 0, location: 1 };
+      ? { email, password }
+      : { username, email, password, membershipStatus: 0, location: 1 };
 
     try {
-        const response = await fetch(url, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload)
-        });
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
 
-        const data = await response.json();
-        if (response.ok) {
-            console.log('Auth successful:', data);
-            router.push('/');
-        } else {
-            setErrors((prev) => ({ ...prev, form: data.message || 'Authentication failed' }));
-        }
+      const data = await response.json();
+      if (response.ok) {
+        login({ username: data.username, email: data.email, token: data.token }); // Store user globally
+        router.push('/');
+      } else {
+        setErrors((prev) => ({ ...prev, form: data.message || 'Authentication failed' }));
+      }
     } catch (error) {
-        // console.error('Error:', error);
-        setErrors((prev) => ({ ...prev, form: 'Server error' }));
+      setErrors((prev) => ({ ...prev, form: 'Server error' }));
     }
   };
 

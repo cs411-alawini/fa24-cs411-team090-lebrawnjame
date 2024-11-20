@@ -7,9 +7,12 @@ import { MessageSquare, Calendar, Camera, ShoppingBag, Mic, Heart, Zap, Users, M
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import Chatbot from "@/components/Chatbot"
+import { UserContext } from "@/contexts/UserContext"; // Import the UserContext
+import { useContext } from "react";
 
 export default function LandingPage() {
   const [username, setUsername] = useState<string | null>(null)
+  const { user } = useContext(UserContext); // Access user data from context
 
   useEffect(() => {
     const storedUsername = localStorage.getItem('username')
@@ -42,14 +45,11 @@ export default function LandingPage() {
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="/livestream">
               Livestream
             </Link>
-            <Link className="text-sm font-medium hover:underline underline-offset-4" href="/profile">
-              Profile
-            </Link>
-            {username ? (
+            {user ? ( // Show the user's name if logged in
               <Link href="/profile">
                 <Button variant="ghost" className="text-sm font-medium flex items-center gap-2">
                   <Users className="h-4 w-4" />
-                  {username}
+                  {user.username} {/* Display the username */}
                 </Button>
               </Link>
             ) : (
