@@ -59,9 +59,7 @@ async function batchPostMessagesToDB(messages: Messages[]) {
       },
       body: JSON.stringify({ messages }),
     });
-  } catch (error) {
-    console.error("Error posting batch messages to DB:", error);
-  }
+  } catch (error) { }
 }
 
 export default function ChatPage() {
@@ -101,9 +99,8 @@ export default function ChatPage() {
         });
 
         setChatHistory(organizedHistory);
-      } catch (error) {
-        console.error("Error fetching messages:", error);
-      } finally {
+      } catch (error) { } 
+      finally {
         setLoading(false);
       }
     };
