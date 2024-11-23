@@ -83,7 +83,7 @@ export default function ChatPage() {
     const fetchMessages = async () => {
       setLoading(true);
       try {
-        const response = await fetch('/api/getMessages');
+        const response = await fetch(`/api/getMessages?username=${encodeURIComponent(user.username)}`);
         const data: Messages[] = await response.json();
         const organizedHistory: Record<string, Messages[]> = {
           Sakura: [],
