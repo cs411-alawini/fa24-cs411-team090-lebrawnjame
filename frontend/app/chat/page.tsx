@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Send } from 'lucide-react';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
-import { UserContext } from '@/contexts/UserContext'; // Import UserContext
+import { UserContext } from '@/contexts/UserContext';
 
 type Messages = {
   Username: string;
@@ -65,7 +65,7 @@ async function batchPostMessagesToDB(messages: Messages[]) {
 }
 
 export default function ChatPage() {
-  const { user } = useContext(UserContext); // Access the current logged-in user from UserContext
+  const { user } = useContext(UserContext);
   const [selectedMember, setSelectedMember] = useState(members[0]);
   const [inputMessage, setInputMessage] = useState('');
   const [loading, setLoading] = useState(true);
@@ -136,10 +136,10 @@ export default function ChatPage() {
 
   const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (inputMessage.trim() === '' || !user) return; // Prevent sending if no user is logged in
+    if (inputMessage.trim() === '' || !user) return;
 
     const newMessage: Messages = {
-      Username: user.username, // Use the current logged-in user's username
+      Username: user.username,
       MemberId: selectedMember.id,
       SentBy: 0,
       Content: inputMessage,
@@ -157,7 +157,7 @@ export default function ChatPage() {
     const botResponseText = await getChatGPTResponse([...messages, newMessage], selectedMember.name);
 
     const botMessage: Messages = {
-      Username: user.username, // Use the current logged-in user's username
+      Username: user.username, 
       MemberId: selectedMember.id,
       SentBy: 1,
       Content: botResponseText,
@@ -208,7 +208,7 @@ export default function ChatPage() {
           ) : (
             messages.map((message, index) => (
               <div
-                key={`${message.Time}-${index}`} // Use unique keys for each message
+                key={`${message.Time}-${index}`} 
                 className={`flex ${
                   message.SentBy ? 'justify-start' : 'justify-end'
                 } mb-4`}

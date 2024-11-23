@@ -2,7 +2,6 @@ import { NextResponse } from 'next/server';
 import { createConnection } from 'mysql2/promise';
 
 export async function GET(request: Request) {
-    // Get the username from the query string
     const { searchParams } = new URL(request.url);
     const username = searchParams.get('username');
 

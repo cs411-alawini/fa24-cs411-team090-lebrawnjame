@@ -8,7 +8,7 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 import Chatbot from "@/components/Chatbot"
 import { UserContext } from "@/contexts/UserContext"; // Import the UserContext
-import { useContext } from "react";
+import { useContext } from "react"
 
 export default function LandingPage() {
   const [username, setUsername] = useState<string | null>(null)
@@ -45,7 +45,7 @@ export default function LandingPage() {
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="/livestream">
               Livestream
             </Link>
-            {user ? ( // Show the user's name if logged in
+            {user ? (
               <Link href="/profile">
                 <Button variant="ghost" className="text-sm font-medium flex items-center gap-2">
                   <Users className="h-4 w-4" />
@@ -187,11 +187,11 @@ export default function LandingPage() {
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
           <p className="text-xs text-gray-500">© 2024 LePhoning. All rights reserved.</p>
           <nav className="flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
+            <Link className="text-xs hover:underline underline-offset-4" href="https://docs.google.com/document/d/1UKMjTSykd-DO5ivyFYOz3wIXTXZA60mDX_XeK5_7eTc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
               Terms of Service
             </Link>
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Privacy
+            <Link className="text-xs hover:underline underline-offset-4" href="https://docs.google.com/document/d/1AFcgWn3-zFVwZs6lcrbl98ondCBi0-dSpaZmQbXKu48/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
             </Link>
           </nav>
         </div>

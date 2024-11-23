@@ -5,7 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/navigation";
-import { UserContext } from "@/contexts/UserContext"; // Import UserContext
+import { UserContext } from "@/contexts/UserContext";
+import { ChevronLeft } from "lucide-react";
 
 type UserInfo = {
   [key: string]: string;
@@ -30,7 +31,7 @@ interface Preferences {
 }
 
 export default function ProfilePage() {
-  const { user,logout } = useContext(UserContext); // Access the current user
+  const { user, logout } = useContext(UserContext);
   const router = useRouter();
 
   const [userInfo, setUserInfo] = useState<UserInfo>({
@@ -57,13 +58,13 @@ export default function ProfilePage() {
 
   useEffect(() => {
     if (!user) {
-      router.push("/auth?tab=login"); // Redirect to login if not logged in
+      router.push("/auth?tab=login"); 
       return;
     }
 
     const getUserInfo = async () => {
       try {
-        const query = `SELECT * FROM User WHERE Username = "${user.username}"`; // Use logged-in user's username
+        const query = `SELECT * FROM User WHERE Username = "${user.username}"`; 
         const response = await fetch(`/api/getRequest?query=${encodeURIComponent(query)}`);
         const data = await response.json();
 
@@ -206,24 +207,22 @@ export default function ProfilePage() {
     router.push("/auth?tab=login"); // Redirect to the login page
   };
 
-
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="w-full px-4 lg:px-6 h-14 flex items-center justify-between bg-white">
-        <h1 className="text-2xl font-bold text-pink-500">Profile</h1>
-        <div className="flex gap-4">
-          <Button variant="ghost" className="text-sm font-medium" onClick={() => router.push("/")}>
-            Back to Home
-          </Button>
-          <Button variant="ghost" className="text-sm font-medium" onClick={handleLogout}>
-            Log Out
-          </Button>
-        </div>
+      <header className="w-full px-4 lg:px-6 h-14 flex items-center justify-between bg-background border-b">
+        <Button variant="ghost" className="text-sm font-medium flex items-center" onClick={() => router.push("/")}>
+          <ChevronLeft className="mr-2 h-4 w-4" />
+          Back to Home
+        </Button>
+        <h1 className="text-2xl font-bold text-primary">Profile</h1>
+        <Button variant="ghost" className="text-sm font-medium" onClick={handleLogout}>
+          Log Out
+        </Button>
       </header>
-      <main className="flex-1 w-full py-12 bg-gray-100">
-        <div className="container mx-auto px-4 md:px-6 space-y-8">
+      <main className="flex-1 w-full py-12 bg-background">
+        <div className="container mx-auto px-4 md:px-6 space-y-8 max-w-3xl">
           {/* User Info */}
-          <Card>
+          <Card className="w-full">
             <CardHeader>
               <CardTitle>Your Information</CardTitle>
               <CardDescription>Update your personal details</CardDescription>
@@ -231,9 +230,12 @@ export default function ProfilePage() {
             <CardContent>
               <div className="space-y-4">
                 {["username", "email", "membership", "location", "password"].map((field, index) => (
-                  <div key={index} className="flex flex-col md:flex-row items-center gap-4">
-                    <label className="text-sm font-medium w-full md:w-1/4 capitalize">{field}</label>
+                  <div key={index} className="space-y-2">
+                    <label htmlFor={field} className="text-sm font-medium capitalize">
+                      {field}
+                    </label>
                     <Input
+                      id={field}
                       name={field}
                       type={field === "password" ? "password" : "text"}
                       value={!userLoading && userInfo[field] ? userInfo[field] : ""}
@@ -244,17 +246,17 @@ export default function ProfilePage() {
                       }
                       onChange={handleInputChange}
                       readOnly={field === "username" && !newUser}
-                      className={!userLoading && userInfo[field] ? "text-black" : "text-gray-400"}
+                      className={!userLoading && userInfo[field] ? "" : "text-muted-foreground"}
                     />
                   </div>
                 ))}
               </div>
-              <div className="flex justify-end mt-4">
-                <Button className="bg-pink-500 text-white hover:bg-pink-600">
+              <div className="flex justify-end mt-6">
+                <Button onClick={updateUserInfo} className="bg-primary text-primary-foreground hover:bg-primary/90">
                   Save Changes
                 </Button>
               </div>
-              {message && <p className="text-sm text-center mt-4 text-pink-500">{message}</p>}
+              {message && <p className="text-sm text-center mt-4 text-primary">{message}</p>}
             </CardContent>
           </Card>
 
@@ -266,13 +268,13 @@ export default function ProfilePage() {
             </CardHeader>
             <CardContent>
               {registerLoading ? (
-                <p className="text-sm text-gray-500">Loading registered events...</p>
+                <p className="text-sm text-muted-foreground">Loading registered events...</p>
               ) : register.length === 0 ? (
-                <p className="text-sm text-gray-500">No registered events available.</p>
+                <p className="text-sm text-muted-foreground">No registered events available.</p>
               ) : (
                 <div className="space-y-4">
                   {register.map((event, index) => (
-                    <div key={index} className="p-4 border rounded-md bg-white">
+                    <div key={index} className="p-4 border rounded-md bg-card">
                       <p><span className="font-medium">Event ID:</span> {event.eventid}</p>
                       <p><span className="font-medium">Registration Time:</span> {event.registrationtime}</p>
                     </div>
@@ -290,13 +292,13 @@ export default function ProfilePage() {
             </CardHeader>
             <CardContent>
               {contentLoading ? (
-                <p className="text-sm text-gray-500">Loading content preferences...</p>
+                <p className="text-sm text-muted-foreground">Loading content preferences...</p>
               ) : preferences.length === 0 ? (
-                <p className="text-sm text-gray-500">No content preferences available.</p>
+                <p className="text-sm text-muted-foreground">No content preferences available.</p>
               ) : (
                 <div className="space-y-4">
                   {preferences.map((preference, index) => (
-                    <div key={index} className="p-4 border rounded-md bg-white">
+                    <div key={index} className="p-4 border rounded-md bg-card">
                       <p><span className="font-medium">Media ID:</span> {preference.mediaid}</p>
                       <p><span className="font-medium">Bias:</span> {preference.bias}</p>
                       <p><span className="font-medium">Event Name:</span> {preference.eventname}</p>
@@ -308,12 +310,11 @@ export default function ProfilePage() {
           </Card>
         </div>
       </main>
-      <footer className="w-full py-6 px-4 md:px-6 border-t bg-white">
+      <footer className="w-full py-6 px-4 md:px-6 border-t bg-background">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-          <p className="text-xs text-gray-500">© 2024 LePhoning. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground">© 2024 LePhoning. All rights reserved.</p>
         </div>
       </footer>
     </div>
   );
-
 }

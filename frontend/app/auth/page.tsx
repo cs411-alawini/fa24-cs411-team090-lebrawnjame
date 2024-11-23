@@ -61,7 +61,7 @@ export default function AuthPage() {
 
       const data = await response.json();
       if (response.ok) {
-        login({ username: data.username, email: data.email, token: data.token }); // Store user globally
+        login({ username: data.username, email: data.email, token: data.token });
         router.push('/');
       } else {
         setErrors((prev) => ({ ...prev, form: data.message || 'Authentication failed' }));
