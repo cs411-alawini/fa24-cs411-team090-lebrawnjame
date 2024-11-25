@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { UserProvider } from "../contexts/UserContext"; // Import your context
+import { UserProvider } from "../contexts/UserContext"; 
+import { Toaster } from "@/components/ui/toaster"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -31,6 +32,7 @@ export default function RootLayout({
       >
         <UserProvider>
           {children}
+          <Toaster/>
         </UserProvider>
       </body>
     </html>

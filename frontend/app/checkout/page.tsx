@@ -9,6 +9,8 @@ import { Separator } from "@/components/ui/separator"
 import { ArrowLeft, CreditCard, ShoppingCart, Trash2 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { sendOrderConfirmation } from '@/app/api/actions/sendOrderConfirmation'
+import { useToast } from "@/components/ui/use-toast"
 
 type Product = {
   id: number;
@@ -20,6 +22,9 @@ type Product = {
 
 export default function CheckoutPage() {
   const [cart, setCart] = useState<Product[]>([]);
+  const [email, setEmail] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
+  const { toast } = useToast();
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -36,6 +41,31 @@ export default function CheckoutPage() {
 
   const calculateTotal = () => {
     return cart.reduce((total, item) => total + item.price, 0);
+  };
+
+  const handlePayment = async () => {
+    setIsProcessing(true);
+    const total = calculateTotal();
+    const result = await sendOrderConfirmation(email, total);
+    setIsProcessing(false);
+
+    if (result.success) {
+      toast({
+        title: "Order Confirmation Sent",
+        description: "Check your email for order details.",
+        duration: 5000,
+      });
+      // Clear the cart after successful order
+      setCart([]);
+      localStorage.setItem('cart', JSON.stringify([]));
+    } else {
+      toast({
+        title: "Error",
+        description: result.error || "Failed to process order. Please try again.",
+        variant: "destructive",
+        duration: 5000,
+      });
+    }
   };
 
   return (
@@ -104,7 +134,13 @@ export default function CheckoutPage() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Enter your email" />
+                <Input 
+                  id="email" 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="address">Address</Label>
@@ -129,9 +165,13 @@ export default function CheckoutPage() {
               </div>
             </CardContent>
             <CardFooter>
-              <Button className="w-full bg-pink-500 hover:bg-pink-600 text-white" disabled={cart.length === 0}>
+              <Button 
+                className="w-full bg-pink-500 hover:bg-pink-600 text-white" 
+                disabled={cart.length === 0 || isProcessing} 
+                onClick={handlePayment}
+              >
                 <ShoppingCart className="mr-2 h-4 w-4" />
-                Pay ${calculateTotal().toFixed(2)}
+                {isProcessing ? 'Processing...' : `Pay $${calculateTotal().toFixed(2)}`}
               </Button>
             </CardFooter>
           </Card>
