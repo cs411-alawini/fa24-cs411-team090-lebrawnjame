@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createConnection } from 'mysql2/promise';
+import bcrypt from 'bcrypt';
 
 export async function POST(request: Request) {
     let body;
@@ -14,6 +15,16 @@ export async function POST(request: Request) {
         return NextResponse.json({ message: 'Query and values are required' }, { status: 400 });
     }
 
+    const transformedValues = await Promise.all(
+        values.map(async (value) => {
+            if (typeof value === 'string') {
+                if (value.trim().toLowerCase() === 'premium') return '1';
+                if (value.trim().toLowerCase() === 'basic') return '0';
+            }
+            return value;
+        })
+    );
+
     const connection = await createConnection({
         host: '35.226.113.165',
         user: 'dev',
@@ -22,7 +33,7 @@ export async function POST(request: Request) {
     });
 
     try {
-        const [result] = await connection.query(query, values);
+        const [result] = await connection.query(query, transformedValues);
         return NextResponse.json({ message: 'Success', result });
     } catch (error) {
         console.error("Database query error:", error);

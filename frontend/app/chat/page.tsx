@@ -64,6 +64,7 @@ async function batchPostMessagesToDB(messages: Messages[]) {
 
 export default function ChatPage() {
   const { user } = useContext(UserContext);
+  const [username, setUsername] = useState('');
   const [selectedMember, setSelectedMember] = useState(members[0]);
   const [inputMessage, setInputMessage] = useState('');
   const [loading, setLoading] = useState(true);
@@ -78,10 +79,21 @@ export default function ChatPage() {
   const chatEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    if (user?.username) {
+      setUsername(user.username);
+    } else {
+      const storedUsername = localStorage.getItem('username');
+      if (storedUsername) {
+        setUsername(storedUsername);
+      }
+    }
+  }, [user]);
+
+  useEffect(() => {
     const fetchMessages = async () => {
       setLoading(true);
       try {
-        const response = await fetch(`/api/getMessages?username=${encodeURIComponent(user.username)}`);
+        const response = await fetch(`/api/getMessages?username=${encodeURIComponent(username)}`);
         const data: Messages[] = await response.json();
         const organizedHistory: Record<string, Messages[]> = {
           Sakura: [],
@@ -106,7 +118,7 @@ export default function ChatPage() {
     };
 
     fetchMessages();
-  }, []);
+  }, [username]);
 
   const messages = chatHistory[selectedMember.name];
 
@@ -136,7 +148,7 @@ export default function ChatPage() {
     if (inputMessage.trim() === '' || !user) return;
 
     const newMessage: Messages = {
-      Username: user.username,
+      Username: username,
       MemberId: selectedMember.id,
       SentBy: 0,
       Content: inputMessage,
@@ -154,7 +166,7 @@ export default function ChatPage() {
     const botResponseText = await getChatGPTResponse([...messages, newMessage], selectedMember.name);
 
     const botMessage: Messages = {
-      Username: user.username, 
+      Username: username, 
       MemberId: selectedMember.id,
       SentBy: 1,
       Content: botResponseText,

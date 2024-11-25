@@ -17,11 +17,11 @@ connection.connect(err => {
 });
 
 router.post('/login', async (req, res) => {
-    const { email, password } = req.body;
-
+    const { username, password } = req.body;
+    
     connection.query(
-        'SELECT * FROM User WHERE Email = ?',
-        [email],
+        'SELECT * FROM User WHERE Username = ?',
+        [username],
         async (err, results) => {
             if (err) return res.status(500).send('Server error');
             if (results.length === 0) return res.status(400).send('User not found');
@@ -33,28 +33,37 @@ router.post('/login', async (req, res) => {
                 const token = jwt.sign({ id: user.id }, 'your_jwt_secret', { expiresIn: '1h' });
                 res.status(200).json({ message: 'Login successful', token });
             } else {
-                res.status(400).send('Incorrect password');
+                res.status(400).send("Incorrect password");
             }
         }
     );
 });
 
 router.post('/signup', async (req, res) => {
-    const { username, email, password, membershipStatus, location } = req.body;
-    const hashedPassword = await bcrypt.hash(password, 10);
+  const { username, email, password, membershipStatus, location } = req.body;
 
-    const userData = {
+  connection.query(
+    'SELECT * FROM User WHERE Username = ?',
+    [username],
+    async (err, results) => {
+      if (err) return res.status(500).send('Server error');
+      if (results.length > 0) return res.status(400).send('Username already exists');
+
+      const hashedPassword = await bcrypt.hash(password, 10);
+      const userData = {
         Username: username,
         Email: email,
         Password: hashedPassword,
         MembershipStatus: membershipStatus || 0,
-        Location: location || 1
-    };
+        Location: location || 1,
+      };
 
-    connection.query('INSERT INTO User SET ?', userData, (err, results) => {
+      connection.query('INSERT INTO User SET ?', userData, (err, results) => {
         if (err) return res.status(500).send('Server error');
-        res.status(201).send('User created');
-    });
+        res.status(201).json({ username, email, message: 'User created' });
+      });
+    }
+  );
 });
 
 module.exports = router;

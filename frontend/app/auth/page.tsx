@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -9,39 +9,37 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter }
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
-import { useContext } from 'react';
 import { UserContext } from '@/contexts/UserContext'
 
 export default function AuthPage() {
   const { login } = useContext(UserContext);
   const router = useRouter();
-  const [isLogin, setIsLogin] = useState(true)
-  const [username, setUsername] = useState('')
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [errors, setErrors] = useState({ username: '', email: '', password: '' })
+  const [isLogin, setIsLogin] = useState(true);
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState<{ username: string; email?: string; password: string, form?: string }>({ username: '', password: '' });
 
   const validateForm = () => {
-    let isValid = true
-    const newErrors = { username: '', email: '', password: '' }
+    let isValid = true;
+    const newErrors: { username: string; email?: string; password: string } = { username: '', password: '' };
 
-    if (!isLogin && username.length < 3) {
-      newErrors.username = 'Username must be at least 3 characters long'
-      isValid = false
+    if (username.trim().length < 3) {
+      newErrors.username = 'Username must be at least 3 characters long';
+      isValid = false;
     }
-    if (!/\S+@\S+\.\S+/.test(email)) {
-      newErrors.email = 'Please enter a valid email address'
-      isValid = false
+    if (!isLogin && !/\S+@\S+\.\S+/.test(email)) {
+      newErrors.email = 'Please enter a valid email address';
+      isValid = false;
     }
-    if (password.length < 6) {
-      newErrors.password = 'Password must be at least 6 characters long'
-      isValid = false
+    if (password.trim().length < 6) {
+      newErrors.password = 'Password must be at least 6 characters long';
+      isValid = false;
     }
 
-    setErrors(newErrors)
-    return isValid
-  }
-
+    setErrors(newErrors);
+    return isValid;
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -49,7 +47,7 @@ export default function AuthPage() {
 
     const url = isLogin ? 'http://localhost:3001/auth/login' : 'http://localhost:3001/auth/signup';
     const payload = isLogin
-      ? { email, password }
+      ? { username, password }
       : { username, email, password, membershipStatus: 0, location: 1 };
 
     try {
@@ -61,13 +59,13 @@ export default function AuthPage() {
 
       const data = await response.json();
       if (response.ok) {
-        login({ username: data.username, email: data.email, token: data.token });
+        login({ username: username, email: email, token: data.token });
         router.push('/');
       } else {
         setErrors((prev) => ({ ...prev, form: data.message || 'Authentication failed' }));
       }
     } catch (error) {
-      setErrors((prev) => ({ ...prev, form: 'Server error' }));
+      setErrors((prev) => ({ ...prev, form: 'Incorrect password' }));
     }
   };
 
@@ -94,15 +92,15 @@ export default function AuthPage() {
               <TabsContent value="login">
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div className="space-y-2">
-                    <Label htmlFor="email">Email</Label>
+                    <Label htmlFor="username">Username</Label>
                     <Input
-                      id="email"
-                      type="email"
-                      placeholder="Enter your email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      id="username"
+                      type="text"
+                      placeholder="Enter your username"
+                      value={username}
+                      onChange={(e) => setUsername(e.target.value)}
                     />
-                    {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
+                    {errors.username && <p className="text-sm text-red-500">{errors.username}</p>}
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="password">Password</Label>
@@ -115,6 +113,7 @@ export default function AuthPage() {
                     />
                     {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
                   </div>
+                  {errors.form && <p className="text-sm text-red-500 text-center">{errors.form}</p>}
                   <Button type="submit" className="w-full">Login</Button>
                 </form>
               </TabsContent>
@@ -153,6 +152,7 @@ export default function AuthPage() {
                     />
                     {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
                   </div>
+                  {errors.form && <p className="text-sm text-red-500 text-center">{errors.form}</p>}
                   <Button type="submit" className="w-full">Sign Up</Button>
                 </form>
               </TabsContent>
@@ -183,5 +183,5 @@ export default function AuthPage() {
         </Card>
       </div>
     </div>
-  )
+  );
 }

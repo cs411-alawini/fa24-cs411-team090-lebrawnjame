@@ -7,6 +7,7 @@ import { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/navigation";
 import { UserContext } from "@/contexts/UserContext";
 import { ChevronLeft } from "lucide-react";
+import bcrypt from 'bcryptjs';
 
 type UserInfo = {
   [key: string]: string;
@@ -73,9 +74,9 @@ export default function ProfilePage() {
           setUserInfo({
             username: userData.Username,
             email: userData.Email,
-            membership: userData.MembershipStatus,
+            membership: userData.MembershipStatus === 0 ? "Basic" : "Premium",
             location: userData.Location,
-            password: userData.Password,
+            password: "",
           });
           setNewUser(false);
         } else {
@@ -152,6 +153,7 @@ export default function ProfilePage() {
     try {
       let query;
       let values;
+      const hashedPassword = await bcrypt.hash(userInfo.password, 10);
 
       if (newUser) {
         query = `
@@ -163,7 +165,7 @@ export default function ProfilePage() {
           userInfo.email,
           userInfo.membership,
           userInfo.location,
-          userInfo.password,
+          hashedPassword,
         ];
       } else {
         query = `
@@ -175,7 +177,7 @@ export default function ProfilePage() {
           userInfo.email,
           userInfo.membership,
           userInfo.location,
-          userInfo.password,
+          hashedPassword,
           userInfo.username,
         ];
       }
@@ -232,20 +234,21 @@ export default function ProfilePage() {
                 {["username", "email", "membership", "location", "password"].map((field, index) => (
                   <div key={index} className="space-y-2">
                     <label htmlFor={field} className="text-sm font-medium capitalize">
-                      {field}
+                      {field === "password" ? "Change Password" : field}
                     </label>
                     <Input
                       id={field}
                       name={field}
-                      type={field === "password" ? "password" : "text"}
                       value={!userLoading && userInfo[field] ? userInfo[field] : ""}
                       placeholder={
                         userLoading
                           ? `Loading ${field}...`
-                          : `Enter your ${field}`
+                          : field === "password" 
+                            ? `Enter your new password`
+                            : `Enter your ${field}`
                       }
                       onChange={handleInputChange}
-                      readOnly={field === "username" && !newUser}
+                      readOnly={(field === "username" || field === "membership") && !newUser}
                       className={!userLoading && userInfo[field] ? "" : "text-muted-foreground"}
                     />
                   </div>
