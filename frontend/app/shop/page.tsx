@@ -178,6 +178,8 @@ import { useState, useEffect } from 'react'
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import React, { memo } from 'react';
+
 import {
   Select,
   SelectContent,
@@ -211,6 +213,7 @@ export default function ShopPage() {
     return [];
   });
   const [merchandise, setMerchandise] = useState<MerchItem[]>([]);
+  const [quantities, setQuantities] = useState<{ [key: number]: number }>({});
 
   useEffect(() => {
     const fetchMerchandise = async () => {
@@ -236,6 +239,7 @@ export default function ShopPage() {
           const imageName = item.MerchType.toLowerCase().replace(/\s+/g, '-');
           return {
             ...item,
+            id: item.ItemID,
             price: Math.floor(Math.random() * (50 - 10 + 1) + 10),
             image: `/shop/${imageName}.png`,
             status: Math.random() > 0.8 ? ['Sold out'] : [],
@@ -256,11 +260,11 @@ export default function ShopPage() {
     fetchMerchandise();
   }, []);
 
-  const addToCart = (product: MerchItem) => {
-    const updatedCart = [...cart, product];
+  const addToCart = (product: MerchItem, quantity: number) => {
+    const updatedCart = [...cart, ...Array(quantity).fill(product)];
     setCart(updatedCart);
     localStorage.setItem('cart', JSON.stringify(updatedCart));
-  };
+  };    
 
   const sortedMerchandise = [...merchandise].sort((a, b) => {
     switch (sortBy) {
@@ -275,6 +279,73 @@ export default function ShopPage() {
     }
   });
 
+  const ProductCard = memo(({ product, addToCart, cart }: { 
+    product: MerchItem; 
+    addToCart: (product: MerchItem, quantity: number) => void; 
+    cart: MerchItem[];
+  }) => {
+    const [selectedQuantity, setSelectedQuantity] = useState(1);
+    const currentQuantity = cart.filter((item) => item.id === product.id).length;
+    const maxAddable = Math.max(0, 10 - currentQuantity);
+  
+    return (
+      <Card key={product.id} className="overflow-hidden group bg-white shadow-lg hover:shadow-xl transition-shadow">
+        <CardHeader className="p-0">
+          <div className="aspect-square relative overflow-hidden bg-gray-200">
+            <Image
+              src={product.image}
+              alt={product.MerchType}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+        </CardHeader>
+        <CardContent className="p-4">
+          <div className="flex flex-wrap gap-2 mb-2">
+            {product.status.map((status, index) => (
+              <Badge
+                key={index}
+                variant={status === "Sold out" ? "destructive" : "secondary"}
+              >
+                {status}
+              </Badge>
+            ))}
+          </div>
+          <h2 className="font-semibold text-lg mb-2 line-clamp-2">{product.MerchType}</h2>
+          <p className="text-sm text-gray-600 mb-2">{product.Merchant}</p>
+          <p className="text-lg font-bold text-pink-500">${product.price.toFixed(2)}</p>
+        </CardContent>
+        <CardFooter className="p-4 pt-0 flex items-center gap-4">
+          <Select
+            value={selectedQuantity.toString()}
+            onValueChange={(value) => setSelectedQuantity(parseInt(value, 10))}
+            disabled={maxAddable === 0}
+          >
+            <SelectTrigger className={`w-16 ${maxAddable === 0 ? 'opacity-50 cursor-not-allowed' : ''}`} disabled={maxAddable === 0}>
+              <SelectValue placeholder="Qty" />
+            </SelectTrigger>
+            <SelectContent>
+              {[...Array(maxAddable).keys()].map((_, i) => (
+                <SelectItem key={i} value={(i + 1).toString()}>
+                  {i + 1}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+  
+          <Button
+            className="flex-1 bg-purple-500 hover:bg-purple-600 text-white transition-colors"
+            disabled={product.status.includes("Sold out") || currentQuantity >= 10}
+            onClick={() => addToCart(product, selectedQuantity)}
+          >
+            <ShoppingCart className="mr-2 h-4 w-4" />
+            {currentQuantity >= 10 ? "Max Reached" : "Add to Cart"}
+          </Button>
+        </CardFooter>
+      </Card>
+    );
+  });  
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-100 to-purple-100 p-8">
       <div className="max-w-7xl mx-auto">
@@ -286,7 +357,7 @@ export default function ShopPage() {
             </Button>
           </Link>
           <h1 className="text-3xl font-bold text-center text-pink-500">LE SSERAFIM Shop</h1>
-          <div className="w-[150px]">
+          <div className="w-[160px]">
             <Select value={sortBy} onValueChange={setSortBy}>
               <SelectTrigger>
                 <SelectValue placeholder="Sort by" />
@@ -309,56 +380,13 @@ export default function ShopPage() {
             </Button>
           </Link>
         </div>
-
+  
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {sortedMerchandise.map((product) => (
-            <Card key={product.id} className="overflow-hidden group bg-white shadow-lg hover:shadow-xl transition-shadow">
-              <CardHeader className="p-0">
-                <div className="aspect-square relative overflow-hidden bg-gray-200">
-                  <Image
-                    src={product.image}
-                    alt={product.MerchType}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    onError={() => {
-                      const imgElement = document.getElementById(`product-image-${product.id}`) as HTMLImageElement;
-                      if (imgElement) {
-                        imgElement.src = '/placeholder.png';
-                      }
-                    }}
-                    id={`product-image-${product.id}`}
-                  />
-                </div>
-              </CardHeader>
-              <CardContent className="p-4">
-                <div className="flex flex-wrap gap-2 mb-2">
-                  {product.status.map((status, index) => (
-                    <Badge
-                      key={index}
-                      variant={status === "Sold out" ? "destructive" : "secondary"}
-                    >
-                      {status}
-                    </Badge>
-                  ))}
-                </div>
-                <h2 className="font-semibold text-lg mb-2 line-clamp-2">{product.MerchType}</h2>
-                <p className="text-sm text-gray-600 mb-2">{product.Merchant}</p>
-                <p className="text-lg font-bold text-pink-500">${product.price.toFixed(2)}</p>
-              </CardContent>
-              <CardFooter className="p-4 pt-0">
-                <Button
-                  className="w-full bg-purple-500 hover:bg-purple-600 text-white transition-colors"
-                  disabled={product.status.includes("Sold out")}
-                  onClick={() => addToCart(product)}
-                >
-                  <ShoppingCart className="mr-2 h-4 w-4" />
-                  {product.status.includes("Sold out") ? "Sold Out" : "Add to Cart"}
-                </Button>
-              </CardFooter>
-            </Card>
+            <ProductCard key={product.id} product={product} addToCart={addToCart} cart={cart} />
           ))}
         </div>
       </div>
     </div>
-  );
+  );  
 }

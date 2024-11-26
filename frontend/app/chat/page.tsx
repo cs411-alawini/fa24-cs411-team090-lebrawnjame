@@ -249,7 +249,7 @@ export default function ChatPage() {
     <div className="flex h-screen bg-gray-100">
       <div className="w-1/4 bg-gray-200 p-4">
         <Link href="/">
-          <Button variant="outline" className="flex items-center gap-2" onClick={handleContextSwitch}>
+          <Button variant="ghost" className="flex items-center gap-2 px-4 py-2 mb-6" onClick={handleContextSwitch}>
             <ArrowLeft className="h-4 w-4" />
             Back to Home
           </Button>

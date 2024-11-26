@@ -1,16 +1,17 @@
-'use client'
+'use client';
 
-import { useEffect, useState } from 'react'
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "@/components/ui/separator"
-import { ArrowLeft, CreditCard, ShoppingCart, Trash2 } from 'lucide-react'
-import Link from 'next/link'
-import Image from 'next/image'
-import { sendOrderConfirmation } from '@/app/api/actions/sendOrderConfirmation'
-import { useToast } from "@/components/ui/use-toast"
+import { useEffect, useState } from 'react';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
+import { ArrowLeft, CreditCard, ShoppingCart, Trash2 } from 'lucide-react';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import Link from 'next/link';
+import Image from 'next/image';
+import { sendOrderConfirmation } from '@/app/api/actions/sendOrderConfirmation';
+import { useToast } from "@/components/ui/use-toast";
 
 type Product = {
   id: number;
@@ -33,6 +34,28 @@ export default function CheckoutPage() {
     }
   }, []);
 
+  const getUniqueCartItems = () => {
+    const itemMap = new Map<number, { item: Product; quantity: number }>();
+
+    cart.forEach((item) => {
+      if (itemMap.has(item.id)) {
+        itemMap.get(item.id)!.quantity += 1;
+      } else {
+        itemMap.set(item.id, { item, quantity: 1 });
+      }
+    });
+
+    return Array.from(itemMap.values());
+  };
+
+  const updateQuantity = (productId: number, quantity: number) => {
+    const newCart = cart.filter((item) => item.id !== productId);
+    const updatedItems = Array(quantity).fill(cart.find((item) => item.id === productId)!);
+
+    setCart([...newCart, ...updatedItems]);
+    localStorage.setItem('cart', JSON.stringify([...newCart, ...updatedItems]));
+  };
+
   const removeFromCart = (productId: number) => {
     const updatedCart = cart.filter((item) => item.id !== productId);
     setCart(updatedCart);
@@ -40,7 +63,10 @@ export default function CheckoutPage() {
   };
 
   const calculateTotal = () => {
-    return cart.reduce((total, item) => total + item.price, 0);
+    return getUniqueCartItems().reduce(
+      (total, { item, quantity }) => total + item.price * quantity,
+      0
+    );
   };
 
   const handlePayment = async () => {
@@ -55,7 +81,7 @@ export default function CheckoutPage() {
         description: "Check your email for order details.",
         duration: 5000,
       });
-      // Clear the cart after successful order
+
       setCart([]);
       localStorage.setItem('cart', JSON.stringify([]));
     } else {
@@ -79,15 +105,43 @@ export default function CheckoutPage() {
         </Link>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Cart Summary */}
-          <Card>
-            <CardHeader>
-              <CardTitle>Order Summary</CardTitle>
-              <CardDescription>Review your items before checkout</CardDescription>
+
+          <Card className="flex flex-col h-full">
+            <CardHeader className="flex flex-row justify-between items-start">
+              <div>
+                <CardTitle>Order Summary</CardTitle>
+                <CardDescription>Review your items before checkout</CardDescription>
+              </div>
+
+              <div>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  onClick={() => {
+                    setCart([]);
+                    localStorage.setItem('cart', JSON.stringify([]));
+                  }}
+                >
+                  Clear Cart
+                </Button>
+              </div>
             </CardHeader>
-            <CardContent className="space-y-4">
+
+            <CardContent
+              className="flex-1 overflow-y-auto space-y-4"
+              style={{
+                maxHeight: '400px',
+                scrollbarWidth: 'none',
+                msOverflowStyle: 'none',
+              }}
+            >
+              <style jsx>{`
+                ::-webkit-scrollbar {
+                  display: none;
+                }
+              `}</style>
               {cart.length > 0 ? (
-                cart.map((item) => (
+                getUniqueCartItems().map(({ item, quantity }) => (
                   <div key={item.id} className="flex items-center space-x-4">
                     <div className="relative w-16 h-16 rounded-md overflow-hidden">
                       <Image
@@ -97,10 +151,30 @@ export default function CheckoutPage() {
                         className="object-cover"
                       />
                     </div>
+
                     <div className="flex-1">
                       <h3 className="font-semibold">{item.MerchType}</h3>
-                      <p className="text-sm text-gray-500">${item.price.toFixed(2)}</p>
+                      <p className="text-gray-700">${(item.price * quantity).toFixed(2)}</p>
                     </div>
+
+                    <Select
+                      value={quantity.toString()}
+                      onValueChange={(value) =>
+                        updateQuantity(item.id, parseInt(value, 10))
+                      }
+                    >
+                      <SelectTrigger className="w-20">
+                        <SelectValue placeholder="Qty" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {[...Array(10).keys()].map((_, i) => (
+                          <SelectItem key={i} value={(i + 1).toString()}>
+                            {i + 1}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+
                     <Button
                       variant="ghost"
                       size="icon"
@@ -114,14 +188,14 @@ export default function CheckoutPage() {
                 <p className="text-center text-gray-500">Your cart is empty.</p>
               )}
             </CardContent>
+
             <Separator className="my-4" />
-            <CardFooter className="justify-between">
+            <CardFooter className="mt-auto justify-between">
               <p className="font-semibold">Total</p>
               <p className="font-semibold">${calculateTotal().toFixed(2)}</p>
             </CardFooter>
           </Card>
 
-          {/* Checkout Form */}
           <Card>
             <CardHeader>
               <CardTitle>Checkout</CardTitle>
@@ -180,4 +254,3 @@ export default function CheckoutPage() {
     </div>
   );
 }
-

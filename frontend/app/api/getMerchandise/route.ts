@@ -12,7 +12,7 @@ export async function GET(request: Request) {
 
 
   try {
-      const [rows] = await connection.execute('SELECT * FROM Shop');
+      const [rows] = await connection.execute('SELECT * FROM Shop LIMIT 99;');
       return NextResponse.json(rows);
   } catch (error) {
       console.error("Database query error:", error);
