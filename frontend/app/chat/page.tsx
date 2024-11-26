@@ -6,7 +6,8 @@ import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Send } from 'lucide-react';
-import { ArrowLeft } from 'lucide-react';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
+import { ArrowLeft, ArrowRight, Sparkles, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { UserContext } from '@/contexts/UserContext';
 
@@ -179,6 +180,70 @@ export default function ChatPage() {
     }));
     setPendingMessages((prevPending) => [...prevPending, botMessage]);
   };
+
+  if (!user) {
+    return (
+      <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {}
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 animate-gradient-x" />
+        
+        {}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute -top-4 -left-4 w-24 h-24 bg-white/10 rounded-full blur-xl" />
+          <div className="absolute top-1/4 -right-8 w-32 h-32 bg-pink-400/20 rounded-full blur-xl" />
+          <div className="absolute bottom-1/4 -left-8 w-32 h-32 bg-purple-400/20 rounded-full blur-xl" />
+        </div>
+
+        <Card className="w-[400px] relative backdrop-blur-sm bg-white/95 border-2 border-white/50 shadow-2xl">
+          <CardHeader className="space-y-1 text-center pb-2">
+            <div className="flex justify-center mb-2">
+              <MessageSquare className="h-10 w-10 text-pink-500" />
+            </div>
+            <CardTitle className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+              Welcome to LePhoning Chat
+            </CardTitle>
+            <CardDescription className="text-base">
+              Connect with LE SSERAFIM members
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <div className="p-4 rounded-lg bg-pink-50 border border-pink-100">
+              <p className="text-center text-pink-900">
+                You must be logged in to chat with LE SSERAFIM members on LePhoning
+              </p>
+            </div>
+            <div className="space-y-3">
+              <Link href="/auth?mode=login" className="block">
+                <Button 
+                  className="w-full h-12 text-lg transition-all hover:scale-[1.02] hover:shadow-lg"
+                  variant="default"
+                >
+                  Log in
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+              <Link href="/auth?mode=signup" className="block">
+                <Button 
+                  variant="outline" 
+                  className="w-full h-12 text-lg border-2 transition-all hover:scale-[1.02] hover:shadow-md hover:border-pink-500 hover:text-pink-500"
+                >
+                  Sign up
+                  <Sparkles className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
+          </CardContent>
+          <CardFooter className="justify-center pb-6">
+            <p className="text-sm flex items-center gap-2 text-muted-foreground">
+              <Sparkles className="h-4 w-4" />
+              Join the FEARNOT community today!
+              <Sparkles className="h-4 w-4" />
+            </p>
+          </CardFooter>
+        </Card>
+      </div>
+    );
+  }
 
   return (
     <div className="flex h-screen bg-gray-100">

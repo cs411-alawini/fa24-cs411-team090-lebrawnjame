@@ -25,7 +25,7 @@ export default function MediaPage() {
   useEffect(() => {
     async function loadMediaItems() {
       try {
-        const items: MediaItem[] = Array.from({ length: 56 }, (_, i) => ({ // Changed 20 to 56
+        const items: MediaItem[] = Array.from({ length: 56 }, (_, i) => ({
           id: i + 1,
           type: 'image',
           src: `/media/image${i + 1}.${i + 1 === 7 ? 'jpeg' : i + 1 === 13 ? 'png' : 'jpg'}`,
@@ -50,15 +50,6 @@ export default function MediaPage() {
       </Link>
       <h1 className="text-3xl font-bold text-center mb-8 text-pink-500">LE SSERAFIM Media</h1>
       
-      <Tabs defaultValue="all" className="w-full max-w-3xl mx-auto mb-8">
-        <TabsList className="grid w-full grid-cols-1">
-          <TabsTrigger value="all" onClick={() => setFilter('all')}>
-            <Camera className="mr-2 h-4 w-4" />
-            Photos
-          </TabsTrigger>
-        </TabsList>
-      </Tabs>
-
       <ScrollArea className="h-[calc(100vh-200px)]">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {mediaItems.map((item) => (

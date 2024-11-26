@@ -51,7 +51,7 @@ export default function EventsPage() {
                   ...event,
                   start: new Date(event.start),
                   end: new Date(event.end),
-                    color: '#60A5FA', // Set a default color for events
+                    color: '#60A5FA',
                 }));
 
                 setEvents(formattedEvents);
