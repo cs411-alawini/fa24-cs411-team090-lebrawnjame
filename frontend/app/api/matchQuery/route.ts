@@ -7,25 +7,40 @@ const openai = new OpenAI({
 
 export async function POST(req: Request) {
   try {
-    const { userMessage, queries, context } = await req.json();
+    const { userMessage, schema, context } = await req.json();
 
     const response = await openai.chat.completions.create({
-      model: 'gpt-4o',
+      model: 'gpt-4',
       messages: [
         { role: 'system', content: context },
         {
           role: 'user',
-          content: `User message: "${userMessage}". Match it with one of these queries: ${queries.join(', ')}`,
+          content: `User message: "${userMessage}".`,
         },
       ],
-      max_tokens: 200,
+      max_tokens: 300,
     });
 
-    const matchedQuery = response.choices[0]?.message?.content;
+    const output = response.choices[0]?.message?.content?.trim();
 
-    return NextResponse.json({ matchedQuery });
+    if (!output) {
+      return NextResponse.json(
+        { error: 'No valid response received from GPT.' },
+        { status: 500 }
+      );
+    }
+
+    const isSQLQuery = output.toLowerCase().startsWith('select') || 
+                       output.toLowerCase().startsWith('insert') || 
+                       output.toLowerCase().startsWith('update') || 
+                       output.toLowerCase().startsWith('delete');
+
+    if (isSQLQuery) {
+      return NextResponse.json({ matchedQuery: output });
+    } else {
+      return NextResponse.json({ message: output });
+    }
   } catch (error) {
-    console.error('Error fetching ChatGPT response for matchQuery:', error);
-    return NextResponse.json({ error: 'Failed to match query' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to process the request' }, { status: 500 });
   }
 }
