@@ -20,6 +20,7 @@ export async function POST(req: Request) {
 
   try {
     const { messages }: { messages: Messages[] } = await req.json();
+    await connection.beginTransaction();
 
     // Prepare the values for batch insertion
     const values = messages.map(message => [
@@ -41,13 +42,18 @@ export async function POST(req: Request) {
       [values]
     );
 
+    await connection.commit();
+
     // For each user-member chat log, run stored procedure to limit their messages
     for (const value of limit_values) {
       await connection.query('CALL LimitMessages(?, ?)', value);
     }
 
+    await connection.commit();
+
     return NextResponse.json({ message: 'Messages stored successfully' });
   } catch (error) {
+    await connection.rollback();
     console.error('Error storing messages:', error);
     return NextResponse.json({ error: 'Failed to store messages' }, { status: 500 });
   } finally {
