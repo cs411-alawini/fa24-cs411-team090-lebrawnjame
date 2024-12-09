@@ -30,11 +30,21 @@ export async function POST(req: Request) {
       message.Time
     ]);
 
+    const limit_values = messages.map(message => [
+      message.Username,
+      message.MemberId
+    ]);
+
     // Perform a single batch insert
     await connection.query(
       'INSERT INTO Messages (Username, MemberId, SentBy, Content, Time) VALUES ?',
       [values]
     );
+
+    // For each user-member chat log, run stored procedure to limit their messages
+    for (const value of limit_values) {
+      await connection.query('CALL LimitMessages(?, ?)', value);
+    }
 
     return NextResponse.json({ message: 'Messages stored successfully' });
   } catch (error) {
