@@ -7,12 +7,12 @@ import { MessageSquare, Calendar, Camera, ShoppingBag, Mic, Heart, Zap, Users, M
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import Chatbot from "@/components/Chatbot"
-import { UserContext } from "@/contexts/UserContext";
+import { UserContext } from "@/contexts/UserContext"; // Import the UserContext
 import { useContext } from "react"
 
 export default function LandingPage() {
   const [username, setUsername] = useState<string | null>(null)
-  const { user } = useContext(UserContext);
+  const { user } = useContext(UserContext); // Access user data from context
 
   useEffect(() => {
     const storedUsername = localStorage.getItem('username')

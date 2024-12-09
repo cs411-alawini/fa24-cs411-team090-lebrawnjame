@@ -259,8 +259,10 @@ export default function AuthPage() {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Animated background */}
       <div className="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 animate-gradient-x" />
       
+      {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-4 -left-4 w-24 h-24 bg-white/10 rounded-full blur-xl" />
         <div className="absolute top-1/4 -right-8 w-32 h-32 bg-pink-400/20 rounded-full blur-xl" />
@@ -286,11 +288,11 @@ export default function AuthPage() {
         <CardContent>
           <Tabs defaultValue="login" onValueChange={(value) => setIsLogin(value === 'login')}>
             <TabsList className="grid w-full grid-cols-2 mb-4">
-              <TabsTrigger value="login" className="text-md">
+              <TabsTrigger value="login" className="text-lg">
                 <LogIn className="w-4 h-4 mr-2" />
                 Login
               </TabsTrigger>
-              <TabsTrigger value="signup" className="text-md">
+              <TabsTrigger value="signup" className="text-lg">
                 <UserPlus className="w-4 h-4 mr-2" />
                 Sign Up
               </TabsTrigger>
@@ -305,7 +307,7 @@ export default function AuthPage() {
                     placeholder="Enter your username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="bg-white/50 transition-all"
+                    className="bg-white/50 border-2 border-pink-200 focus:border-pink-500 transition-all"
                   />
                   {errors.username && <p className="text-sm text-red-500">{errors.username}</p>}
                 </div>
@@ -317,7 +319,7 @@ export default function AuthPage() {
                     placeholder="Enter your password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="bg-white/50 transition-all"
+                    className="bg-white/50 border-2 border-pink-200 focus:border-pink-500 transition-all"
                   />
                   {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
                 </div>
@@ -337,7 +339,7 @@ export default function AuthPage() {
                     placeholder="Choose a username"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
-                    className="bg-white/50 transition-all"
+                    className="bg-white/50 border-2 border-pink-200 focus:border-pink-500 transition-all"
                   />
                   {errors.username && <p className="text-sm text-red-500">{errors.username}</p>}
                 </div>
@@ -349,7 +351,7 @@ export default function AuthPage() {
                     placeholder="Enter your email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="bg-white/50 transition-all"
+                    className="bg-white/50 border-2 border-pink-200 focus:border-pink-500 transition-all"
                   />
                   {errors.email && <p className="text-sm text-red-500">{errors.email}</p>}
                 </div>
@@ -361,7 +363,7 @@ export default function AuthPage() {
                     placeholder="Choose a password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    className="bg-white/50 transition-all"
+                    className="bg-white/50 border-2 border-pink-200 focus:border-pink-500 transition-all"
                   />
                   {errors.password && <p className="text-sm text-red-500">{errors.password}</p>}
                 </div>
@@ -374,34 +376,28 @@ export default function AuthPage() {
           </Tabs>
         </CardContent>
         <CardFooter>
-          {!isLogin && (
-            <p className="text-sm text-center w-full">
-              <span className="flex items-center justify-center gap-1">
-                <Sparkles className="h-4 w-4 text-pink-500" />
-                By signing up, you agree to our{' '}
-                <a
-                  href="https://docs.google.com/document/d/1UKMjTSykd-DO5ivyFYOz3wIXTXZA60mDX_XeK5_7eTc/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-500 hover:text-pink-600 underline transition-colors"
-                >
-                  Terms of Service
-                </a>
-              </span>
-              <span className="flex items-center justify-center gap-1">
-                and{' '}
-                <a
-                  href="https://docs.google.com/document/d/1AFcgWn3-zFVwZs6lcrbl98ondCBi0-dSpaZmQbXKu48/edit?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-pink-500 hover:text-pink-600 underline transition-colors"
-                >
-                  Privacy Policy
-                </a>
-                <Sparkles className="h-4 w-4 text-pink-500" />
-              </span>
-            </p>
-          )}
+          <p className="text-sm text-center w-full flex items-center justify-center gap-2">
+            <Sparkles className="h-4 w-4 text-pink-500" />
+            By signing up, you agree to our{' '}
+            <a
+              href="https://docs.google.com/document/d/1UKMjTSykd-DO5ivyFYOz3wIXTXZA60mDX_XeK5_7eTc/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-600 underline transition-colors"
+            >
+              Terms of Service
+            </a>{' '}
+            and{' '}
+            <a
+              href="https://docs.google.com/document/d/1AFcgWn3-zFVwZs6lcrbl98ondCBi0-dSpaZmQbXKu48/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-600 underline transition-colors"
+            >
+              Privacy Policy
+            </a>.
+            <Sparkles className="h-4 w-4 text-pink-500" />
+          </p>
         </CardFooter>
       </Card>
     </div>
