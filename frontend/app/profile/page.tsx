@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import { UserContext } from "@/contexts/UserContext";
 import { ChevronLeft } from "lucide-react";
 import bcrypt from 'bcryptjs';
+import internal from "stream";
 
 type UserInfo = {
   [key: string]: string;
@@ -31,6 +32,13 @@ interface Preferences {
   eventname: string;
 }
 
+interface ShopPreferences {
+  username: string;
+  itemid: string;
+  bias: string;
+  eventname: string;
+}
+
 export default function ProfilePage() {
   const { user, logout } = useContext(UserContext);
   const router = useRouter();
@@ -45,11 +53,13 @@ export default function ProfilePage() {
 
   const [register, setRegister] = useState<Register[]>([]);
   const [preferences, setPreferences] = useState<Preferences[]>([]);
+  const [shopPreferences, setShopPreferences] = useState<ShopPreferences[]>([])
 
   const [message, setMessage] = useState("");
   const [userLoading, setUserLoading] = useState(true);
   const [registerLoading, setRegisterLoading] = useState(true);
   const [contentLoading, setContentLoading] = useState(true);
+  const [shopPrefLoading, setShopPrefLoading] = useState(true);
   const [newUser, setNewUser] = useState(true);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -147,6 +157,35 @@ export default function ProfilePage() {
     };
 
     getPreferencesInfo();
+  }, [user]);
+
+  useEffect(() => {
+    if (!user) return;
+
+    const getShopPreferences = async () => {
+      try {
+        const query = `SELECT * FROM ShopPreferences WHERE Username = "${user.username}"`;
+        const response = await fetch(`/api/getRequest?query=${encodeURIComponent(query)}`);
+        const data = await response.json();
+
+        if (data && data.length > 0) {
+          setShopPreferences(
+            data.map((shoppref: any) => ({
+              username: shoppref.Username,
+              itemid: shoppref.ItemID,
+              bias: shoppref.Bias,
+              eventname: shoppref.EventName,
+            }))
+          );
+        }
+      } catch (error) {
+        console.error("Error fetching shop preferences: ", error);
+      } finally {
+        setShopPrefLoading(false);
+      }
+    };
+
+    getShopPreferences();
   }, [user]);
 
   const updateUserInfo = async () => {
@@ -287,7 +326,7 @@ export default function ProfilePage() {
             </CardContent>
           </Card>
 
-          {/* Preferences */}
+          {/* Content Preferences */}
           <Card>
             <CardHeader>
               <CardTitle>Your Content Preferences</CardTitle>
@@ -311,6 +350,32 @@ export default function ProfilePage() {
               )}
             </CardContent>
           </Card>
+
+          {/* Shop Preferences */}
+          <Card>
+            <CardHeader>
+              <CardTitle>Your Shop Preferences</CardTitle>
+              <CardDescription>Manage your shop feed</CardDescription>
+            </CardHeader>
+            <CardContent>
+              {contentLoading ? (
+                <p className="text-sm text-muted-foreground">Loading shop preferences...</p>
+              ) : shopPreferences.length === 0 ? (
+                <p className="text-sm text-muted-foreground">No shop preferences available.</p>
+              ) : (
+                <div className="space-y-4">
+                  {shopPreferences.map((shopPreferences, index) => (
+                    <div key={index} className="p-4 border rounded-md bg-card">
+                      <p><span className="font-medium">Item ID:</span> {shopPreferences.itemid}</p>
+                      <p><span className="font-medium">Bias:</span> {shopPreferences.bias}</p>
+                      <p><span className="font-medium">Event Name:</span> {shopPreferences.eventname}</p>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </CardContent>
+          </Card>
+
         </div>
       </main>
       <footer className="w-full py-6 px-4 md:px-6 border-t bg-background">
