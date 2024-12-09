@@ -1,5 +1,4 @@
 # Team090-lebrawnjame
-# Team090-lebrawnjame
 
 Here is the code for the triggers and stored procedure we used: 
 
