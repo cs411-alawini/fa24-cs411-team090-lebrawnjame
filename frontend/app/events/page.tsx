@@ -84,7 +84,7 @@ export default function EventsPage() {
                         startAccessor="start"
                         endAccessor="end"
                         style={{ height: 'calc(100vh - 200px)' }}
-                        defaultDate={new Date()} // Set to current date
+                        defaultDate={new Date(2024, 9, 1)}
                         eventPropGetter={eventStyleGetter}
                         selectable
                     />
